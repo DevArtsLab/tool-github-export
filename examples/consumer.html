@@ -28,12 +28,13 @@
   </table>
 
   <script>
-    // Point this at whichever endpoint you are consuming:
-    //   local:   http://localhost:8000/repos.public.json   (uv run python -m http.server -d data)
-    //   remote:  https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json
-    //   cdn:     https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json
+    // Serve this page next to the export (e.g. `python -m http.server -d data`)
+    // and the relative default just works. Override with ?src=<url> to consume
+    // a remote endpoint, e.g.:
+    //   ?src=https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json
+    //   ?src=https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json
     const EXPORT_URL = new URLSearchParams(location.search).get("src")
-      || "http://localhost:8000/repos.public.json";
+      || "repos.public.json";
 
     let repos = [];
 
