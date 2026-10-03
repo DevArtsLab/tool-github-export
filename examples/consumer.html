@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>github-export consumer example</title>
+  <style>
+    body { font-family: ui-monospace, monospace; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; font-size: 14px; }
+    th { background: #f4f4f4; }
+    .featured td { background: #fffbe6; }
+    .meta { color: #666; margin-bottom: 1rem; }
+    input { padding: 6px; width: 240px; font-family: inherit; }
+  </style>
+</head>
+<body>
+  <h1>Repositories</h1>
+  <p class="meta" id="meta">loading...</p>
+  <p>
+    Category filter:
+    <input id="filter" placeholder="tool | org-infra | project" />
+  </p>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Category</th><th>Tags</th><th>Lang</th><th>Stars</th><th>Pushed</th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <script>
+    // Point this at whichever endpoint you are consuming:
+    //   local:   http://localhost:8000/repos.public.json   (uv run python -m http.server -d data)
+    //   remote:  https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json
+    //   cdn:     https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json
+    const EXPORT_URL = new URLSearchParams(location.search).get("src")
+      || "http://localhost:8000/repos.public.json";
+
+    let repos = [];
+
+    fetch(EXPORT_URL)
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then((data) => {
+        repos = data.repositories;
+        document.getElementById("meta").textContent =
+          `${data.stats.total} repos | generated ${data.generated_at} | schema v${data.schema_version} | ${EXPORT_URL}`;
+        render();
+      })
+      .catch((e) => {
+        document.getElementById("meta").textContent = `Failed: ${e.message} (url: ${EXPORT_URL})`;
+      });
+
+    document.getElementById("filter").addEventListener("input", render);
+
+    function render() {
+      const q = document.getElementById("filter").value.trim().toLowerCase();
+      const rows = repos
+        .filter((r) => !q || r.category === q)
+        .map((r) => `<tr class="${r.featured ? "featured" : ""}">
+          <td><a href="${r.url}">${r.display_name || r.name}</a></td>
+          <td>${r.category}</td>
+          <td>${(r.tags || []).join(", ")}</td>
+          <td>${r.primary_language || ""}</td>
+          <td>${r.stars}</td>
+          <td>${(r.pushed_at || "").slice(0, 10)}</td>
+        </tr>`);
+      document.getElementById("rows").innerHTML = rows.join("");
+    }
+  </script>
+</body>
+</html>

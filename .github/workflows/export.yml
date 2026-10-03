@@ -1,0 +1,60 @@
+name: export
+
+on:
+  schedule:
+    # Every 6 hours, offset from the top of the hour.
+    - cron: "13 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: export
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run export
+        env:
+          GH_EXPORT_TOKEN: ${{ secrets.GH_EXPORT_TOKEN }}
+        run: uv run github-export export --config export.config.yaml
+
+      - name: Validate output
+        run: |
+          uv run github-export validate data/repos.public.json
+          uv run github-export validate data/repos.private.json
+
+      - name: Commit public export
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/repos.public.json
+          git diff --staged --quiet || git commit -m "chore(data): update repos.public.json"
+          git push
+
+      - name: Publish private export
+        if: vars.PRIVATE_DATA_REPO != ''
+        env:
+          GH_EXPORT_TOKEN: ${{ secrets.GH_EXPORT_TOKEN }}
+          PRIVATE_DATA_REPO: ${{ vars.PRIVATE_DATA_REPO }}
+        run: |
+          git clone "https://x-access-token:${GH_EXPORT_TOKEN}@github.com/${PRIVATE_DATA_REPO}.git" /tmp/private-data
+          cp data/repos.private.json /tmp/private-data/repos.private.json
+          cd /tmp/private-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add repos.private.json
+          git diff --staged --quiet || git commit -m "chore(data): update repos.private.json"
+          git push

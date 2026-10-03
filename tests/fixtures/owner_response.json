@@ -1,0 +1,126 @@
+{
+  "data": {
+    "repositoryOwner": {
+      "login": "DevArtsLab",
+      "__typename": "Organization",
+      "repositories": {
+        "pageInfo": { "hasNextPage": false, "endCursor": null },
+        "nodes": [
+          {
+            "name": "tool-github-export",
+            "nameWithOwner": "DevArtsLab/tool-github-export",
+            "description": "Export GitHub repository metadata to JSON",
+            "url": "https://github.com/DevArtsLab/tool-github-export",
+            "homepageUrl": "https://githublabs.com",
+            "visibility": "PUBLIC",
+            "isPrivate": false,
+            "isFork": false,
+            "isArchived": false,
+            "isTemplate": false,
+            "isDisabled": false,
+            "isLocked": false,
+            "stargazerCount": 3,
+            "forkCount": 1,
+            "diskUsage": 512,
+            "createdAt": "2026-10-03T00:00:00Z",
+            "updatedAt": "2026-10-03T12:00:00Z",
+            "pushedAt": "2026-10-03T12:00:00Z",
+            "openGraphImageUrl": "https://opengraph.githubassets.com/abc/DevArtsLab/tool-github-export",
+            "usesCustomOpenGraphImage": false,
+            "owner": { "login": "DevArtsLab", "__typename": "Organization" },
+            "defaultBranchRef": { "name": "main" },
+            "primaryLanguage": { "name": "Python", "color": "#3572A5" },
+            "licenseInfo": { "spdxId": "MIT", "name": "MIT License" },
+            "parent": null,
+            "watchers": { "totalCount": 3 },
+            "issues": { "totalCount": 2 },
+            "repositoryTopics": {
+              "nodes": [
+                { "topic": { "name": "github-api" } },
+                { "topic": { "name": "json" } }
+              ]
+            },
+            "languages": {
+              "totalSize": 10000,
+              "edges": [
+                { "size": 9000, "node": { "name": "Python", "color": "#3572A5" } },
+                { "size": 1000, "node": { "name": "Shell", "color": "#89e051" } }
+              ]
+            },
+            "latestRelease": { "tagName": "v0.1.0", "publishedAt": "2026-10-03T10:00:00Z" }
+          },
+          {
+            "name": "secret-internal-app",
+            "nameWithOwner": "DevArtsLab/secret-internal-app",
+            "description": "Internal app, not for the public directory",
+            "url": "https://github.com/DevArtsLab/secret-internal-app",
+            "homepageUrl": null,
+            "visibility": "PRIVATE",
+            "isPrivate": true,
+            "isFork": false,
+            "isArchived": false,
+            "isTemplate": false,
+            "isDisabled": false,
+            "isLocked": false,
+            "stargazerCount": 0,
+            "forkCount": 0,
+            "diskUsage": 128,
+            "createdAt": "2026-09-01T00:00:00Z",
+            "updatedAt": "2026-09-02T00:00:00Z",
+            "pushedAt": "2026-09-02T00:00:00Z",
+            "openGraphImageUrl": "https://opengraph.githubassets.com/def/DevArtsLab/secret-internal-app",
+            "usesCustomOpenGraphImage": false,
+            "owner": { "login": "DevArtsLab", "__typename": "Organization" },
+            "defaultBranchRef": { "name": "main" },
+            "primaryLanguage": { "name": "TypeScript", "color": "#3178c6" },
+            "licenseInfo": null,
+            "parent": null,
+            "watchers": { "totalCount": 1 },
+            "issues": { "totalCount": 0 },
+            "repositoryTopics": { "nodes": [] },
+            "languages": {
+              "totalSize": 5000,
+              "edges": [
+                { "size": 5000, "node": { "name": "TypeScript", "color": "#3178c6" } }
+              ]
+            },
+            "latestRelease": null
+          },
+          {
+            "name": "hidden-by-override",
+            "nameWithOwner": "DevArtsLab/hidden-by-override",
+            "description": "Public repo excluded from public export via override",
+            "url": "https://github.com/DevArtsLab/hidden-by-override",
+            "homepageUrl": null,
+            "visibility": "PUBLIC",
+            "isPrivate": false,
+            "isFork": false,
+            "isArchived": false,
+            "isTemplate": false,
+            "isDisabled": false,
+            "isLocked": false,
+            "stargazerCount": 0,
+            "forkCount": 0,
+            "diskUsage": 64,
+            "createdAt": "2026-08-01T00:00:00Z",
+            "updatedAt": "2026-08-02T00:00:00Z",
+            "pushedAt": "2026-08-02T00:00:00Z",
+            "openGraphImageUrl": "https://opengraph.githubassets.com/ghi/DevArtsLab/hidden-by-override",
+            "usesCustomOpenGraphImage": false,
+            "owner": { "login": "DevArtsLab", "__typename": "Organization" },
+            "defaultBranchRef": { "name": "main" },
+            "primaryLanguage": null,
+            "licenseInfo": null,
+            "parent": null,
+            "watchers": { "totalCount": 0 },
+            "issues": { "totalCount": 0 },
+            "repositoryTopics": { "nodes": [] },
+            "languages": { "totalSize": 0, "edges": [] },
+            "latestRelease": null
+          }
+        ]
+      }
+    },
+    "rateLimit": { "cost": 1, "remaining": 4999 }
+  }
+}

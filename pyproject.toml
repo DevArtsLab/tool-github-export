@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "github-export"
+version = "0.1.0"
+description = "Export GitHub repository metadata to versioned JSON artifacts for downstream consumers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "DevArts Lab" }]
+keywords = ["github", "export", "json", "portfolio", "metadata"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "pyyaml>=6.0.1",
+    "typer>=0.12",
+    "rich>=13.7",
+]
+
+[project.scripts]
+github-export = "github_export.cli:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "jsonschema>=4.23",
+    "respx>=0.21",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/github_export"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"schemas" = "github_export/schemas"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

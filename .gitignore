@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+
+# Tooling
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Env / secrets
+.env
+*.local
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Never commit the private export to this public repo
+data/repos.private.json

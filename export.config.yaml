@@ -1,0 +1,37 @@
+version: 1
+
+# GitHub owners to export repositories from.
+sources:
+  - type: organization
+    login: DevArtsLab
+  - type: user
+    login: AmirhosseinOlyaei
+
+# Which repos enter the export at all. Excluded repos are dropped before
+# the public/private split.
+filters:
+  include_forks: true
+  include_archived: true
+  include_templates: true
+
+# Name-prefix -> category mapping. First match wins. Repos with no matching
+# prefix get default_category. This is the stable field consumers filter on.
+categories:
+  "tool-": tool
+  "devarts-": org-infra
+  "devartslab-": org-infra
+default_category: project
+
+outputs:
+  dir: data
+  public_file: repos.public.json
+  private_file: repos.private.json
+
+# Per-repo overrides keyed by full_name ("owner/repo").
+# exclude: true keeps the repo out of repos.public.json (it still appears
+# in repos.private.json). featured/display_name/category/description enrich
+# the entry for directory and resume consumers.
+overrides:
+  "DevArtsLab/tool-github-export":
+    display_name: "GitHub Export"
+    featured: true
