@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-03T23:49:06.567263Z",
+  "generated_at": "2026-10-03T23:52:06.251449Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -16,16 +16,60 @@
     }
   ],
   "stats": {
-    "total": 115,
-    "public": 115,
+    "total": 116,
+    "public": 116,
     "private": 0,
     "by_category": {
+      "tool": 4,
       "org-infra": 3,
-      "tool": 3,
       "project": 109
     }
   },
   "repositories": [
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 30179,
+          "percentage": 100.0
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 0,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-10-03T23:51:25Z",
+      "pushed_at": "2026-10-03T23:51:22Z",
+      "image_url": "https://opengraph.githubassets.com/10ce941a93f93ea9032f27ab721fa7fff9f758db11bc4f773d4672b344f53fc0/DevArtsLab/tool-github-export"
+    },
     {
       "name": "devarts-business",
       "full_name": "DevArtsLab/devarts-business",
