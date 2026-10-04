@@ -95,8 +95,10 @@ export default {
     }
 
     // Public GET responses are edge-cached; authed responses never are.
+    // Local dev bypasses all caching so reloads show fresh output.
     const authed = authorized(request, env);
-    if (!authed) {
+    const dev = url.hostname === "localhost" || url.hostname === "127.0.0.1";
+    if (!authed && !dev) {
       const cached = await caches.default.match(request);
       if (cached) return cached;
     }
@@ -111,13 +113,13 @@ export default {
           : err(500, "internal_error");
     }
 
-    if (!authed && resp.status === 200) {
+    if (!authed && !dev && resp.status === 200) {
       resp.headers.set(
         "Cache-Control",
         `public, max-age=${PUBLIC_CACHE_SECONDS}, stale-while-revalidate=60`,
       );
       ctx.waitUntil(caches.default.put(request, resp.clone()));
-    } else if (authed) {
+    } else if (authed || dev) {
       resp.headers.set("Cache-Control", "private, no-store");
     }
     return resp;
@@ -429,7 +431,7 @@ function corsPreflight(): Response {
 // ---------------------------------------------------------------------------
 
 const BROWSE_CSS =
-  "body{font-family:sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#222}" +
+  "body{font-family:sans-serif;font-size:14px;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#222}" +
   "table{border-collapse:collapse;width:100%}" +
   "th,td{text-align:left;padding:2px 16px 2px 0;font-size:14px;white-space:nowrap}" +
   "th{border-bottom:1px solid #999}td{border-bottom:1px solid #eee}" +
@@ -474,8 +476,12 @@ async function browse(
 
   if (segs.length === 0) {
     const doc = await load(env, false).catch(() => null);
+    const priv = await load(env, true).catch(() => null);
+    const privCount = priv
+      ? priv.repositories.filter((r) => r.visibility === "private").length
+      : null;
     const meta = doc
-      ? `${doc.repositories.length} public repos - generated ${fmtDate(doc.generated_at)} - schema ${esc(String(doc.schema_version ?? "-"))}`
+      ? `${doc.repositories.length} public${privCount !== null ? ` + ${privCount} private` : ""} repos - generated ${fmtDate(doc.generated_at)} - schema ${esc(String(doc.schema_version ?? "-"))}`
       : "dataset not synced yet";
     const apiRows = ENDPOINTS.map(
       ([m, d]) => `<tr><td><code>${esc(m)}</code></td><td>${esc(d)}</td></tr>`,

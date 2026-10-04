@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Serve tool-github-export artifacts as a filtered JSON API on data.devartslab.com",
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --live-reload",
     "deploy": "wrangler deploy",
     "tail": "wrangler tail"
   },
