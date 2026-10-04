@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-04T12:17:26.841462Z",
+  "generated_at": "2026-10-04T21:18:33.231166Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -16,16 +16,43 @@
     }
   ],
   "stats": {
-    "total": 116,
-    "public": 116,
+    "total": 117,
+    "public": 117,
     "private": 0,
     "by_category": {
+      "project": 110,
       "tool": 4,
-      "org-infra": 3,
-      "project": 109
+      "org-infra": 3
     }
   },
   "repositories": [
+    {
+      "name": "homebrew-tap",
+      "full_name": "DevArtsLab/homebrew-tap",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Homebrew Tap",
+      "description": "Homebrew tap for DevArts Lab tools",
+      "url": "https://github.com/DevArtsLab/homebrew-tap",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "languages": [],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 0,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-04T14:16:55Z",
+      "updated_at": "2026-10-04T14:16:57Z",
+      "pushed_at": "2026-10-04T14:16:57Z",
+      "image_url": "https://opengraph.githubassets.com/480d3ddc59aa786e371a30e4297088a6a49f65fec8ed1ec4e2889c13c664faa5/DevArtsLab/homebrew-tap"
+    },
     {
       "name": "tool-universal-ai-config",
       "full_name": "DevArtsLab/tool-universal-ai-config",
@@ -69,15 +96,109 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 120,
+      "size_kb": 144,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-08-08T00:59:11Z",
-      "updated_at": "2026-10-04T11:55:20Z",
-      "pushed_at": "2026-10-04T11:55:27Z",
-      "image_url": "https://opengraph.githubassets.com/27ca6a5db1c6b08482d40036658b59edc2b601f52974a283ee15c384f44c355a/DevArtsLab/tool-universal-ai-config"
+      "updated_at": "2026-10-04T14:16:50Z",
+      "pushed_at": "2026-10-04T14:16:48Z",
+      "latest_release": {
+        "tag": "v0.1.1",
+        "published_at": "2026-10-04T14:18:05Z"
+      },
+      "image_url": "https://opengraph.githubassets.com/403707d3d22e56197be07ba4b9a35859050bd0f5bf4bb8d7bc180750319c38a3/DevArtsLab/tool-universal-ai-config"
+    },
+    {
+      "name": "devartslab-site",
+      "full_name": "DevArtsLab/devartslab-site",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Devartslab Site",
+      "description": "DevArts Lab landing page on devartslab.com - Cloudflare Workers",
+      "url": "https://github.com/DevArtsLab/devartslab-site",
+      "homepage": "https://devartslab.com",
+      "visibility": "public",
+      "category": "org-infra",
+      "featured": false,
+      "tags": [
+        "cloudflare-workers",
+        "landing-page"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 5431,
+          "percentage": 100.0
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 87,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-01T02:08:10Z",
+      "updated_at": "2026-10-04T13:33:16Z",
+      "pushed_at": "2026-10-04T13:33:11Z",
+      "image_url": "https://opengraph.githubassets.com/4d5efda487ce70e20d8c80fb759a8d44e7994937c30bd52b631dce3340c23b00/DevArtsLab/devartslab-site"
+    },
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 29825,
+          "percentage": 58.45
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 21201,
+          "percentage": 41.55
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 117,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-10-04T12:17:32Z",
+      "pushed_at": "2026-10-04T12:17:28Z",
+      "image_url": "https://opengraph.githubassets.com/1d64c27f8534de03a1f51be0626eb4355a93f33e91a398113f84356c73f539c5/DevArtsLab/tool-github-export"
     },
     {
       "name": "devarts-mail",
@@ -135,7 +256,7 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 270,
+      "size_kb": 268,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
@@ -193,56 +314,6 @@
       "updated_at": "2026-10-04T05:15:33Z",
       "pushed_at": "2026-10-04T05:15:30Z",
       "image_url": "https://opengraph.githubassets.com/2e534c792c0955a1df4fbbe76b021cadd11d9b7794c4a4b5421c4ece2ec0c368/DevArtsLab/tool-airtable-export"
-    },
-    {
-      "name": "tool-github-export",
-      "full_name": "DevArtsLab/tool-github-export",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "GitHub Export",
-      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
-      "url": "https://github.com/DevArtsLab/tool-github-export",
-      "visibility": "public",
-      "category": "tool",
-      "featured": true,
-      "tags": [
-        "cli",
-        "developer-tools",
-        "github-api",
-        "graphql",
-        "json",
-        "python",
-        "tool"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 29825,
-          "percentage": 58.45
-        },
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 21201,
-          "percentage": 41.55
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 117,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-04T03:44:42Z",
-      "pushed_at": "2026-10-04T03:44:39Z",
-      "image_url": "https://opengraph.githubassets.com/e2fa3a24643b654327b9e0b6257167a32a0026b528170d3cbc795324f9dad7de/DevArtsLab/tool-github-export"
     },
     {
       "name": "devarts-business",
@@ -421,46 +492,6 @@
       "updated_at": "2026-10-01T05:42:18Z",
       "pushed_at": "2026-10-01T04:40:29Z",
       "image_url": "https://opengraph.githubassets.com/f7fccaee11b74c86a29290fc9539d2eb8754e74907231a2c1e2b8a8fd94db6c5/DevArtsLab/guaranteed-income-program"
-    },
-    {
-      "name": "devartslab-site",
-      "full_name": "DevArtsLab/devartslab-site",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Devartslab Site",
-      "description": "DevArts Lab landing page on devartslab.com - Cloudflare Workers",
-      "url": "https://github.com/DevArtsLab/devartslab-site",
-      "homepage": "https://devartslab.com",
-      "visibility": "public",
-      "category": "org-infra",
-      "featured": false,
-      "tags": [
-        "cloudflare-workers",
-        "landing-page"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 3400,
-          "percentage": 100.0
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 21,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-01T02:08:10Z",
-      "updated_at": "2026-10-01T05:29:34Z",
-      "pushed_at": "2026-10-01T04:27:14Z",
-      "image_url": "https://opengraph.githubassets.com/0e50cbd3cc8ac68dc6257112eb8ec8abd0e62c38771c757f8134afb23b5d002b/DevArtsLab/devartslab-site"
     },
     {
       "name": "algorithms-ctd",
