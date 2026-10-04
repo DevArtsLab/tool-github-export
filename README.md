@@ -130,7 +130,7 @@ Private repos and repos marked `exclude: true` never reach `repos.public.json`. 
 
 ## Roadmap
 
-- Optional AI enrichment block (`ai` field per repo: summary, tech stack, highlights) via GitHub Models in the Action
+- Optional AI enrichment block (`ai` field per repo: summary, tech stack, highlights) via a model API in the Action
 - Phase 2 serving: Cloudflare Worker + R2 for `data.devartslab.com`-style endpoints with query filters
 - `repos.featured.json` convenience view
 
