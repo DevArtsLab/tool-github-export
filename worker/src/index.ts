@@ -140,7 +140,8 @@ async function route(request: Request, env: Env, authed: boolean): Promise<Respo
   const url = new URL(request.url);
   const path = url.pathname.replace(/\/+$/, "") || "/";
 
-  if (path === "/" || path === "/v1") return index(env);
+  if (path === "/") return browse(request, env, url, "/browse", "/");
+  if (path === "/v1") return index(env);
   if (path === "/health") return health(env);
   if (path === "/v1/export.json") return rawExport(env, authed);
   if (path === "/browse" || path.startsWith("/browse/"))
@@ -165,6 +166,23 @@ async function route(request: Request, env: Env, authed: boolean): Promise<Respo
 // Handlers
 // ---------------------------------------------------------------------------
 
+const ENDPOINTS: [string, string][] = [
+  ["GET /", "browse root (same as /browse)"],
+  ["GET /health", "liveness + upstream sync status"],
+  [
+    "GET /v1/repos",
+    "filtered list; params: category, owner, tag, lang, featured, q, sort, order, limit, offset",
+  ],
+  ["GET /v1/repos/{owner}/{name}", "single repository entry"],
+  ["GET /v1/stats", "export stats block"],
+  ["GET /v1/categories", "repo count per category"],
+  ["GET /v1/tags", "repo count per tag/topic"],
+  ["GET /v1/languages", "repo count per language"],
+  ["GET /v1/export.json", "the whole export document"],
+  ["GET /browse", "FTP-style browsable directory index (HTML)"],
+  ["POST /v1/admin/sync", "force an R2 resync from GitHub (auth required)"],
+];
+
 async function index(env: Env): Promise<Response> {
   const doc = await load(env, false).catch(() => null);
   return json({
@@ -173,19 +191,7 @@ async function index(env: Env): Promise<Response> {
       "Repository metadata API over tool-github-export artifacts. Public by default; Authorization: Bearer <token> unlocks the private dataset.",
     generated_at: doc?.generated_at ?? null,
     schema_version: doc?.schema_version ?? null,
-    endpoints: {
-      "GET /health": "liveness + upstream sync status",
-      "GET /v1/repos":
-        "filtered list; params: category, owner, tag, lang, featured, q, sort, order, limit, offset",
-      "GET /v1/repos/{owner}/{name}": "single repository entry",
-      "GET /v1/stats": "export stats block",
-      "GET /v1/categories": "repo count per category",
-      "GET /v1/tags": "repo count per tag/topic",
-      "GET /v1/languages": "repo count per language",
-      "GET /v1/export.json": "the whole export document",
-      "GET /browse": "FTP-style browsable directory index (HTML)",
-      "POST /v1/admin/sync": "force an R2 resync from GitHub (auth required)",
-    },
+    endpoints: Object.fromEntries(ENDPOINTS),
     source: "https://github.com/DevArtsLab/tool-github-export",
   });
 }
@@ -423,12 +429,12 @@ function corsPreflight(): Response {
 // ---------------------------------------------------------------------------
 
 const BROWSE_CSS =
-  "body{font-family:ui-monospace,Menlo,monospace;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#222}" +
+  "body{font-family:sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#222}" +
   "table{border-collapse:collapse;width:100%}" +
   "th,td{text-align:left;padding:2px 16px 2px 0;font-size:14px;white-space:nowrap}" +
   "th{border-bottom:1px solid #999}td{border-bottom:1px solid #eee}" +
   "a{color:#05c;text-decoration:none}a:hover{text-decoration:underline}" +
-  "h1{font-size:17px;font-weight:600}address{font-size:12px;color:#888}";
+  "h1{font-size:17px;font-weight:600}h2{font-size:14px;font-weight:600;margin-top:1.5rem}address{font-size:12px;color:#888}";
 
 function esc(s: string): string {
   return s
@@ -462,16 +468,28 @@ async function browse(
   env: Env,
   _url: URL,
   path: string,
+  title = path,
 ): Promise<Response> {
   const segs = path.slice("/browse".length).split("/").filter(Boolean);
 
   if (segs.length === 0) {
+    const doc = await load(env, false).catch(() => null);
+    const meta = doc
+      ? `${doc.repositories.length} public repos - generated ${fmtDate(doc.generated_at)} - schema ${esc(String(doc.schema_version ?? "-"))}`
+      : "dataset not synced yet";
+    const apiRows = ENDPOINTS.map(
+      ([m, d]) => `<tr><td><code>${esc(m)}</code></td><td>${esc(d)}</td></tr>`,
+    ).join("");
     return html(
-      "/browse/",
-      `<table><tr><th>Name</th><th>Description</th></tr>` +
+      title === "/" ? "/" : "/browse/",
+      `<p>Repository metadata API over tool-github-export artifacts.<br>` +
+        `${meta} - JSON index: <a href="/v1">/v1</a> - ` +
+        `source: <a href="https://github.com/DevArtsLab/tool-github-export">github.com/DevArtsLab/tool-github-export</a></p>` +
+        `<table><tr><th>Name</th><th>Description</th></tr>` +
         `<tr><td class="d"><a href="/browse/public/">public/</a></td><td>public repositories export</td></tr>` +
         `<tr><td class="d"><a href="/browse/private/">private/</a></td><td>all repositories export (auth required)</td></tr>` +
-        `<tr><td><a href="/v1/export.json">repos.public.json</a></td><td>raw JSON document</td></tr></table>`,
+        `<tr><td><a href="/v1/export.json">repos.public.json</a></td><td>raw JSON document</td></tr></table>` +
+        `<h2>API endpoints</h2><table>${apiRows}</table>`,
     );
   }
 

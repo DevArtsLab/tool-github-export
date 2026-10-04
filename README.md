@@ -4,7 +4,7 @@
 >
 > | You want                 | URL                                      |
 > | ------------------------ | ---------------------------------------- |
-> | Browse repos (FTP-style) | `data.devartslab.com/browse/`            |
+> | Browse repos (FTP-style) | `data.devartslab.com`                    |
 > | JSON API                 | `data.devartslab.com/v1/repos`           |
 > | Private data             | same URLs + password `PRIVATE_API_TOKEN` |
 
@@ -72,18 +72,19 @@ See `examples/consumer.html` for a working browser page (serve it with `uv run p
 
 The `worker/` directory is a Cloudflare Worker serving both exports from R2 at `https://data.devartslab.com`. It syncs from GitHub every 15 minutes (cron) and also accepts `POST /v1/admin/sync` to force a refresh.
 
-| Endpoint                       | Description                   |
-| ------------------------------ | ----------------------------- |
-| `GET /`                        | service index + endpoint docs |
-| `GET /health`                  | liveness + R2 dataset status  |
-| `GET /v1/repos`                | filtered list (params below)  |
-| `GET /v1/repos/{owner}/{name}` | single repository             |
-| `GET /v1/stats`                | export stats block            |
-| `GET /v1/categories`           | repo count per category       |
-| `GET /v1/tags`                 | repo count per tag            |
-| `GET /v1/languages`            | repo count per language       |
-| `GET /v1/export.json`          | the whole export document     |
-| `GET /browse`                  | FTP-style directory index     |
+| Endpoint                       | Description                  |
+| ------------------------------ | ---------------------------- |
+| `GET /`                        | FTP-style browse root        |
+| `GET /v1`                      | JSON index + endpoint docs   |
+| `GET /health`                  | liveness + R2 dataset status |
+| `GET /v1/repos`                | filtered list (params below) |
+| `GET /v1/repos/{owner}/{name}` | single repository            |
+| `GET /v1/stats`                | export stats block           |
+| `GET /v1/categories`           | repo count per category      |
+| `GET /v1/tags`                 | repo count per tag           |
+| `GET /v1/languages`            | repo count per language      |
+| `GET /v1/export.json`          | the whole export document    |
+| `GET /browse`                  | FTP-style directory index    |
 
 `/v1/repos` query params: `category`, `owner`, `tag`, `lang`, `featured`, `q` (free text), `sort` (pushed_at/stars/forks/name/created_at/updated_at/size_kb/open_issues), `order` (asc/desc), `limit`, `offset`.
 
@@ -105,6 +106,8 @@ npx wrangler deploy                    # deploys + attaches data.devartslab.com
 npx wrangler secret put GH_EXPORT_TOKEN     # cron fetch of the private export
 npx wrangler secret put PRIVATE_API_TOKEN   # consumer bearer for private dataset
 ```
+
+Local dev: `npx wrangler dev` serves on `localhost:8787` with a simulated (empty) R2 — put both secrets in `worker/.dev.vars` (gitignored), then `curl -X POST localhost:8787/v1/admin/sync -H "Authorization: Bearer $PRIVATE_API_TOKEN"` once to pull the datasets. Edit `src/index.ts`, wrangler hot-reloads.
 
 CI deploys are intentionally not wired yet (needs a scoped Cloudflare API token; the wrangler OAuth token expires and should not be stored in repo secrets).
 
