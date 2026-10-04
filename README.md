@@ -2,7 +2,7 @@
 
 Export GitHub repository metadata from multiple owners (orgs + users) into versioned JSON artifacts that any project can consume over HTTP.
 
-This repo is the single source of truth for "which repos exist, what are they, and how should they be categorized" across DevArts Lab properties: the githublabs.com directory, portfolio components, the resume builder, and anything else that needs a project list.
+This repo is the single source of truth for "which repos exist, what are they, and how should they be categorized" across DevArts Lab properties: the devartslab.com directory, portfolio components, the resume builder, and anything else that needs a project list.
 
 ## How it works
 
@@ -17,18 +17,18 @@ A scheduled GitHub Action runs the exporter every 6 hours (or on demand via `wor
 
 ## Outputs
 
-| File | Visibility | Where it goes |
-|---|---|---|
-| `repos.public.json` | public repos only, minus `exclude` overrides | committed to `data/` in this repo |
+| File                 | Visibility                                     | Where it goes                                                        |
+| -------------------- | ---------------------------------------------- | -------------------------------------------------------------------- |
+| `repos.public.json`  | public repos only, minus `exclude` overrides   | committed to `data/` in this repo                                    |
 | `repos.private.json` | all repos the token can see (public + private) | pushed to the private repo named by the `PRIVATE_DATA_REPO` variable |
 
 ### Consumer URLs (public export)
 
-| Endpoint | URL | Notes |
-|---|---|---|
-| raw | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json` | always fresh, rate-limited lightly |
-| jsDelivr CDN | `https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json` | cached, fast, CORS-friendly; pin `@<commit>` for deterministic reads |
-| schema | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/schemas/repos.schema.json` | JSON Schema 2020-12 |
+| Endpoint     | URL                                                                                              | Notes                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| raw          | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json`    | always fresh, rate-limited lightly                                   |
+| jsDelivr CDN | `https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json`          | cached, fast, CORS-friendly; pin `@<commit>` for deterministic reads |
+| schema       | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/schemas/repos.schema.json` | JSON Schema 2020-12                                                  |
 
 ### Consuming it
 
@@ -40,7 +40,7 @@ curl -s https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repo
 ```ts
 // TypeScript / frontend
 const res = await fetch(
-  "https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json"
+  "https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json",
 );
 const { repositories, stats, generated_at } = await res.json();
 const tools = repositories.filter((r) => r.category === "tool");
@@ -69,12 +69,12 @@ Each repository carries: identity (`name`, `full_name`, `owner`, `owner_type`, `
 ## Configuration (`export.config.yaml`)
 
 ```yaml
-sources:          # owners to scan: {type: user|organization, login: ...}
-filters:          # include_forks / include_archived / include_templates
-categories:       # "prefix-": category  (first match wins, case-insensitive)
+sources: # owners to scan: {type: user|organization, login: ...}
+filters: # include_forks / include_archived / include_templates
+categories: # "prefix-": category  (first match wins, case-insensitive)
 default_category: project
-outputs:          # dir + filenames
-overrides:        # per-repo, keyed by "owner/repo"
+outputs: # dir + filenames
+overrides: # per-repo, keyed by "owner/repo"
 ```
 
 Per-repo `overrides`:
@@ -82,12 +82,12 @@ Per-repo `overrides`:
 ```yaml
 overrides:
   "DevArtsLab/tool-github-export":
-    display_name: "GitHub Export"   # pretty name for directories/resumes
-    description: "..."              # replaces the GitHub description
-    category: tool                  # overrides prefix-derived category
-    featured: true                  # consumers can surface this
-    tags_add: ["cli"]               # merged into tags
-    exclude: true                   # kept out of repos.public.json only
+    display_name: "GitHub Export" # pretty name for directories/resumes
+    description: "..." # replaces the GitHub description
+    category: tool # overrides prefix-derived category
+    featured: true # consumers can surface this
+    tags_add: ["cli"] # merged into tags
+    exclude: true # kept out of repos.public.json only
 ```
 
 ## Running it
@@ -117,10 +117,10 @@ Token resolution order: `--token` flag -> `GH_EXPORT_TOKEN` / `GH_TOKEN` / `GITH
 
 ### Required secrets / variables
 
-| Name | Kind | Value |
-|---|---|---|
-| `GH_EXPORT_TOKEN` | secret | PAT that can read target repos. Classic PAT with `repo` + `read:org` covers both private org and personal repos. Public-only exports need just `public_repo` + `read:org`. |
-| `PRIVATE_DATA_REPO` | variable | e.g. `DevArtsLab/tool-github-export-data`. If unset, the private file is generated and validated but not published. |
+| Name                | Kind     | Value                                                                                                                                                                      |
+| ------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GH_EXPORT_TOKEN`   | secret   | PAT that can read target repos. Classic PAT with `repo` + `read:org` covers both private org and personal repos. Public-only exports need just `public_repo` + `read:org`. |
+| `PRIVATE_DATA_REPO` | variable | e.g. `DevArtsLab/tool-github-export-data`. If unset, the private file is generated and validated but not published.                                                        |
 
 The `GITHUB_TOKEN` provided by Actions cannot be used here: it is scoped to this repository and cannot list org/user repositories.
 
@@ -131,7 +131,7 @@ Private repos and repos marked `exclude: true` never reach `repos.public.json`. 
 ## Roadmap
 
 - Optional AI enrichment block (`ai` field per repo: summary, tech stack, highlights) via GitHub Models in the Action
-- Phase 2 serving: Cloudflare Worker + R2 for `data.githublabs.com`-style endpoints with query filters
+- Phase 2 serving: Cloudflare Worker + R2 for `data.devartslab.com`-style endpoints with query filters
 - `repos.featured.json` convenience view
 
 ## License

@@ -11,7 +11,7 @@
             "nameWithOwner": "DevArtsLab/tool-github-export",
             "description": "Export GitHub repository metadata to JSON",
             "url": "https://github.com/DevArtsLab/tool-github-export",
-            "homepageUrl": "https://githublabs.com",
+            "homepageUrl": "https://devartslab.com",
             "visibility": "PUBLIC",
             "isPrivate": false,
             "isFork": false,
@@ -47,7 +47,10 @@
                 { "size": 1000, "node": { "name": "Shell", "color": "#89e051" } }
               ]
             },
-            "latestRelease": { "tagName": "v0.1.0", "publishedAt": "2026-10-03T10:00:00Z" }
+            "latestRelease": {
+              "tagName": "v0.1.0",
+              "publishedAt": "2026-10-03T10:00:00Z"
+            }
           },
           {
             "name": "secret-internal-app",

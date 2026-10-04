@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import subprocess
-import time
 from typing import Any
 
 import httpx
@@ -42,8 +41,8 @@ def resolve_token(explicit: str | None = None) -> str:
 
 class GitHubClient:
     def __init__(self, token: str, timeout: float = 30.0) -> None:
-        # NOTE: post to the exact /graphql URL. An httpx base_url + empty path
-        # produces a trailing slash, and GitHub 404s on /graphql/.
+        # NOTE: do not send REST-only headers (e.g. X-GitHub-Api-Version); they
+        # route the request to the REST API and /graphql 404s.
         self._http = httpx.Client(
             headers={"Authorization": f"bearer {token}"},
             timeout=timeout,
@@ -52,26 +51,16 @@ class GitHubClient:
     def close(self) -> None:
         self._http.close()
 
-    def __enter__(self) -> GitHubClient:
+    def __enter__(self) -> "GitHubClient":
         return self
 
     def __exit__(self, *args: Any) -> None:
         self.close()
 
     def _graphql(self, query: str, variables: dict[str, Any]) -> dict[str, Any]:
-        last: httpx.Response | None = None
-        for attempt in range(4):
-            resp = self._http.post(
-                API_URL, json={"query": query, "variables": variables}
-            )
-            if resp.status_code == 200:
-                break
-            last = resp
-            if resp.status_code < 500:
-                break  # 4xx will not improve on retry
-            time.sleep(2**attempt)
-        else:
-            resp = last
+        resp = self._http.post(
+            API_URL, json={"query": query, "variables": variables}
+        )
         if resp.status_code != 200:
             raise GitHubClientError(
                 f"GitHub API returned HTTP {resp.status_code}: {resp.text[:300]}"
