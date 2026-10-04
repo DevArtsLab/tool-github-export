@@ -143,6 +143,8 @@ async function route(request: Request, env: Env, authed: boolean): Promise<Respo
   if (path === "/" || path === "/v1") return index(env);
   if (path === "/health") return health(env);
   if (path === "/v1/export.json") return rawExport(env, authed);
+  if (path === "/browse" || path.startsWith("/browse/"))
+    return browse(request, env, url, path);
 
   if (path.startsWith("/v1/repos/")) {
     const name = decodeURIComponent(path.slice("/v1/repos/".length));
@@ -181,6 +183,7 @@ async function index(env: Env): Promise<Response> {
       "GET /v1/tags": "repo count per tag/topic",
       "GET /v1/languages": "repo count per language",
       "GET /v1/export.json": "the whole export document",
+      "GET /browse": "FTP-style browsable directory index (HTML)",
       "POST /v1/admin/sync": "force an R2 resync from GitHub (auth required)",
     },
     source: "https://github.com/DevArtsLab/tool-github-export",
@@ -373,8 +376,20 @@ async function sync(env: Env): Promise<Response> {
 // ---------------------------------------------------------------------------
 
 function authorized(request: Request, env: Env): boolean {
-  const header = request.headers.get("Authorization") ?? "";
-  const token = header.replace(/^Bearer\s+/i, "");
+  const m = (request.headers.get("Authorization") ?? "").match(/^(\S+)\s+(.+)$/);
+  if (!m) return false;
+  let token = "";
+  const scheme = m[1].toLowerCase();
+  if (scheme === "bearer") {
+    token = m[2];
+  } else if (scheme === "basic") {
+    // browsers prompt for user:pass; accept the password as the token
+    try {
+      token = atob(m[2]).split(":").slice(1).join(":");
+    } catch {
+      token = "";
+    }
+  }
   return !!env.PRIVATE_API_TOKEN && token === env.PRIVATE_API_TOKEN;
 }
 
@@ -401,4 +416,186 @@ function corsPreflight(): Response {
       "Access-Control-Max-Age": "86400",
     },
   });
+}
+
+// ---------------------------------------------------------------------------
+// FTP-style browsable directory index (/browse)
+// ---------------------------------------------------------------------------
+
+const BROWSE_CSS =
+  "body{font-family:ui-monospace,Menlo,monospace;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#222}" +
+  "table{border-collapse:collapse;width:100%}" +
+  "th,td{text-align:left;padding:2px 16px 2px 0;font-size:14px;white-space:nowrap}" +
+  "th{border-bottom:1px solid #999}td{border-bottom:1px solid #eee}" +
+  "a{color:#05c;text-decoration:none}a:hover{text-decoration:underline}" +
+  "h1{font-size:17px;font-weight:600}address{font-size:12px;color:#888}";
+
+function esc(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function html(title: string, body: string): Response {
+  const page =
+    `<!doctype html><html><head><meta charset="utf-8">` +
+    `<title>Index of ${esc(title)}</title><style>${BROWSE_CSS}</style></head><body>` +
+    `<h1>Index of ${esc(title)}</h1><hr>${body}<hr>` +
+    `<address>data.devartslab.com - tool-github-export worker</address></body></html>`;
+  return new Response(page, {
+    headers: { "Content-Type": "text/html; charset=utf-8" },
+  });
+}
+
+function escAttr(s: string): string {
+  return esc(s);
+}
+
+function fmtDate(iso?: string): string {
+  return iso ? iso.slice(0, 10) : "-";
+}
+
+async function browse(
+  request: Request,
+  env: Env,
+  _url: URL,
+  path: string,
+): Promise<Response> {
+  const segs = path.slice("/browse".length).split("/").filter(Boolean);
+
+  if (segs.length === 0) {
+    return html(
+      "/browse/",
+      `<table><tr><th>Name</th><th>Description</th></tr>` +
+        `<tr><td class="d"><a href="/browse/public/">public/</a></td><td>public repositories export</td></tr>` +
+        `<tr><td class="d"><a href="/browse/private/">private/</a></td><td>all repositories export (auth required)</td></tr>` +
+        `<tr><td><a href="/v1/export.json">repos.public.json</a></td><td>raw JSON document</td></tr></table>`,
+    );
+  }
+
+  const ds = segs[0];
+  if (ds !== "public" && ds !== "private") {
+    return html(
+      path,
+      `<p>Not a directory: ${esc(ds)}. Try <a href="/browse/">/browse/</a>.</p>`,
+    );
+  }
+
+  const authed = ds === "private";
+  if (authed && !authorized(request, env)) {
+    return new Response("Authentication required", {
+      status: 401,
+      headers: { "WWW-Authenticate": 'Basic realm="data.devartslab.com"' },
+    });
+  }
+
+  const doc = await load(env, authed);
+  if (!doc) return html(path, "<p>Dataset not synced yet.</p>");
+
+  if (segs.length === 1) return browseOwners(doc, ds);
+  if (segs.length === 2) return browseRepos(doc, ds, segs[1]);
+  if (segs.length === 3) return browseRepo(doc, ds, segs[1], segs[2]);
+  return html(path, "<p>No such directory.</p>");
+}
+
+function parentRow(href: string): string {
+  return `<tr><td class="d" colspan="6"><a href="${escAttr(href)}">../</a></td></tr>`;
+}
+
+async function browseOwners(doc: ExportDoc, ds: string): Promise<Response> {
+  const byOwner = new Map<string, number>();
+  for (const r of doc.repositories)
+    byOwner.set(r.owner, (byOwner.get(r.owner) ?? 0) + 1);
+
+  const rows = [...byOwner.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(
+      ([owner, n]) =>
+        `<tr><td class="d"><a href="/browse/${ds}/${encodeURIComponent(owner)}/">${esc(owner)}/</a></td><td>${n} repos</td></tr>`,
+    )
+    .join("");
+
+  const fileRow =
+    `<tr><td><a href="/v1/export.json">repos.${ds}.json</a></td>` +
+    `<td>${doc.repositories.length} repos, generated ${fmtDate(doc.generated_at)}</td></tr>`;
+
+  return html(
+    `/browse/${ds}/`,
+    `<table><tr><th>Name</th><th>Contents</th></tr>${parentRow("/browse/")}${rows}${fileRow}</table>`,
+  );
+}
+
+async function browseRepos(
+  doc: ExportDoc,
+  ds: string,
+  owner: string,
+): Promise<Response> {
+  const repos = doc.repositories.filter(
+    (r) => r.owner.toLowerCase() === owner.toLowerCase(),
+  );
+  if (repos.length === 0)
+    return html(
+      `/browse/${ds}/${owner}/`,
+      `<p>Empty directory.</p>${parentRow(`/browse/${ds}/`)}`,
+    );
+
+  const rows = repos
+    .map(
+      (r) =>
+        `<tr>` +
+        `<td class="d"><a href="/browse/${ds}/${encodeURIComponent(owner)}/${encodeURIComponent(r.name)}/">${esc(r.name)}/</a></td>` +
+        `<td>${esc(r.category)}</td>` +
+        `<td>${esc(r.primary_language ?? "-")}</td>` +
+        `<td>${r.stars}</td>` +
+        `<td>${fmtDate(r.pushed_at)}</td>` +
+        `<td>${r.size_kb}</td>` +
+        `</tr>`,
+    )
+    .join("");
+
+  return html(
+    `/browse/${ds}/${owner}/`,
+    `<table><tr><th>Name</th><th>Category</th><th>Lang</th><th>Stars</th><th>Pushed</th><th>KB</th></tr>` +
+      `${parentRow(`/browse/${ds}/`)}${rows}</table>`,
+  );
+}
+
+async function browseRepo(
+  doc: ExportDoc,
+  ds: string,
+  owner: string,
+  name: string,
+): Promise<Response> {
+  const repo = doc.repositories.find(
+    (r) => r.full_name.toLowerCase() === `${owner}/${name}`.toLowerCase(),
+  );
+  const base = `/browse/${ds}/${encodeURIComponent(owner)}/`;
+  if (!repo)
+    return html(`${base}${name}/`, `<p>No such repository.</p>${parentRow(base)}`);
+
+  const rows = Object.entries(repo)
+    .map(([k, v]) => {
+      const val =
+        v === null || v === undefined
+          ? "-"
+          : typeof v === "object"
+            ? `<code>${esc(JSON.stringify(v))}</code>`
+            : k === "url" || k === "homepage" || k === "image_url"
+              ? `<a href="${escAttr(String(v))}">${esc(String(v))}</a>`
+              : esc(String(v));
+      return `<tr><td>${esc(k)}</td><td>${val}</td></tr>`;
+    })
+    .join("");
+
+  const links =
+    `<p><a href="/v1/repos/${escAttr(repo.full_name)}">repos/${esc(repo.full_name)}.json</a> (raw JSON)` +
+    (ds === "private" ? ` &middot; private dataset` : "") +
+    `</p>`;
+
+  return html(
+    `${base}${name}/`,
+    `${parentRow(base)}${links}<table><tr><th>Field</th><th>Value</th></tr>${rows}</table>`,
+  );
 }
