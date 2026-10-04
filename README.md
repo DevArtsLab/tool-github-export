@@ -1,5 +1,13 @@
 # tool-github-export
 
+> **TL;DR** — everything lives at `https://data.devartslab.com`:
+>
+> | You want                 | URL                                      |
+> | ------------------------ | ---------------------------------------- |
+> | Browse repos (FTP-style) | `data.devartslab.com/browse/`            |
+> | JSON API                 | `data.devartslab.com/v1/repos`           |
+> | Private data             | same URLs + password `PRIVATE_API_TOKEN` |
+
 Export GitHub repository metadata from multiple owners (orgs + users) into versioned JSON artifacts that any project can consume over HTTP.
 
 This repo is the single source of truth for "which repos exist, what are they, and how should they be categorized" across DevArts Lab properties: the devartslab.com directory, portfolio components, the resume builder, and anything else that needs a project list.
