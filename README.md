@@ -75,6 +75,7 @@ The `worker/` directory is a Cloudflare Worker serving both exports from R2 at `
 | `GET /v1/tags`                 | repo count per tag            |
 | `GET /v1/languages`            | repo count per language       |
 | `GET /v1/export.json`          | the whole export document     |
+| `GET /browse`                  | FTP-style directory index     |
 
 `/v1/repos` query params: `category`, `owner`, `tag`, `lang`, `featured`, `q` (free text), `sort` (pushed_at/stars/forks/name/created_at/updated_at/size_kb/open_issues), `order` (asc/desc), `limit`, `offset`.
 
@@ -84,6 +85,8 @@ curl -s "https://data.devartslab.com/v1/repos/DevArtsLab/tool-github-export"
 ```
 
 **Private dataset:** any `GET /v1/*` endpoint served with `Authorization: Bearer $PRIVATE_API_TOKEN` returns the private export instead (superset of the public one). On the private dataset, `visibility=private` is honored as an extra filter. Authed responses are never cached.
+
+**FTP-style browse:** `https://data.devartslab.com/browse/` renders a human-readable directory listing: `/browse/{public,private}/<owner>/<repo>/` with `../` navigation, columns for category/language/stars/last-push/size, and a field listing + `repo.json` link on each repo page. `/browse/private/` challenges with HTTP Basic auth (browsers show the classic login dialog; any username, password = `$PRIVATE_API_TOKEN`). Private browse responses are `no-store`.
 
 ### Worker ops
 
