@@ -1,0 +1,21 @@
+name = "data-devartslab"
+main = "src/index.ts"
+compatibility_date = "2026-10-04"
+minify = true
+workers_dev = false
+
+# Custom domain: DNS record is created automatically (zone is on this account).
+routes = [
+  { pattern = "data.devartslab.com", custom_domain = true },
+]
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "github-export"
+
+[triggers]
+# Keep R2 in sync with the GitHub-committed exports.
+crons = ["*/15 * * * *"]
+
+[observability]
+enabled = true

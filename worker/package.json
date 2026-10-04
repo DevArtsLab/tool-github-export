@@ -1,0 +1,16 @@
+{
+  "name": "data-devartslab",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Serve tool-github-export artifacts as a filtered JSON API on data.devartslab.com",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261003.1",
+    "typescript": "^5.5.0",
+    "wrangler": "^4.147.0"
+  }
+}

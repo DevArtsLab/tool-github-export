@@ -23,3 +23,8 @@ htmlcov/
 
 # Never commit the private export to this public repo
 data/repos.private.json
+
+# Node / worker
+node_modules/
+.wrangler/
+worker/.dev.vars

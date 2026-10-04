@@ -11,6 +11,9 @@ export.config.yaml  -->  github-export (GraphQL v4)  -->  data/repos.public.json
                         |                          -->  data/repos.private.json  (pushed to a private repo)
                         v
               categories | overrides | filters
+
+GitHub Action (every 6h) writes the files; the data.devartslab.com Worker
+(cron */15m) pulls them into R2 and serves a filtered JSON API on top.
 ```
 
 A scheduled GitHub Action runs the exporter every 6 hours (or on demand via `workflow_dispatch`), validates the output against the JSON schema, and commits `data/repos.public.json` back to this repo. `repos.private.json` is pushed to a separate private repo (see [Private output](#private-output)).
@@ -26,6 +29,7 @@ A scheduled GitHub Action runs the exporter every 6 hours (or on demand via `wor
 
 | Endpoint     | URL                                                                                              | Notes                                                                |
 | ------------ | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| **API**      | `https://data.devartslab.com`                                                                    | Cloudflare Worker + R2, filtered endpoints, ~15 min freshness        |
 | raw          | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json`    | always fresh, rate-limited lightly                                   |
 | jsDelivr CDN | `https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json`          | cached, fast, CORS-friendly; pin `@<commit>` for deterministic reads |
 | schema       | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/schemas/repos.schema.json` | JSON Schema 2020-12                                                  |
@@ -55,6 +59,43 @@ data = httpx.get(
 ```
 
 See `examples/consumer.html` for a working browser page (serve it with `uv run python -m http.server`).
+
+## API: data.devartslab.com
+
+The `worker/` directory is a Cloudflare Worker serving both exports from R2 at `https://data.devartslab.com`. It syncs from GitHub every 15 minutes (cron) and also accepts `POST /v1/admin/sync` to force a refresh.
+
+| Endpoint                       | Description                   |
+| ------------------------------ | ----------------------------- |
+| `GET /`                        | service index + endpoint docs |
+| `GET /health`                  | liveness + R2 dataset status  |
+| `GET /v1/repos`                | filtered list (params below)  |
+| `GET /v1/repos/{owner}/{name}` | single repository             |
+| `GET /v1/stats`                | export stats block            |
+| `GET /v1/categories`           | repo count per category       |
+| `GET /v1/tags`                 | repo count per tag            |
+| `GET /v1/languages`            | repo count per language       |
+| `GET /v1/export.json`          | the whole export document     |
+
+`/v1/repos` query params: `category`, `owner`, `tag`, `lang`, `featured`, `q` (free text), `sort` (pushed_at/stars/forks/name/created_at/updated_at/size_kb/open_issues), `order` (asc/desc), `limit`, `offset`.
+
+```bash
+curl -s "https://data.devartslab.com/v1/repos?category=tool&sort=stars&order=desc"
+curl -s "https://data.devartslab.com/v1/repos/DevArtsLab/tool-github-export"
+```
+
+**Private dataset:** any `GET /v1/*` endpoint served with `Authorization: Bearer $PRIVATE_API_TOKEN` returns the private export instead (superset of the public one). On the private dataset, `visibility=private` is honored as an extra filter. Authed responses are never cached.
+
+### Worker ops
+
+```bash
+cd worker
+npm install
+npx wrangler deploy                    # deploys + attaches data.devartslab.com
+npx wrangler secret put GH_EXPORT_TOKEN     # cron fetch of the private export
+npx wrangler secret put PRIVATE_API_TOKEN   # consumer bearer for private dataset
+```
+
+CI deploys are intentionally not wired yet (needs a scoped Cloudflare API token; the wrangler OAuth token expires and should not be stored in repo secrets).
 
 ## The contract
 
@@ -131,7 +172,7 @@ Private repos and repos marked `exclude: true` never reach `repos.public.json`. 
 ## Roadmap
 
 - Optional AI enrichment block (`ai` field per repo: summary, tech stack, highlights) via a model API in the Action
-- Phase 2 serving: Cloudflare Worker + R2 for `data.devartslab.com`-style endpoints with query filters
+- CI deploy for `worker/` on merge (needs a scoped Cloudflare API token)
 - `repos.featured.json` convenience view
 
 ## License
