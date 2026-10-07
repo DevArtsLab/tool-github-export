@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-05T05:29:47.793064Z",
+  "generated_at": "2026-10-07T23:02:49.325064Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -16,13 +16,13 @@
     }
   ],
   "stats": {
-    "total": 117,
-    "public": 117,
+    "total": 116,
+    "public": 116,
     "private": 0,
     "by_category": {
       "tool": 4,
-      "project": 110,
-      "org-infra": 3
+      "org-infra": 3,
+      "project": 109
     }
   },
   "repositories": [
@@ -51,14 +51,14 @@
         {
           "name": "Python",
           "color": "#3572A5",
-          "bytes": 29825,
-          "percentage": 58.45
+          "bytes": 31772,
+          "percentage": 59.98
         },
         {
           "name": "TypeScript",
           "color": "#3178c6",
           "bytes": 21201,
-          "percentage": 41.55
+          "percentage": 40.02
         }
       ],
       "license": "MIT",
@@ -66,42 +66,81 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 119,
+      "size_kb": 122,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-04T21:18:38Z",
-      "pushed_at": "2026-10-04T21:18:34Z",
-      "image_url": "https://opengraph.githubassets.com/a48487ed684d55e799051ba730557f7eda8d8444d3f91d3b5b6c69ee93fbd72e/DevArtsLab/tool-github-export"
+      "updated_at": "2026-10-07T11:52:30Z",
+      "pushed_at": "2026-10-07T11:52:26Z",
+      "image_url": "https://opengraph.githubassets.com/4bae4241053e380f81d42e9dfc28ba18878771848f620e8ba817eba56f6dcfb7/DevArtsLab/tool-github-export"
     },
     {
-      "name": "homebrew-tap",
-      "full_name": "DevArtsLab/homebrew-tap",
+      "name": "devarts-mail",
+      "full_name": "DevArtsLab/devarts-mail",
       "owner": "DevArtsLab",
       "owner_type": "Organization",
-      "display_name": "Homebrew Tap",
-      "description": "Homebrew tap for DevArts Lab tools",
-      "url": "https://github.com/DevArtsLab/homebrew-tap",
+      "display_name": "Devarts Mail",
+      "description": "Self-hosted email + calendar entirely on Cloudflare - Workers, Email Routing, D1, send_email. No Google or third-party mail service.",
+      "url": "https://github.com/DevArtsLab/devarts-mail",
       "visibility": "public",
-      "category": "project",
+      "category": "org-infra",
       "featured": false,
-      "tags": [],
-      "languages": [],
+      "tags": [
+        "calendar",
+        "cloudflare-workers",
+        "d1",
+        "email",
+        "self-hosted"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 54465,
+          "percentage": 48.86
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 29480,
+          "percentage": 26.44
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 18647,
+          "percentage": 16.73
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 6413,
+          "percentage": 5.75
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 2475,
+          "percentage": 2.22
+        }
+      ],
+      "license": "Apache-2.0",
       "stars": 0,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 0,
+      "size_kb": 293,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
-      "created_at": "2026-10-04T14:16:55Z",
-      "updated_at": "2026-10-04T14:16:57Z",
-      "pushed_at": "2026-10-04T14:16:57Z",
-      "image_url": "https://opengraph.githubassets.com/480d3ddc59aa786e371a30e4297088a6a49f65fec8ed1ec4e2889c13c664faa5/DevArtsLab/homebrew-tap"
+      "created_at": "2026-10-01T01:41:59Z",
+      "updated_at": "2026-10-06T14:53:28Z",
+      "pushed_at": "2026-10-06T14:53:23Z",
+      "image_url": "https://opengraph.githubassets.com/cce8d38c582d63f4dccd8f6f631ed4fb0691b6e3050c7e66a847ab8a0d313ae5/DevArtsLab/devarts-mail"
     },
     {
       "name": "tool-universal-ai-config",
@@ -111,6 +150,7 @@
       "display_name": "Tool Universal Ai Config",
       "description": "Unified configuration management for AI agents across multiple providers",
       "url": "https://github.com/DevArtsLab/tool-universal-ai-config",
+      "homepage": "https://pypi.org/project/universal-ai-config",
       "visibility": "public",
       "category": "tool",
       "featured": false,
@@ -131,34 +171,95 @@
         {
           "name": "Python",
           "color": "#3572A5",
-          "bytes": 51253,
-          "percentage": 75.68
+          "bytes": 114367,
+          "percentage": 87.41
         },
         {
           "name": "Shell",
           "color": "#89e051",
           "bytes": 16467,
-          "percentage": 24.32
+          "percentage": 12.59
         }
       ],
       "license": "MIT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 144,
+      "size_kb": 199,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-08-08T00:59:11Z",
-      "updated_at": "2026-10-04T14:16:50Z",
-      "pushed_at": "2026-10-04T14:16:48Z",
+      "updated_at": "2026-10-07T09:38:45Z",
+      "pushed_at": "2026-10-05T19:48:29Z",
       "latest_release": {
-        "tag": "v0.1.1",
-        "published_at": "2026-10-04T14:18:05Z"
+        "tag": "v0.2.1",
+        "published_at": "2026-10-05T22:18:45Z"
       },
-      "image_url": "https://opengraph.githubassets.com/403707d3d22e56197be07ba4b9a35859050bd0f5bf4bb8d7bc180750319c38a3/DevArtsLab/tool-universal-ai-config"
+      "image_url": "https://opengraph.githubassets.com/5bc2ecb67a8589f1c9a1675a1673556e0612c320c1435f7b8f0fe21bccfe9a1e/DevArtsLab/tool-universal-ai-config"
+    },
+    {
+      "name": "ai-starter-kits",
+      "full_name": "DevArtsLab/ai-starter-kits",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Ai Starter Kits",
+      "description": "StarterKit Radar \u2014 a static dashboard for comparing AI starter kits: scored on time-to-hello-world, stack coverage, difficulty, maturity, docs quality and cost. Metrics auto-refresh weekly from the GitHub API.",
+      "url": "https://github.com/DevArtsLab/ai-starter-kits",
+      "homepage": "https://devartslab.github.io/ai-starter-kits/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "ai-starter-kits",
+        "dashboard",
+        "developer-tools",
+        "echarts",
+        "github-actions",
+        "github-pages",
+        "llm",
+        "rag",
+        "starter-template",
+        "static-site",
+        "vanilla-javascript"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 84128,
+          "percentage": 67.52
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 23852,
+          "percentage": 19.14
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 16619,
+          "percentage": 13.34
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 1922,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "development",
+      "created_at": "2026-09-22T02:15:04Z",
+      "updated_at": "2026-10-05T14:42:42Z",
+      "pushed_at": "2026-10-05T14:42:37Z",
+      "image_url": "https://opengraph.githubassets.com/d5ffd56be3a7ceb0e789086098c1c40dae00904d2155e8b53bd7662f95f80035/DevArtsLab/ai-starter-kits"
     },
     {
       "name": "devartslab-site",
@@ -199,72 +300,6 @@
       "updated_at": "2026-10-04T13:33:16Z",
       "pushed_at": "2026-10-04T13:33:11Z",
       "image_url": "https://opengraph.githubassets.com/4d5efda487ce70e20d8c80fb759a8d44e7994937c30bd52b631dce3340c23b00/DevArtsLab/devartslab-site"
-    },
-    {
-      "name": "devarts-mail",
-      "full_name": "DevArtsLab/devarts-mail",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Devarts Mail",
-      "description": "Self-hosted email + calendar entirely on Cloudflare - Workers, Email Routing, D1, send_email. No Google or third-party mail service.",
-      "url": "https://github.com/DevArtsLab/devarts-mail",
-      "visibility": "public",
-      "category": "org-infra",
-      "featured": false,
-      "tags": [
-        "calendar",
-        "cloudflare-workers",
-        "d1",
-        "email",
-        "self-hosted"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 52145,
-          "percentage": 52.96
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 25652,
-          "percentage": 26.05
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 12217,
-          "percentage": 12.41
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 5965,
-          "percentage": 6.06
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 2475,
-          "percentage": 2.51
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 268,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-01T01:41:59Z",
-      "updated_at": "2026-10-04T11:38:47Z",
-      "pushed_at": "2026-10-04T11:38:43Z",
-      "image_url": "https://opengraph.githubassets.com/4e7e46fcff4df4dd8d08f91a94f9fc5f5f94f0e37750e3d15f15d46da04601f0/DevArtsLab/devarts-mail"
     },
     {
       "name": "tool-airtable-export",
@@ -612,67 +647,6 @@
       "updated_at": "2026-09-29T10:30:56Z",
       "pushed_at": "2026-09-28T18:37:45Z",
       "image_url": "https://opengraph.githubassets.com/dc1fe7a93c1d9bbea48bd21408e3715b0808a73bc34f83d4f947f3a03fcda01c/AmirhosseinOlyaei/neuro-san-studio"
-    },
-    {
-      "name": "ai-starter-kits",
-      "full_name": "DevArtsLab/ai-starter-kits",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Ai Starter Kits",
-      "description": "StarterKit Radar \u2014 a static dashboard for comparing AI starter kits: scored on time-to-hello-world, stack coverage, difficulty, maturity, docs quality and cost. Metrics auto-refresh weekly from the GitHub API.",
-      "url": "https://github.com/DevArtsLab/ai-starter-kits",
-      "homepage": "https://devartslab.github.io/ai-starter-kits/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "ai-starter-kits",
-        "dashboard",
-        "developer-tools",
-        "echarts",
-        "github-actions",
-        "github-pages",
-        "llm",
-        "rag",
-        "starter-template",
-        "static-site",
-        "vanilla-javascript"
-      ],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 84128,
-          "percentage": 67.52
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 23852,
-          "percentage": 19.14
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 16619,
-          "percentage": 13.34
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 1920,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "development",
-      "created_at": "2026-09-22T02:15:04Z",
-      "updated_at": "2026-09-28T13:58:01Z",
-      "pushed_at": "2026-09-28T13:57:54Z",
-      "image_url": "https://opengraph.githubassets.com/37f2e54c4b7dd99f6cc25c686205060238b1fd785c6b5a83d6cbddf5d5adaac7/DevArtsLab/ai-starter-kits"
     },
     {
       "name": "vault-cli",
