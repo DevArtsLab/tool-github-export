@@ -7,9 +7,7 @@ import respx
 
 from github_export.client import GitHubClient, GitHubClientError, resolve_token
 
-FIXTURE = json.loads(
-    (Path(__file__).parent / "fixtures" / "owner_response.json").read_text()
-)
+FIXTURE = json.loads((Path(__file__).parent / "fixtures" / "owner_response.json").read_text())
 
 
 def _page(nodes, has_next, cursor):
@@ -54,11 +52,46 @@ def test_iter_repositories_paginates():
 
 
 @respx.mock
+def test_retries_on_502():
+    route = respx.post(url__regex=r"api\.github\.com/graphql/?")
+    route.side_effect = [
+        httpx.Response(502, text="Bad Gateway"),
+        httpx.Response(200, json=FIXTURE),
+    ]
+    with GitHubClient("token", backoff=0) as client:
+        _, nodes = client.iter_repositories("DevArtsLab")
+    assert len(nodes) == 3
+    assert route.call_count == 2
+
+
+@respx.mock
+def test_gives_up_after_max_attempts():
+    route = respx.post(url__regex=r"api\.github\.com/graphql/?")
+    route.mock(return_value=httpx.Response(502, text="Bad Gateway"))
+    with (
+        GitHubClient("token", max_attempts=3, backoff=0) as client,
+        pytest.raises(GitHubClientError, match="HTTP 502"),
+    ):
+        client.iter_repositories("x")
+    assert route.call_count == 3
+
+
+@respx.mock
+def test_does_not_retry_on_401():
+    route = respx.post(url__regex=r"api\.github\.com/graphql/?")
+    route.mock(return_value=httpx.Response(401, json={"message": "Bad credentials"}))
+    with (
+        GitHubClient("bad", backoff=0) as client,
+        pytest.raises(GitHubClientError, match="HTTP 401"),
+    ):
+        client.iter_repositories("x")
+    assert route.call_count == 1
+
+
+@respx.mock
 def test_graphql_errors_raise():
     respx.post(url__regex=r"api\.github\.com/graphql/?").mock(
-        return_value=httpx.Response(
-            200, json={"errors": [{"message": "Bad credentials"}]}
-        )
+        return_value=httpx.Response(200, json={"errors": [{"message": "Bad credentials"}]})
     )
     with GitHubClient("bad") as client, pytest.raises(GitHubClientError, match="Bad credentials"):
         client.iter_repositories("x")
