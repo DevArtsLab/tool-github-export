@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T23:02:49.325064Z",
+  "generated_at": "2026-10-08T23:18:40.957065Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -20,12 +20,970 @@
     "public": 116,
     "private": 0,
     "by_category": {
+      "project": 109,
       "tool": 4,
-      "org-infra": 3,
-      "project": 109
+      "org-infra": 3
     }
   },
   "repositories": [
+    {
+      "name": "node-express-course",
+      "full_name": "AmirhosseinOlyaei/node-express-course",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Node Express Course",
+      "description": "Node.js and Express course exercises",
+      "url": "https://github.com/AmirhosseinOlyaei/node-express-course",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "course",
+        "express",
+        "javascript",
+        "nodejs"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 1175711,
+          "percentage": 63.69
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 559568,
+          "percentage": 30.31
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 110678,
+          "percentage": 6.0
+        },
+        {
+          "name": "Procfile",
+          "color": "#3B2F63",
+          "bytes": 112,
+          "percentage": 0.01
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 54015,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "Code-the-Dream-School/node-express-course",
+      "default_branch": "main",
+      "created_at": "2024-02-24T01:16:12Z",
+      "updated_at": "2026-10-08T08:14:31Z",
+      "pushed_at": "2026-10-08T08:14:16Z",
+      "image_url": "https://opengraph.githubassets.com/be94f307781d94e614ad1011d108ee5090675d9f9af7aebac06dabe89895470c/AmirhosseinOlyaei/node-express-course"
+    },
+    {
+      "name": "AmirhosseinOlyaei-Portfolio",
+      "full_name": "AmirhosseinOlyaei/AmirhosseinOlyaei-Portfolio",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Amirhosseinolyaei Portfolio",
+      "description": "Starter repository for Fenrir Intro to Programming course",
+      "url": "https://github.com/AmirhosseinOlyaei/AmirhosseinOlyaei-Portfolio",
+      "homepage": "https://amir-olyaei.vercel.app/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "css",
+        "html",
+        "javascript",
+        "portfolio"
+      ],
+      "primary_language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 21570,
+          "percentage": 48.88
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 16483,
+          "percentage": 37.36
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 6072,
+          "percentage": 13.76
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 7104,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "Code-the-Dream-School/fenrir-intro",
+      "default_branch": "main",
+      "created_at": "2023-05-17T05:53:54Z",
+      "updated_at": "2026-10-08T08:14:19Z",
+      "pushed_at": "2026-10-08T08:14:15Z",
+      "image_url": "https://opengraph.githubassets.com/d76be82003c37d45edf9b7206b6514e62960eccd78008bbdfb078af87c6dfaa2/AmirhosseinOlyaei/AmirhosseinOlyaei-Portfolio"
+    },
+    {
+      "name": "w3schools-test.github.io",
+      "full_name": "AmirhosseinOlyaei/w3schools-test.github.io",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "W3Schools Test.Github.Io",
+      "description": "w3schools.com repository used in demonstrating GitHub and GitHub pages",
+      "url": "https://github.com/AmirhosseinOlyaei/w3schools-test.github.io",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "github-pages",
+        "html",
+        "tutorial"
+      ],
+      "primary_language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 176893,
+          "percentage": 100.0
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 1600,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "w3schools-test/w3schools-test.github.io",
+      "default_branch": "master",
+      "created_at": "2022-11-30T07:29:35Z",
+      "updated_at": "2026-10-08T08:14:53Z",
+      "pushed_at": "2026-10-08T08:14:14Z",
+      "image_url": "https://opengraph.githubassets.com/7cc90fd106d44b4266daa79b29d69616d38d7ae3c55a99d81eb7dd5b8d324d00/AmirhosseinOlyaei/w3schools-test.github.io"
+    },
+    {
+      "name": "Precourse",
+      "full_name": "AmirhosseinOlyaei/Precourse",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Precourse",
+      "description": "This repo contains the instruction material and assignments for Lambda School's pre-course program.",
+      "url": "https://github.com/AmirhosseinOlyaei/Precourse",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "course",
+        "javascript"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 48562,
+          "percentage": 80.77
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 7942,
+          "percentage": 13.21
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 3621,
+          "percentage": 6.02
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 213,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "bloominstituteoftechnology/Precourse",
+      "default_branch": "master",
+      "created_at": "2018-03-06T03:56:23Z",
+      "updated_at": "2026-10-08T08:14:22Z",
+      "pushed_at": "2026-10-08T08:14:13Z",
+      "image_url": "https://opengraph.githubassets.com/f5b73b73b9135343be5a24e4d2d6aa5c74feb819543bf8e3037602d52572f338/AmirhosseinOlyaei/Precourse"
+    },
+    {
+      "name": "neuro-san-studio",
+      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Neuro San Studio",
+      "description": "A playground for neuro-san",
+      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
+      "homepage": "https://decisionai.ml/neuro-san",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 2878447,
+          "percentage": 97.15
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 30422,
+          "percentage": 1.03
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54",
+          "bytes": 26210,
+          "percentage": 0.88
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 14085,
+          "percentage": 0.48
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 9442,
+          "percentage": 0.32
+        },
+        {
+          "name": "Makefile",
+          "color": "#427819",
+          "bytes": 4261,
+          "percentage": 0.14
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 63955,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "cognizant-ai-lab/neuro-san-studio",
+      "default_branch": "main",
+      "created_at": "2026-09-29T10:30:56Z",
+      "updated_at": "2026-10-07T23:39:55Z",
+      "pushed_at": "2026-10-07T23:39:42Z",
+      "image_url": "https://opengraph.githubassets.com/6b548bb1fc5a1831203fc5b754d1ea0f435f1713f91274ddb3c4ffd653739d91/AmirhosseinOlyaei/neuro-san-studio"
+    },
+    {
+      "name": "city-scrapers-tulsa",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-tulsa",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Tulsa",
+      "description": "Web scrapers for public meetings in Tulsa, Oklahoma",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-tulsa",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 80357,
+          "percentage": 99.63
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 298,
+          "percentage": 0.37
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 454,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-tulsa",
+      "default_branch": "main",
+      "created_at": "2025-12-09T01:24:25Z",
+      "updated_at": "2026-10-07T23:39:53Z",
+      "pushed_at": "2026-10-07T23:39:40Z",
+      "image_url": "https://opengraph.githubassets.com/ce78789b9175722a7bf88eb8d7b53f1cce0069572d66af3f3cb578e73e0a65bb/AmirhosseinOlyaei/city-scrapers-tulsa"
+    },
+    {
+      "name": "city-scrapers-fortx",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-fortx",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Fortx",
+      "description": "Web scrapers for public meetings in Fort Worth, TX",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-fortx",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 91082,
+          "percentage": 99.67
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 297,
+          "percentage": 0.33
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 396,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-fortx",
+      "default_branch": "main",
+      "created_at": "2026-01-29T18:36:49Z",
+      "updated_at": "2026-10-07T23:39:44Z",
+      "pushed_at": "2026-10-07T23:39:38Z",
+      "image_url": "https://opengraph.githubassets.com/a0fdda1f4221d3217dfccf2e16127f1d57f0e11f9653a47ebc0b36d1739b2a71/AmirhosseinOlyaei/city-scrapers-fortx"
+    },
+    {
+      "name": "city-scrapers-coloh",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-coloh",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Coloh",
+      "description": "Web scrapers for public meetings in Columbus, OH",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-coloh",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 42976,
+          "percentage": 99.32
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 293,
+          "percentage": 0.68
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 173,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-coloh",
+      "default_branch": "main",
+      "created_at": "2026-02-17T19:17:01Z",
+      "updated_at": "2026-10-07T23:39:41Z",
+      "pushed_at": "2026-10-07T23:39:36Z",
+      "image_url": "https://opengraph.githubassets.com/1de3763fb2a6b4285b19827e6d6883afd40ab89b89f35d974f09ceb0849a0943/AmirhosseinOlyaei/city-scrapers-coloh"
+    },
+    {
+      "name": "city-scrapers",
+      "full_name": "AmirhosseinOlyaei/city-scrapers",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers",
+      "description": "Scrape, standardize and share public meetings from local government websites",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers",
+      "homepage": "https://city-scrapers.org/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 532245,
+          "percentage": 57.19
+        },
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 398088,
+          "percentage": 42.78
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 270,
+          "percentage": 0.03
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 11597,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers",
+      "default_branch": "main",
+      "created_at": "2026-02-25T19:16:32Z",
+      "updated_at": "2026-10-07T23:39:43Z",
+      "pushed_at": "2026-10-07T23:39:34Z",
+      "image_url": "https://opengraph.githubassets.com/30e323e4d9c28ae4c1e2d86c9ae7482de4b9c9bd2842dcf90cb3f0dc88f3cc2b/AmirhosseinOlyaei/city-scrapers"
+    },
+    {
+      "name": "material-dashboard-react",
+      "full_name": "AmirhosseinOlyaei/material-dashboard-react",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Material Dashboard React",
+      "description": "React version of Material Dashboard by Creative Tim",
+      "url": "https://github.com/AmirhosseinOlyaei/material-dashboard-react",
+      "homepage": "https://www.creative-tim.com/product/material-dashboard-react",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "chartjs",
+        "dashboard",
+        "material-ui",
+        "mui",
+        "react"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 588348,
+          "percentage": 99.69
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 1811,
+          "percentage": 0.31
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 16240,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "creativetimofficial/material-dashboard-react",
+      "default_branch": "main",
+      "created_at": "2022-12-13T18:28:55Z",
+      "updated_at": "2026-10-07T23:38:52Z",
+      "pushed_at": "2026-10-07T23:38:30Z",
+      "image_url": "https://opengraph.githubassets.com/060c1dfc81e1c17bae8a982eb456700bc49433c94827f7621a9907c270c80cfd/AmirhosseinOlyaei/material-dashboard-react"
+    },
+    {
+      "name": "dotfiles",
+      "full_name": "AmirhosseinOlyaei/dotfiles",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Dotfiles",
+      "description": "Dotfiles",
+      "url": "https://github.com/AmirhosseinOlyaei/dotfiles",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "dotfiles",
+        "lua",
+        "shell"
+      ],
+      "primary_language": "Shell",
+      "languages": [
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 85980,
+          "percentage": 66.77
+        },
+        {
+          "name": "Lua",
+          "color": "#000080",
+          "bytes": 30195,
+          "percentage": 23.45
+        },
+        {
+          "name": "Perl",
+          "color": "#0298c3",
+          "bytes": 9037,
+          "percentage": 7.02
+        },
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 3553,
+          "percentage": 2.76
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 25346,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "mattcarlotta/dotfiles",
+      "default_branch": "main",
+      "created_at": "2023-07-15T06:40:50Z",
+      "updated_at": "2026-10-07T23:38:37Z",
+      "pushed_at": "2026-10-07T23:38:29Z",
+      "image_url": "https://opengraph.githubassets.com/a5dac6b01914eb189e96cee22aa38c41272843d30577f4e5fa945f7e37b0daa8/AmirhosseinOlyaei/dotfiles"
+    },
+    {
+      "name": "city-scrapers-minn",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-minn",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Minn",
+      "description": "Web scrapers for public meetings in Minnesota",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-minn",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 110571,
+          "percentage": 99.73
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 297,
+          "percentage": 0.27
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 816,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-minn",
+      "default_branch": "master",
+      "created_at": "2026-05-04T17:00:12Z",
+      "updated_at": "2026-10-07T23:38:33Z",
+      "pushed_at": "2026-10-07T23:38:27Z",
+      "image_url": "https://opengraph.githubassets.com/d8a4b3119c8c50db363a664d17e5bc02be4ab98d5a97e3f1e8158f4fe12b95f6/AmirhosseinOlyaei/city-scrapers-minn"
+    },
+    {
+      "name": "city-scrapers-kancit",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-kancit",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Kancit",
+      "description": "Web scrapers for public meetings in Kansas City",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-kancit",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 180890,
+          "percentage": 99.84
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 297,
+          "percentage": 0.16
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 419,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-kancit",
+      "default_branch": "main",
+      "created_at": "2026-01-14T16:31:01Z",
+      "updated_at": "2026-10-07T23:38:36Z",
+      "pushed_at": "2026-10-07T23:38:26Z",
+      "image_url": "https://opengraph.githubassets.com/d68e6bcf02da8717b7643e63243e4c3fb0803de0612f365d3ddfe139e94725d9/AmirhosseinOlyaei/city-scrapers-kancit"
+    },
+    {
+      "name": "city-scrapers-charnc",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-charnc",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Charnc",
+      "description": "Web scrapers for public meetings in Charlotte, NC",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-charnc",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 197573,
+          "percentage": 99.85
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 297,
+          "percentage": 0.15
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 598,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-charnc",
+      "default_branch": "main",
+      "created_at": "2026-03-18T16:35:37Z",
+      "updated_at": "2026-10-07T23:38:28Z",
+      "pushed_at": "2026-10-07T23:38:24Z",
+      "image_url": "https://opengraph.githubassets.com/55c622755e689c1bec098123dfa0594cdebed72510a74e427be35c413a7935d6/AmirhosseinOlyaei/city-scrapers-charnc"
+    },
+    {
+      "name": "Ruby-on-Rails-lesson-3-and-4",
+      "full_name": "AmirhosseinOlyaei/Ruby-on-Rails-lesson-3-and-4",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Ruby On Rails Lesson 3 And 4",
+      "description": "Ruby on Rails lessons 3 and 4",
+      "url": "https://github.com/AmirhosseinOlyaei/Ruby-on-Rails-lesson-3-and-4",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "course",
+        "ruby",
+        "ruby-on-rails"
+      ],
+      "languages": [],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 34,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "Code-the-Dream-School/ROR-lesson-3-and-4",
+      "default_branch": "main",
+      "created_at": "2024-07-01T14:23:18Z",
+      "updated_at": "2026-10-07T23:38:27Z",
+      "pushed_at": "2026-10-07T23:38:22Z",
+      "image_url": "https://opengraph.githubassets.com/fd08aff2879fc0d89265d73f651986698b6cfc0e626fb2ba1f35b95e10114a5b/AmirhosseinOlyaei/Ruby-on-Rails-lesson-3-and-4"
+    },
+    {
+      "name": "GPTs",
+      "full_name": "AmirhosseinOlyaei/GPTs",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Gpts",
+      "description": "leaked prompts of GPTs",
+      "url": "https://github.com/AmirhosseinOlyaei/GPTs",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai",
+        "gpt",
+        "prompt-engineering",
+        "prompts"
+      ],
+      "languages": [],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 654,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "linexjlin/GPTs",
+      "default_branch": "main",
+      "created_at": "2023-12-11T22:36:48Z",
+      "updated_at": "2026-10-07T23:38:48Z",
+      "pushed_at": "2026-10-07T23:38:21Z",
+      "image_url": "https://opengraph.githubassets.com/210c142f14b9bfb04b59047d27eb5488a2670100488daffb39072b0eec64c91c/AmirhosseinOlyaei/GPTs"
+    },
+    {
+      "name": "city-scrapers-losca",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-losca",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Losca",
+      "description": "Web scrapers for public meetings in Los Angeles County, CA",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-losca",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 107092,
+          "percentage": 99.72
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 297,
+          "percentage": 0.28
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 555,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-losca",
+      "default_branch": "main",
+      "created_at": "2026-02-27T19:18:03Z",
+      "updated_at": "2026-10-07T23:24:22Z",
+      "pushed_at": "2026-10-07T23:24:08Z",
+      "image_url": "https://opengraph.githubassets.com/e0fdf666a688b12f508f2ca25aa419bee1f30e71b98616847aa3baed209c0668/AmirhosseinOlyaei/city-scrapers-losca"
+    },
+    {
+      "name": "city-scrapers-colgo",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-colgo",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Colgo",
+      "description": "Web scrapers for public meetings in the Columbia Gorge region (Oregon and Washington)",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-colgo",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 134491,
+          "percentage": 99.78
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 298,
+          "percentage": 0.22
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 390,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-colgo",
+      "default_branch": "main",
+      "created_at": "2025-12-22T19:15:19Z",
+      "updated_at": "2026-10-07T23:22:55Z",
+      "pushed_at": "2026-10-07T23:22:48Z",
+      "image_url": "https://opengraph.githubassets.com/2512fcf77aa4992f68125ebcdae71393b720e9c1629639bcc09123f936601c27/AmirhosseinOlyaei/city-scrapers-colgo"
+    },
+    {
+      "name": "city-scrapers-atl",
+      "full_name": "AmirhosseinOlyaei/city-scrapers-atl",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "City Scrapers Atl",
+      "description": "City Scrapers for Atlanta",
+      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-atl",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "civic-tech",
+        "open-data",
+        "public-meetings",
+        "python",
+        "scrapy",
+        "web-scraping"
+      ],
+      "primary_language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 1611422,
+          "percentage": 91.83
+        },
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 143130,
+          "percentage": 8.16
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 297,
+          "percentage": 0.02
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 821,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "City-Bureau/city-scrapers-atl",
+      "default_branch": "main",
+      "created_at": "2026-04-22T18:24:27Z",
+      "updated_at": "2026-10-07T23:22:17Z",
+      "pushed_at": "2026-10-07T23:22:07Z",
+      "image_url": "https://opengraph.githubassets.com/43c26774993b0244f94c539463dd26adc2fc730c11b456dafa527a17d7edeae5/AmirhosseinOlyaei/city-scrapers-atl"
+    },
     {
       "name": "tool-github-export",
       "full_name": "DevArtsLab/tool-github-export",
@@ -62,19 +1020,19 @@
         }
       ],
       "license": "MIT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 122,
+      "size_kb": 123,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-07T11:52:30Z",
-      "pushed_at": "2026-10-07T11:52:26Z",
-      "image_url": "https://opengraph.githubassets.com/4bae4241053e380f81d42e9dfc28ba18878771848f620e8ba817eba56f6dcfb7/DevArtsLab/tool-github-export"
+      "updated_at": "2026-10-07T23:13:01Z",
+      "pushed_at": "2026-10-07T23:02:51Z",
+      "image_url": "https://opengraph.githubassets.com/93cb9e151e2801697db2d24895ab5984e47ba8a3d66c2c4b1e33ea78f0c6c0ee/DevArtsLab/tool-github-export"
     },
     {
       "name": "devarts-mail",
@@ -128,7 +1086,7 @@
         }
       ],
       "license": "Apache-2.0",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -138,9 +1096,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-01T01:41:59Z",
-      "updated_at": "2026-10-06T14:53:28Z",
+      "updated_at": "2026-10-07T23:13:08Z",
       "pushed_at": "2026-10-06T14:53:23Z",
-      "image_url": "https://opengraph.githubassets.com/cce8d38c582d63f4dccd8f6f631ed4fb0691b6e3050c7e66a847ab8a0d313ae5/DevArtsLab/devarts-mail"
+      "image_url": "https://opengraph.githubassets.com/11caf007e4b4a9b7a104211842414e5b9a92d12a9939f3d6bbd521943097d7af/DevArtsLab/devarts-mail"
     },
     {
       "name": "tool-universal-ai-config",
@@ -247,7 +1205,7 @@
           "percentage": 13.34
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -257,9 +1215,9 @@
       "is_template": false,
       "default_branch": "development",
       "created_at": "2026-09-22T02:15:04Z",
-      "updated_at": "2026-10-05T14:42:42Z",
+      "updated_at": "2026-10-07T23:13:20Z",
       "pushed_at": "2026-10-05T14:42:37Z",
-      "image_url": "https://opengraph.githubassets.com/d5ffd56be3a7ceb0e789086098c1c40dae00904d2155e8b53bd7662f95f80035/DevArtsLab/ai-starter-kits"
+      "image_url": "https://opengraph.githubassets.com/9f9b4ecef3cfb835df5ff540b9cd1adc0aca391ea394e31f7be4a7e3dd7e5cb0/DevArtsLab/ai-starter-kits"
     },
     {
       "name": "devartslab-site",
@@ -287,7 +1245,7 @@
         }
       ],
       "license": "Apache-2.0",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -297,9 +1255,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-01T02:08:10Z",
-      "updated_at": "2026-10-04T13:33:16Z",
+      "updated_at": "2026-10-07T23:13:27Z",
       "pushed_at": "2026-10-04T13:33:11Z",
-      "image_url": "https://opengraph.githubassets.com/4d5efda487ce70e20d8c80fb759a8d44e7994937c30bd52b631dce3340c23b00/DevArtsLab/devartslab-site"
+      "image_url": "https://opengraph.githubassets.com/7c7daf9a035caf3d92ddff35088643ac3613c92634f89f3810992cf8efbe9f39/DevArtsLab/devartslab-site"
     },
     {
       "name": "tool-airtable-export",
@@ -336,7 +1294,7 @@
         }
       ],
       "license": "MIT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -346,9 +1304,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-09-01T05:09:39Z",
-      "updated_at": "2026-10-04T05:15:33Z",
+      "updated_at": "2026-10-07T23:13:33Z",
       "pushed_at": "2026-10-04T05:15:30Z",
-      "image_url": "https://opengraph.githubassets.com/2e534c792c0955a1df4fbbe76b021cadd11d9b7794c4a4b5421c4ece2ec0c368/DevArtsLab/tool-airtable-export"
+      "image_url": "https://opengraph.githubassets.com/f669120baf62ab71efce073705e4b7dd5c79de3a27225e7487dab3167085ecf4/DevArtsLab/tool-airtable-export"
     },
     {
       "name": "devarts-business",
@@ -366,7 +1324,7 @@
         "documentation"
       ],
       "languages": [],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -376,9 +1334,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2025-12-15T23:24:51Z",
-      "updated_at": "2026-10-02T11:30:01Z",
+      "updated_at": "2026-10-07T23:13:50Z",
       "pushed_at": "2026-10-02T11:29:56Z",
-      "image_url": "https://opengraph.githubassets.com/17f51d58046cd87a07f45c252301ce1f149192832ffdfca5d1e1155daf245744/DevArtsLab/devarts-business"
+      "image_url": "https://opengraph.githubassets.com/3741f8a70b8943fb062ccc5d5f579330826d38c9b22ea3ff5e0b257b4a7c0b4b/DevArtsLab/devarts-business"
     },
     {
       "name": "tool-readme-links",
@@ -409,7 +1367,7 @@
           "percentage": 100.0
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -419,9 +1377,9 @@
       "is_template": false,
       "default_branch": "master",
       "created_at": "2026-10-02T02:49:04Z",
-      "updated_at": "2026-10-03T22:59:07Z",
+      "updated_at": "2026-10-07T23:14:04Z",
       "pushed_at": "2026-10-02T02:49:20Z",
-      "image_url": "https://opengraph.githubassets.com/e4c8b81ad5ef47d356f7894377eddd682596e8f37e185f96dacdace0a0ea2593/DevArtsLab/tool-readme-links"
+      "image_url": "https://opengraph.githubassets.com/f3cd3891f7ee23b03bdf00124c4cc20921ef8f1e515f2b7e98d7cbc01658385f/DevArtsLab/tool-readme-links"
     },
     {
       "name": "voice-quote-proxy",
@@ -449,7 +1407,7 @@
         }
       ],
       "license": "Apache-2.0",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -459,9 +1417,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-01T06:07:54Z",
-      "updated_at": "2026-10-01T06:08:01Z",
+      "updated_at": "2026-10-07T23:14:19Z",
       "pushed_at": "2026-10-01T06:07:57Z",
-      "image_url": "https://opengraph.githubassets.com/163be7916cbb17e8f81dbbc87247559deffa35088f41ccc8d2e2ea7692408495/DevArtsLab/voice-quote-proxy"
+      "image_url": "https://opengraph.githubassets.com/1b7ceddf006bec1c1f9213b5bd4c817226272f46e65bb8a8853c072265b06d85/DevArtsLab/voice-quote-proxy"
     },
     {
       "name": "guaranteed-income-program",
@@ -514,7 +1472,7 @@
           "percentage": 2.59
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -524,9 +1482,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-04-09T06:31:16Z",
-      "updated_at": "2026-10-01T05:42:18Z",
+      "updated_at": "2026-10-07T23:14:26Z",
       "pushed_at": "2026-10-01T04:40:29Z",
-      "image_url": "https://opengraph.githubassets.com/f7fccaee11b74c86a29290fc9539d2eb8754e74907231a2c1e2b8a8fd94db6c5/DevArtsLab/guaranteed-income-program"
+      "image_url": "https://opengraph.githubassets.com/ac7500f0b51ef2067b1a90f7125217e899149661c61f924bd2de87e48fe9331d/DevArtsLab/guaranteed-income-program"
     },
     {
       "name": "algorithms-ctd",
@@ -581,74 +1539,6 @@
       "image_url": "https://opengraph.githubassets.com/2ccd52223b3db6af195d607d6330d1ac54725bf4a31e878c92a56064272f07bb/AmirhosseinOlyaei/algorithms-ctd"
     },
     {
-      "name": "neuro-san-studio",
-      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Neuro San Studio",
-      "description": "A playground for neuro-san",
-      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
-      "homepage": "https://decisionai.ml/neuro-san",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 2764996,
-          "percentage": 97.04
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 30422,
-          "percentage": 1.07
-        },
-        {
-          "name": "Dockerfile",
-          "color": "#384d54",
-          "bytes": 26210,
-          "percentage": 0.92
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 14085,
-          "percentage": 0.49
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 9442,
-          "percentage": 0.33
-        },
-        {
-          "name": "Makefile",
-          "color": "#427819",
-          "bytes": 4265,
-          "percentage": 0.15
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 63401,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "cognizant-ai-lab/neuro-san-studio",
-      "default_branch": "main",
-      "created_at": "2026-09-29T10:30:56Z",
-      "updated_at": "2026-09-29T10:30:56Z",
-      "pushed_at": "2026-09-28T18:37:45Z",
-      "image_url": "https://opengraph.githubassets.com/dc1fe7a93c1d9bbea48bd21408e3715b0808a73bc34f83d4f947f3a03fcda01c/AmirhosseinOlyaei/neuro-san-studio"
-    },
-    {
       "name": "vault-cli",
       "full_name": "AmirhosseinOlyaei/vault-cli",
       "owner": "AmirhosseinOlyaei",
@@ -677,7 +1567,7 @@
           "percentage": 100.0
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -687,9 +1577,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-09-27T17:19:58Z",
-      "updated_at": "2026-09-28T02:21:02Z",
+      "updated_at": "2026-10-07T23:17:26Z",
       "pushed_at": "2026-09-28T02:18:59Z",
-      "image_url": "https://opengraph.githubassets.com/45fd33c5056d32710f240a5fc5ec321d04b3c7435e7616f3a1bb5da3f58c443c/AmirhosseinOlyaei/vault-cli"
+      "image_url": "https://opengraph.githubassets.com/d1c76e7b13fa819825883df541494260d418261769c0567bd4e0fdfbe51f0d41/AmirhosseinOlyaei/vault-cli"
     },
     {
       "name": "american-community-network",
@@ -712,7 +1602,7 @@
       ],
       "languages": [],
       "license": "MIT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -722,9 +1612,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-09-24T04:51:04Z",
-      "updated_at": "2026-09-25T01:35:23Z",
+      "updated_at": "2026-10-07T23:14:35Z",
       "pushed_at": "2026-09-25T01:35:19Z",
-      "image_url": "https://opengraph.githubassets.com/37bef5d29e66ff93ed1c6a120eedfde01d8c52403a31c3ee572625382a2f1c28/DevArtsLab/american-community-network"
+      "image_url": "https://opengraph.githubassets.com/49614373f5d6e7253542d9ad7445a86598462a323f0c545db796c99fcebf6973/DevArtsLab/american-community-network"
     },
     {
       "name": "city-scrapers-meetings-viewer",
@@ -781,7 +1671,7 @@
           "percentage": 0.12
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -791,9 +1681,9 @@
       "is_template": false,
       "default_branch": "CS-121-docs-platform-implementations",
       "created_at": "2026-08-24T19:30:05Z",
-      "updated_at": "2026-09-28T02:58:03Z",
+      "updated_at": "2026-10-07T23:15:04Z",
       "pushed_at": "2026-09-17T05:45:10Z",
-      "image_url": "https://opengraph.githubassets.com/56bf8c75a76939d64807bfe6edd55312f955526cf9abe6b0387ff19395b6da90/DevArtsLab/city-scrapers-meetings-viewer"
+      "image_url": "https://opengraph.githubassets.com/59493b25d9ea8177f1bf445f4c0cb1aa63606d862f416401a56f37c55e4d09ff/DevArtsLab/city-scrapers-meetings-viewer"
     },
     {
       "name": "sentiment-analyzer-ml-pipeline",
@@ -826,7 +1716,7 @@
           "percentage": 100.0
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -836,9 +1726,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-01-08T18:03:37Z",
-      "updated_at": "2026-09-28T02:58:06Z",
+      "updated_at": "2026-10-07T23:15:20Z",
       "pushed_at": "2026-06-16T05:22:23Z",
-      "image_url": "https://opengraph.githubassets.com/647a51fce537e9a52980f5153c9dbcdf33fef8a74afada9034a8d8588c4f632d/DevArtsLab/sentiment-analyzer-ml-pipeline"
+      "image_url": "https://opengraph.githubassets.com/237266eddb438a00289dceab6a53efd6f2fa755d63153034023cbce97cae8dd4/DevArtsLab/sentiment-analyzer-ml-pipeline"
     },
     {
       "name": "voice-quote",
@@ -900,7 +1790,7 @@
           "percentage": 0.8
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -910,109 +1800,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-06-01T03:34:24Z",
-      "updated_at": "2026-09-28T02:58:07Z",
+      "updated_at": "2026-10-07T23:15:28Z",
       "pushed_at": "2026-06-16T03:37:06Z",
-      "image_url": "https://opengraph.githubassets.com/85ea646934ba3ba410a0808fc13b4addc95e70e595d9fe29b294801f250c486d/DevArtsLab/voice-quote"
-    },
-    {
-      "name": "city-scrapers-charnc",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-charnc",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Charnc",
-      "description": "Web scrapers for public meetings in Charlotte, NC",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-charnc",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 145832,
-          "percentage": 99.8
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 297,
-          "percentage": 0.2
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 595,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-charnc",
-      "default_branch": "main",
-      "created_at": "2026-03-18T16:35:37Z",
-      "updated_at": "2026-09-28T02:36:51Z",
-      "pushed_at": "2026-06-10T19:41:15Z",
-      "image_url": "https://opengraph.githubassets.com/f743a06e6086fd233fa5808417b3a0ad3b7cc6cb1913121da10c27441ec911ad/AmirhosseinOlyaei/city-scrapers-charnc"
-    },
-    {
-      "name": "city-scrapers-minn",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-minn",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Minn",
-      "description": "Web scrapers for public meetings in Minnesota",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-minn",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 30252,
-          "percentage": 99.03
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 297,
-          "percentage": 0.97
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 799,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-minn",
-      "default_branch": "master",
-      "created_at": "2026-05-04T17:00:12Z",
-      "updated_at": "2026-09-28T02:36:52Z",
-      "pushed_at": "2026-06-09T17:43:05Z",
-      "image_url": "https://opengraph.githubassets.com/909495066359767f2a8e22d2327f98e97f01f7e44d860c95fb2bbdf95805852f/AmirhosseinOlyaei/city-scrapers-minn"
+      "image_url": "https://opengraph.githubassets.com/91986a19ad3aa254382fa01e82d4e8c74e5ce57f65259fac662d0235709147d6/DevArtsLab/voice-quote"
     },
     {
       "name": "virtual-screener-ai-drug-discovery",
@@ -1081,7 +1871,7 @@
           "percentage": 0.33
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -1091,9 +1881,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-05-08T03:59:07Z",
-      "updated_at": "2026-09-28T02:58:08Z",
+      "updated_at": "2026-10-07T23:15:37Z",
       "pushed_at": "2026-05-22T17:53:20Z",
-      "image_url": "https://opengraph.githubassets.com/66f1acd2027adf2858caa2092dd14035ad6fc3dd2eb3b83e289bdeece0745961/DevArtsLab/virtual-screener-ai-drug-discovery"
+      "image_url": "https://opengraph.githubassets.com/eb4d28a78e972a10edf8bdcee41e57f0198a7861bc3b9ccf6715784d9da6c3b7/DevArtsLab/virtual-screener-ai-drug-discovery"
     },
     {
       "name": "city-scrapers-joint-builds",
@@ -1154,7 +1944,7 @@
         "profile-readme"
       ],
       "languages": [],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 1,
       "open_issues": 0,
@@ -1164,9 +1954,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2023-06-10T17:43:31Z",
-      "updated_at": "2026-09-28T02:37:35Z",
+      "updated_at": "2026-10-07T23:18:54Z",
       "pushed_at": "2026-05-09T16:35:16Z",
-      "image_url": "https://opengraph.githubassets.com/eb60b2e7deef9980ec359adc74a3b924ccb0a01f40cf9a59979de62789567477/AmirhosseinOlyaei/AmirhosseinOlyaei"
+      "image_url": "https://opengraph.githubassets.com/26c8f4a4ea218f8ce4f617b67788333534f04d027fa50d906e39c252e4928632/AmirhosseinOlyaei/AmirhosseinOlyaei"
     },
     {
       "name": "drug-admet-predictor",
@@ -1206,7 +1996,7 @@
           "percentage": 0.75
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -1216,9 +2006,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-05-08T20:29:16Z",
-      "updated_at": "2026-10-01T06:03:01Z",
+      "updated_at": "2026-10-07T23:15:46Z",
       "pushed_at": "2026-05-08T20:30:14Z",
-      "image_url": "https://opengraph.githubassets.com/3d12ad82f92fca0b450b337d906ecd479a758866ca7cec6fa9a52071db04515d/DevArtsLab/drug-admet-predictor"
+      "image_url": "https://opengraph.githubassets.com/bca5d9c349c6af922ec56d96dab95fe74c80c55299387756d457b6414ddd590d/DevArtsLab/drug-admet-predictor"
     },
     {
       "name": "logseq",
@@ -1236,7 +2026,7 @@
         "notes"
       ],
       "languages": [],
-      "stars": 0,
+      "stars": 1,
       "forks": 1,
       "watchers": 1,
       "open_issues": 0,
@@ -1246,9 +2036,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2023-01-11T04:01:05Z",
-      "updated_at": "2026-09-28T02:38:46Z",
+      "updated_at": "2026-10-07T23:19:05Z",
       "pushed_at": "2026-05-07T19:25:27Z",
-      "image_url": "https://opengraph.githubassets.com/09ab73f902da95d17f74801b5e8b4fa5cfb2e9015c884c9b374a2667e5123170/AmirhosseinOlyaei/logseq"
+      "image_url": "https://opengraph.githubassets.com/58e855291abe6759a8752844225589cb3ab6f988844c77a34abffcc8758a06a0/AmirhosseinOlyaei/logseq"
     },
     {
       "name": "ip-address-tracker",
@@ -1288,7 +2078,7 @@
           "percentage": 1.98
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -1298,165 +2088,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-04-30T02:52:10Z",
-      "updated_at": "2026-09-28T03:23:38Z",
+      "updated_at": "2026-10-07T23:19:49Z",
       "pushed_at": "2026-05-03T16:35:02Z",
-      "image_url": "https://opengraph.githubassets.com/406c4f9024cc2f5a6f31732e8cdf564733d27feb94da2f8fa11b8dc678acfdac/AmirhosseinOlyaei/ip-address-tracker"
-    },
-    {
-      "name": "city-scrapers-losca",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-losca",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Losca",
-      "description": "Web scrapers for public meetings in Los Angeles County, CA",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-losca",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 64564,
-          "percentage": 99.54
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 298,
-          "percentage": 0.46
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 552,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-losca",
-      "default_branch": "main",
-      "created_at": "2026-02-27T19:18:03Z",
-      "updated_at": "2026-09-28T02:36:53Z",
-      "pushed_at": "2026-04-29T04:18:53Z",
-      "image_url": "https://opengraph.githubassets.com/48e71b08f4c3ff7f56d523b24b39e3479532160de001f39682fe3ff13487cc0c/AmirhosseinOlyaei/city-scrapers-losca"
-    },
-    {
-      "name": "city-scrapers-colgo",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-colgo",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Colgo",
-      "description": "Web scrapers for public meetings in the Columbia Gorge region (Oregon and Washington)",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-colgo",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 132793,
-          "percentage": 99.78
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 298,
-          "percentage": 0.22
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 279,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-colgo",
-      "default_branch": "main",
-      "created_at": "2025-12-22T19:15:19Z",
-      "updated_at": "2026-09-28T02:36:58Z",
-      "pushed_at": "2026-04-28T16:29:02Z",
-      "image_url": "https://opengraph.githubassets.com/82e1621728b8d92b69f11760482fec688f460d18a80f2e6c85dce07ad5404a31/AmirhosseinOlyaei/city-scrapers-colgo"
-    },
-    {
-      "name": "city-scrapers-atl",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-atl",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Atl",
-      "description": "City Scrapers for Atlanta",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-atl",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 1611422,
-          "percentage": 94.56
-        },
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 92401,
-          "percentage": 5.42
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 297,
-          "percentage": 0.02
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 954,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-atl",
-      "default_branch": "main",
-      "created_at": "2026-04-22T18:24:27Z",
-      "updated_at": "2026-09-28T02:36:59Z",
-      "pushed_at": "2026-04-21T02:56:54Z",
-      "image_url": "https://opengraph.githubassets.com/e93221327027b773949c4ea4e085cb65786921b568d57a9c0ed353cc19de6d03/AmirhosseinOlyaei/city-scrapers-atl"
+      "image_url": "https://opengraph.githubassets.com/4154f566eff2bb924d1cdced35b12c967ca8a8d27b410d5e0f58fb648a4d19e0/AmirhosseinOlyaei/ip-address-tracker"
     },
     {
       "name": "06-python-ml-api",
@@ -1485,7 +2119,7 @@
           "percentage": 100.0
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -1495,9 +2129,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-03-26T21:02:34Z",
-      "updated_at": "2026-09-28T02:42:58Z",
+      "updated_at": "2026-10-07T23:23:37Z",
       "pushed_at": "2026-03-26T21:02:36Z",
-      "image_url": "https://opengraph.githubassets.com/6c0c2ae1b1fe5044d17fae029cb295daeca3dfc2abf21734b344d6b31684ec2e/AmirhosseinOlyaei/06-python-ml-api"
+      "image_url": "https://opengraph.githubassets.com/98f5426521bcf1ba2fa853ae74c5732762ec91d5e3d4713d8f8d15e46c42a686/AmirhosseinOlyaei/06-python-ml-api"
     },
     {
       "name": "05-data-labeling-pipeline",
@@ -1717,213 +2351,6 @@
       "image_url": "https://opengraph.githubassets.com/b4759f20a1d71df324c3b064aabda85aa8a15a9499a4ed9d5a2b3fa2db4c6a79/AmirhosseinOlyaei/01-php-jwt-api"
     },
     {
-      "name": "city-scrapers-fortx",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-fortx",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Fortx",
-      "description": "Web scrapers for public meetings in Fort Worth, TX",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-fortx",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 70220,
-          "percentage": 99.58
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 298,
-          "percentage": 0.42
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 298,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-fortx",
-      "default_branch": "main",
-      "created_at": "2026-01-29T18:36:49Z",
-      "updated_at": "2026-09-28T02:36:54Z",
-      "pushed_at": "2026-03-10T15:17:50Z",
-      "image_url": "https://opengraph.githubassets.com/58d7712de903829588e51989e51483ca6d04d2ce15fdeeb20f83367660cd5e3b/AmirhosseinOlyaei/city-scrapers-fortx"
-    },
-    {
-      "name": "city-scrapers-kancit",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-kancit",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Kancit",
-      "description": "Web scrapers for public meetings in Kansas City",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-kancit",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 4178,
-          "percentage": 93.34
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 298,
-          "percentage": 6.66
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 58,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-kancit",
-      "default_branch": "main",
-      "created_at": "2026-01-14T16:31:01Z",
-      "updated_at": "2026-09-28T02:36:55Z",
-      "pushed_at": "2026-03-03T19:22:10Z",
-      "image_url": "https://opengraph.githubassets.com/61ac016771e1bdbebffd2887668b988086e7190dc63c3f9022a00dacaa6ab7bf/AmirhosseinOlyaei/city-scrapers-kancit"
-    },
-    {
-      "name": "city-scrapers",
-      "full_name": "AmirhosseinOlyaei/city-scrapers",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers",
-      "description": "Scrape, standardize and share public meetings from local government websites",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers",
-      "homepage": "https://city-scrapers.org/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 532245,
-          "percentage": 59.26
-        },
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 365647,
-          "percentage": 40.71
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 291,
-          "percentage": 0.03
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 11706,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers",
-      "default_branch": "main",
-      "created_at": "2026-02-25T19:16:32Z",
-      "updated_at": "2026-09-28T02:36:50Z",
-      "pushed_at": "2026-02-25T02:45:48Z",
-      "image_url": "https://opengraph.githubassets.com/9a2b7555d707fe8cb54567058449ef0f88df15a5c5bda9aaf898996443c1d2df/AmirhosseinOlyaei/city-scrapers"
-    },
-    {
-      "name": "city-scrapers-coloh",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-coloh",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Coloh",
-      "description": "Web scrapers for public meetings in Columbus, OH",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-coloh",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 4140,
-          "percentage": 93.39
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 293,
-          "percentage": 6.61
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 233,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-coloh",
-      "default_branch": "main",
-      "created_at": "2026-02-17T19:17:01Z",
-      "updated_at": "2026-09-28T02:37:00Z",
-      "pushed_at": "2026-02-17T19:43:42Z",
-      "image_url": "https://opengraph.githubassets.com/c71e9906f42cc9ff9a84430e4fd029c3c5507465fc3a8c247dc71d5e9f03033c/AmirhosseinOlyaei/city-scrapers-coloh"
-    },
-    {
       "name": "ecommerce",
       "full_name": "AmirhosseinOlyaei/ecommerce",
       "owner": "AmirhosseinOlyaei",
@@ -2048,7 +2475,7 @@
           "percentage": 0.1
         }
       ],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -2058,68 +2485,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-01-27T06:29:43Z",
-      "updated_at": "2026-09-28T02:24:27Z",
+      "updated_at": "2026-10-07T23:15:53Z",
       "pushed_at": "2026-01-27T06:51:53Z",
-      "image_url": "https://opengraph.githubassets.com/3f957605566830e00dc6c3df21f0a1c969cc500b3b519d90303a7beec279df89/DevArtsLab/health-pulse"
-    },
-    {
-      "name": "node-express-course",
-      "full_name": "AmirhosseinOlyaei/node-express-course",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Node Express Course",
-      "description": "Node.js and Express course exercises",
-      "url": "https://github.com/AmirhosseinOlyaei/node-express-course",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "course",
-        "express",
-        "javascript",
-        "nodejs"
-      ],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 1175711,
-          "percentage": 63.69
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 559568,
-          "percentage": 30.31
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 110678,
-          "percentage": 6.0
-        },
-        {
-          "name": "Procfile",
-          "color": "#3B2F63",
-          "bytes": 112,
-          "percentage": 0.01
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 54021,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "Code-the-Dream-School/node-express-course",
-      "default_branch": "main",
-      "created_at": "2024-02-24T01:16:12Z",
-      "updated_at": "2026-09-28T02:37:39Z",
-      "pushed_at": "2026-01-21T16:13:12Z",
-      "image_url": "https://opengraph.githubassets.com/aaafc09599f1b508439f3c7ab891de732bedd75972a43d757b44c96554d180bb/AmirhosseinOlyaei/node-express-course"
+      "image_url": "https://opengraph.githubassets.com/8bd7e3eca55ebfe7c1f549463126db0b61b5cdddad2c6aaf03a059f3c461ceda/DevArtsLab/health-pulse"
     },
     {
       "name": "healthcare-ai-validation",
@@ -2149,7 +2517,7 @@
         }
       ],
       "license": "NOASSERTION",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -2159,9 +2527,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-01-12T15:03:34Z",
-      "updated_at": "2026-09-28T02:24:28Z",
+      "updated_at": "2026-10-07T23:16:00Z",
       "pushed_at": "2026-01-12T18:48:34Z",
-      "image_url": "https://opengraph.githubassets.com/9ba7e1d6224d5bade04d8cccb417a26fb61f864b73bf6d2e7fc902f7fde3fa8e/DevArtsLab/healthcare-ai-validation"
+      "image_url": "https://opengraph.githubassets.com/07479a9b3906e1655f5fe5bcc4684b0c7b47c034e74abd9c32eaf3980108df91/DevArtsLab/healthcare-ai-validation"
     },
     {
       "name": "documind",
@@ -2230,7 +2598,7 @@
         }
       ],
       "license": "MIT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -2240,52 +2608,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-01-07T15:12:37Z",
-      "updated_at": "2026-10-01T22:00:08Z",
+      "updated_at": "2026-10-07T23:16:06Z",
       "pushed_at": "2026-01-11T19:45:27Z",
-      "image_url": "https://opengraph.githubassets.com/d05adbb3ce28b9502603a518ad58b80b44dfde210e16f4ceae7e6e7574c6b525/DevArtsLab/documind"
-    },
-    {
-      "name": "city-scrapers-tulsa",
-      "full_name": "AmirhosseinOlyaei/city-scrapers-tulsa",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "City Scrapers Tulsa",
-      "description": "Web scrapers for public meetings in Tulsa, Oklahoma",
-      "url": "https://github.com/AmirhosseinOlyaei/city-scrapers-tulsa",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "civic-tech",
-        "open-data",
-        "public-meetings",
-        "python",
-        "scrapy",
-        "web-scraping"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 23917,
-          "percentage": 100.0
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 90,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "City-Bureau/city-scrapers-tulsa",
-      "default_branch": "main",
-      "created_at": "2025-12-09T01:24:25Z",
-      "updated_at": "2026-09-28T02:37:01Z",
-      "pushed_at": "2025-12-24T21:23:32Z",
-      "image_url": "https://opengraph.githubassets.com/ccb8ad574838aaec857d2d31f58c1c7c53a4057c1dec0d33f8772161b4a8f871/AmirhosseinOlyaei/city-scrapers-tulsa"
+      "image_url": "https://opengraph.githubassets.com/5f3520b2edbf930c68628a921479b1654e8cc42c5de6a8440f710b3977ec2fa6/DevArtsLab/documind"
     },
     {
       "name": "gen-ai-databricks",
@@ -2797,38 +3122,6 @@
       "updated_at": "2026-09-28T02:37:36Z",
       "pushed_at": "2024-07-20T04:34:10Z",
       "image_url": "https://opengraph.githubassets.com/8169623090ebb9632d29e9deec7c0d2d72185ed38facf19e08051bb1ef27ba30/AmirhosseinOlyaei/dogtainingonwheels.com"
-    },
-    {
-      "name": "Ruby-on-Rails-lesson-3-and-4",
-      "full_name": "AmirhosseinOlyaei/Ruby-on-Rails-lesson-3-and-4",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Ruby On Rails Lesson 3 And 4",
-      "description": "Ruby on Rails lessons 3 and 4",
-      "url": "https://github.com/AmirhosseinOlyaei/Ruby-on-Rails-lesson-3-and-4",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "course",
-        "ruby",
-        "ruby-on-rails"
-      ],
-      "languages": [],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 29,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "Code-the-Dream-School/ROR-lesson-3-and-4",
-      "default_branch": "main",
-      "created_at": "2024-07-01T14:23:18Z",
-      "updated_at": "2026-09-28T02:37:40Z",
-      "pushed_at": "2024-07-06T22:26:19Z",
-      "image_url": "https://opengraph.githubassets.com/c1cd083cf100744905e36eb291463b3fcef08398c10363b5ccb0f678e72ed684/AmirhosseinOlyaei/Ruby-on-Rails-lesson-3-and-4"
     },
     {
       "name": "PlayItForward-React",
@@ -3556,60 +3849,6 @@
       "image_url": "https://opengraph.githubassets.com/87662f55050b5e60df40be465246fc00dc841c2aecc67c6a39968a13d633693b/AmirhosseinOlyaei/ctd-react-numberGuessingAssignment"
     },
     {
-      "name": "AmirhosseinOlyaei-Portfolio",
-      "full_name": "AmirhosseinOlyaei/AmirhosseinOlyaei-Portfolio",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Amirhosseinolyaei Portfolio",
-      "description": "Starter repository for Fenrir Intro to Programming course",
-      "url": "https://github.com/AmirhosseinOlyaei/AmirhosseinOlyaei-Portfolio",
-      "homepage": "https://amir-olyaei.vercel.app/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "css",
-        "html",
-        "javascript",
-        "portfolio"
-      ],
-      "primary_language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 21570,
-          "percentage": 48.88
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 16483,
-          "percentage": 37.36
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 6072,
-          "percentage": 13.76
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 7104,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "Code-the-Dream-School/fenrir-intro",
-      "default_branch": "main",
-      "created_at": "2023-05-17T05:53:54Z",
-      "updated_at": "2026-09-28T02:37:44Z",
-      "pushed_at": "2024-01-01T21:55:39Z",
-      "image_url": "https://opengraph.githubassets.com/42c405e045bd1b01f2544cdcdea5f281f95b43ea34fe4d83f6e212703476d8c0/AmirhosseinOlyaei/AmirhosseinOlyaei-Portfolio"
-    },
-    {
       "name": "Plate-Stacking",
       "full_name": "AmirhosseinOlyaei/Plate-Stacking",
       "owner": "AmirhosseinOlyaei",
@@ -3721,39 +3960,6 @@
       "updated_at": "2026-09-28T02:38:02Z",
       "pushed_at": "2023-12-29T05:00:23Z",
       "image_url": "https://opengraph.githubassets.com/8bc34d3433aa149fef97a924ea1fa11e1e1c9a196113e3189611454a84ee60a3/AmirhosseinOlyaei/Rock-Paper-Scissors-with-Functions-and-List-in-Python"
-    },
-    {
-      "name": "GPTs",
-      "full_name": "AmirhosseinOlyaei/GPTs",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Gpts",
-      "description": "leaked prompts of GPTs",
-      "url": "https://github.com/AmirhosseinOlyaei/GPTs",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai",
-        "gpt",
-        "prompt-engineering",
-        "prompts"
-      ],
-      "languages": [],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 450,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "linexjlin/GPTs",
-      "default_branch": "main",
-      "created_at": "2023-12-11T22:36:48Z",
-      "updated_at": "2026-09-28T02:38:17Z",
-      "pushed_at": "2023-12-11T07:45:28Z",
-      "image_url": "https://opengraph.githubassets.com/79fbef330c81aea02dd8d27d2a592bb5da6ca757bec1016da254314bd7b3bddb/AmirhosseinOlyaei/GPTs"
     },
     {
       "name": "Resume-Builder-React-OpenAI",
@@ -4289,52 +4495,6 @@
       "updated_at": "2026-09-28T02:38:19Z",
       "pushed_at": "2023-07-16T21:40:47Z",
       "image_url": "https://opengraph.githubassets.com/a51cb50998d8de8a0781a216778d3c1d837b310ffb4e7ca0533f73fab0393bca/AmirhosseinOlyaei/debugging-section-5"
-    },
-    {
-      "name": "dotfiles",
-      "full_name": "AmirhosseinOlyaei/dotfiles",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Dotfiles",
-      "description": "Dotfiles",
-      "url": "https://github.com/AmirhosseinOlyaei/dotfiles",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "dotfiles",
-        "lua",
-        "shell"
-      ],
-      "primary_language": "Shell",
-      "languages": [
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 39627,
-          "percentage": 57.0
-        },
-        {
-          "name": "Lua",
-          "color": "#000080",
-          "bytes": 29898,
-          "percentage": 43.0
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 4080,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "mattcarlotta/dotfiles",
-      "default_branch": "main",
-      "created_at": "2023-07-15T06:40:50Z",
-      "updated_at": "2026-09-28T02:38:21Z",
-      "pushed_at": "2023-07-14T00:24:06Z",
-      "image_url": "https://opengraph.githubassets.com/e9c08a601d4e6f33cd78a4c982ee37d5b1210420fafbeb3f81cb7b34f4f2929e/AmirhosseinOlyaei/dotfiles"
     },
     {
       "name": "D7-Login-Form",
@@ -5349,147 +5509,6 @@
       "updated_at": "2026-09-28T02:38:36Z",
       "pushed_at": "2022-12-08T23:58:15Z",
       "image_url": "https://opengraph.githubassets.com/6b099780f1ab493515c7e5a0399e138e1910d6096f7d54fbde4b088e7e7432cd/AmirhosseinOlyaei/D9-JS-Calculator"
-    },
-    {
-      "name": "w3schools-test.github.io",
-      "full_name": "AmirhosseinOlyaei/w3schools-test.github.io",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "W3Schools Test.Github.Io",
-      "description": "w3schools.com repository used in demonstrating GitHub and GitHub pages",
-      "url": "https://github.com/AmirhosseinOlyaei/w3schools-test.github.io",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "github-pages",
-        "html",
-        "tutorial"
-      ],
-      "primary_language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 176893,
-          "percentage": 100.0
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 1809,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "w3schools-test/w3schools-test.github.io",
-      "default_branch": "master",
-      "created_at": "2022-11-30T07:29:35Z",
-      "updated_at": "2026-09-28T02:38:24Z",
-      "pushed_at": "2022-11-30T07:53:31Z",
-      "image_url": "https://opengraph.githubassets.com/bfbb8ec8cf580e31ece7a49730e2eb650ca3ea402f941d9be397fe7ff3b1c94e/AmirhosseinOlyaei/w3schools-test.github.io"
-    },
-    {
-      "name": "material-dashboard-react",
-      "full_name": "AmirhosseinOlyaei/material-dashboard-react",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Material Dashboard React",
-      "description": "React version of Material Dashboard by Creative Tim",
-      "url": "https://github.com/AmirhosseinOlyaei/material-dashboard-react",
-      "homepage": "https://www.creative-tim.com/product/material-dashboard-react",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "chartjs",
-        "dashboard",
-        "material-ui",
-        "mui",
-        "react"
-      ],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 585815,
-          "percentage": 99.71
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 1684,
-          "percentage": 0.29
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 66830,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "creativetimofficial/material-dashboard-react",
-      "default_branch": "main",
-      "created_at": "2022-12-13T18:28:55Z",
-      "updated_at": "2026-09-28T02:55:35Z",
-      "pushed_at": "2022-11-07T22:53:51Z",
-      "image_url": "https://opengraph.githubassets.com/b02ab7fedc2a9cf46595757ea7baf0a72bb9fe866bbab976b7aadf007f431806/AmirhosseinOlyaei/material-dashboard-react"
-    },
-    {
-      "name": "Precourse",
-      "full_name": "AmirhosseinOlyaei/Precourse",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Precourse",
-      "description": "This repo contains the instruction material and assignments for Lambda School's pre-course program.",
-      "url": "https://github.com/AmirhosseinOlyaei/Precourse",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "course",
-        "javascript"
-      ],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 48562,
-          "percentage": 80.77
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 7942,
-          "percentage": 13.21
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 3621,
-          "percentage": 6.02
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 209,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "bloominstituteoftechnology/Precourse",
-      "default_branch": "master",
-      "created_at": "2018-03-06T03:56:23Z",
-      "updated_at": "2026-09-28T02:38:18Z",
-      "pushed_at": "2018-03-07T20:06:29Z",
-      "image_url": "https://opengraph.githubassets.com/aa892822c508d8c47246ef0a8d1a6fc03ecdd1a6a87930d8cf7ef14829bd67e0/AmirhosseinOlyaei/Precourse"
     },
     {
       "name": "angels",
