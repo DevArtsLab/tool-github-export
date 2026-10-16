@@ -3,6 +3,9 @@
 from __future__ import annotations
 
 import json
+import os
+from collections.abc import Callable
+from contextlib import ExitStack
 from importlib.resources import files
 from pathlib import Path
 from typing import Annotated
@@ -15,6 +18,7 @@ from . import __version__
 from .client import GitHubClient, GitHubClientError, resolve_token
 from .config import DEFAULT_CONFIG_PATH, load_config
 from .exporter import run_export
+from .models import Source
 
 app = typer.Typer(
     name="github-export",
@@ -42,6 +46,34 @@ def _version_callback(value: bool) -> None:
     if value:
         console.print(f"github-export {__version__}")
         raise typer.Exit()
+
+
+def _make_client_resolver(
+    explicit_token: str | None, stack: ExitStack
+) -> Callable[[Source], GitHubClient]:
+    """Resolve each source to a GitHubClient. Sources with token_env get a
+    dedicated client; others share the default token resolution."""
+    clients: dict[str, GitHubClient] = {}
+    default_token: str | None = None
+
+    def get_client(source: Source) -> GitHubClient:
+        nonlocal default_token
+        key = source.token_env or "__default__"
+        if key not in clients:
+            if source.token_env:
+                env_token = os.environ.get(source.token_env)
+                if not env_token:
+                    raise GitHubClientError(
+                        f"Source '{source.login}' requires ${source.token_env} to be set"
+                    )
+                clients[key] = stack.enter_context(GitHubClient(env_token))
+            else:
+                if default_token is None:
+                    default_token = resolve_token(explicit_token)
+                clients[key] = stack.enter_context(GitHubClient(default_token))
+        return clients[key]
+
+    return get_client
 
 
 @app.callback()
@@ -77,13 +109,12 @@ def export(
         raise typer.Exit(2)
 
     cfg = load_config(config)
-    resolved = resolve_token(token)
 
     try:
-        with GitHubClient(resolved) as client:
+        with ExitStack() as stack:
             written = run_export(
-                client, cfg, out_dir=out_dir,
-                public_only=public_only, private_only=private_only,
+                _make_client_resolver(token, stack), cfg,
+                out_dir=out_dir, public_only=public_only, private_only=private_only,
             )
     except GitHubClientError as e:
         err_console.print(f"[red]Export failed:[/red] {e}")

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Callable
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -10,7 +11,14 @@ from typing import Any
 from . import __version__
 from .categorize import derive_category
 from .client import GitHubClient
-from .models import Config, Export, ExportStats, RepoEntry
+from .models import Config, Export, ExportStats, RepoEntry, Source
+
+# A single client, or a resolver that picks a client per source (token_env).
+ClientProvider = GitHubClient | Callable[[Source], GitHubClient]
+
+
+def _client_for(provider: ClientProvider, source: Source) -> GitHubClient:
+    return provider(source) if callable(provider) else provider
 
 
 def apply_overrides(entry: RepoEntry, config: Config) -> RepoEntry:
@@ -46,11 +54,11 @@ def passes_filters(node: dict[str, Any], config: Config) -> bool:
     return not (node.get("isTemplate") and not config.filters.include_templates)
 
 
-def fetch_entries(client: GitHubClient, config: Config) -> list[RepoEntry]:
+def fetch_entries(client: ClientProvider, config: Config) -> list[RepoEntry]:
     entries: list[RepoEntry] = []
     seen: set[str] = set()
     for source in config.sources:
-        _, nodes = client.iter_repositories(source.login)
+        _, nodes = _client_for(client, source).iter_repositories(source.login)
         for node in nodes:
             if not passes_filters(node, config):
                 continue
@@ -104,7 +112,7 @@ def write_export(export: Export, path: Path) -> Path:
 
 
 def run_export(
-    client: GitHubClient,
+    client: ClientProvider,
     config: Config,
     out_dir: Path | None = None,
     public_only: bool = False,

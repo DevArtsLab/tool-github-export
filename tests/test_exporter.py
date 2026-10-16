@@ -87,6 +87,31 @@ def test_filter_excludes_forks():
     assert "forked-repo" not in {e.name for e in entries}
 
 
+def test_fetch_entries_uses_per_source_client():
+    cfg = make_config(
+        sources=[
+            {"type": "organization", "login": "DevArtsLab", "token_env": "ORG_TOK"},
+            {"type": "user", "login": "someuser", "token_env": "USER_TOK"},
+        ]
+    )
+    calls: dict[str, str] = {}
+
+    class ClientA(FakeClient):
+        def iter_repositories(self, login):
+            calls["a"] = login
+            return "Organization", []
+
+    class ClientB(FakeClient):
+        def iter_repositories(self, login):
+            calls["b"] = login
+            return "User", []
+
+    a, b = ClientA(), ClientB()
+    lookup = {"ORG_TOK": a, "USER_TOK": b}
+    fetch_entries(lambda s: lookup[s.token_env], cfg)
+    assert calls == {"a": "DevArtsLab", "b": "someuser"}
+
+
 def test_output_conforms_to_schema(tmp_path):
     cfg = make_config()
     written = run_export(FakeClient(), cfg, out_dir=tmp_path)

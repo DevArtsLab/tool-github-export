@@ -16,6 +16,9 @@ SCHEMA_VERSION = "1.0"
 class Source(BaseModel):
     type: Literal["user", "organization"]
     login: str
+    # Env var holding a dedicated token for this owner. Lets each source use a
+    # fine-grained PAT scoped to its resource owner instead of one broad PAT.
+    token_env: str | None = None
 
 
 class Filters(BaseModel):

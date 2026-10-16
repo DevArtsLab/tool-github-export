@@ -8,7 +8,7 @@ query ($login: String!, $cursor: String) {
     login
     __typename
     repositories(
-      first: 100
+      first: 50
       after: $cursor
       affiliations: [OWNER]
       orderBy: { field: PUSHED_AT, direction: DESC }
@@ -69,7 +69,7 @@ query ($login: String!, $cursor: String) {
             }
           }
         }
-        languages(first: 20, orderBy: { field: SIZE, direction: DESC }) {
+        languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
           totalSize
           edges {
             size

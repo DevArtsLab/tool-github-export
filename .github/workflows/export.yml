@@ -29,6 +29,7 @@ jobs:
       - name: Run export
         env:
           GH_EXPORT_TOKEN: ${{ secrets.GH_EXPORT_TOKEN }}
+          GH_EXPORT_USER_TOKEN: ${{ secrets.GH_EXPORT_USER_TOKEN }}
         run: uv run github-export export --config export.config.yaml
 
       - name: Validate output

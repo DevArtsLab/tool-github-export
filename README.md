@@ -103,7 +103,7 @@ curl -s "https://data.devartslab.com/v1/repos/DevArtsLab/tool-github-export"
 cd worker
 npm install
 npx wrangler deploy                    # deploys + attaches data.devartslab.com
-npx wrangler secret put GH_EXPORT_TOKEN     # cron fetch of the private export
+npx wrangler secret put GH_EXPORT_TOKEN     # fine-grained PAT, contents:read on the data repo only
 npx wrangler secret put PRIVATE_API_TOKEN   # consumer bearer for private dataset
 ```
 
@@ -124,7 +124,7 @@ Each repository carries: identity (`name`, `full_name`, `owner`, `owner_type`, `
 ## Configuration (`export.config.yaml`)
 
 ```yaml
-sources: # owners to scan: {type: user|organization, login: ...}
+sources: # owners to scan: {type: user|organization, login: ..., token_env: ENV_VAR?}
 filters: # include_forks / include_archived / include_templates
 categories: # "prefix-": category  (first match wins, case-insensitive)
 default_category: project
@@ -159,7 +159,7 @@ uv run pytest                               # tests
 uv run ruff check .                         # lint
 ```
 
-Token resolution order: `--token` flag -> `GH_EXPORT_TOKEN` / `GH_TOKEN` / `GITHUB_TOKEN` env -> `gh auth token` fallback.
+Token resolution order: `--token` flag -> `GH_EXPORT_TOKEN` / `GH_TOKEN` / `GITHUB_TOKEN` env -> `gh auth token` fallback. A source can set `token_env` to name an env var holding a dedicated token for that owner; this is how each source uses a fine-grained PAT scoped to its own resource owner.
 
 ## GitHub Action
 
@@ -172,12 +172,13 @@ Token resolution order: `--token` flag -> `GH_EXPORT_TOKEN` / `GH_TOKEN` / `GITH
 
 ### Required secrets / variables
 
-| Name                | Kind     | Value                                                                                                                                                                      |
-| ------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `GH_EXPORT_TOKEN`   | secret   | PAT that can read target repos. Classic PAT with `repo` + `read:org` covers both private org and personal repos. Public-only exports need just `public_repo` + `read:org`. |
-| `PRIVATE_DATA_REPO` | variable | e.g. `DevArtsLab/tool-github-export-data`. If unset, the private file is generated and validated but not published.                                                        |
+| Name                   | Kind     | Value                                                                                                                                                             |
+| ---------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GH_EXPORT_TOKEN`      | secret   | Fine-grained PAT, resource owner `DevArtsLab`, all repositories, Contents: read & write + Issues: read (read for the export, write to push `repos.private.json`). |
+| `GH_EXPORT_USER_TOKEN` | secret   | Fine-grained PAT, resource owner `AmirhosseinOlyaei`, all repositories, Contents: read-only + Issues: read. Feeds the `token_env` source in `export.config.yaml`. |
+| `PRIVATE_DATA_REPO`    | variable | e.g. `DevArtsLab/tool-github-export-data`. If unset, the private file is generated and validated but not published.                                               |
 
-The `GITHUB_TOKEN` provided by Actions cannot be used here: it is scoped to this repository and cannot list org/user repositories.
+Fine-grained PATs are scoped to a single resource owner, which is why the user source needs its own token. The `GITHUB_TOKEN` provided by Actions cannot be used here: it is scoped to this repository and cannot list org/user repositories.
 
 ## Private output
 

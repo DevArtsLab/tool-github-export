@@ -1,11 +1,15 @@
 version: 1
 
-# GitHub owners to export repositories from.
+# GitHub owners to export repositories from. token_env names an env var
+# holding a fine-grained PAT scoped to that owner (falls back to the default
+# token when unset on a source).
 sources:
   - type: organization
     login: DevArtsLab
+    token_env: GH_EXPORT_TOKEN
   - type: user
     login: AmirhosseinOlyaei
+    token_env: GH_EXPORT_USER_TOKEN
 
 # Which repos enter the export at all. Excluded repos are dropped before
 # the public/private split.
