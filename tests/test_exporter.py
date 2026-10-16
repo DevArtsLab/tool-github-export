@@ -112,6 +112,13 @@ def test_fetch_entries_uses_per_source_client():
     assert calls == {"a": "DevArtsLab", "b": "someuser"}
 
 
+def test_token_env_not_in_output(tmp_path):
+    cfg = make_config(sources=[{"type": "user", "login": "u", "token_env": "X"}])
+    written = run_export(FakeClient(), cfg, out_dir=tmp_path)
+    doc = json.loads(written["public"].read_text())
+    assert doc["sources"] == [{"type": "user", "login": "u"}]
+
+
 def test_output_conforms_to_schema(tmp_path):
     cfg = make_config()
     written = run_export(FakeClient(), cfg, out_dir=tmp_path)

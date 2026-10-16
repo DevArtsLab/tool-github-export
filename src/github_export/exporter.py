@@ -89,7 +89,8 @@ def build_export(entries: list[RepoEntry], config: Config, public_only: bool) ->
     return Export(
         generated_at=datetime.now(UTC),
         generator={"name": "tool-github-export", "version": __version__},
-        sources=config.sources,
+        # Strip token_env: it is config-internal and not part of the output contract.
+        sources=[Source(type=s.type, login=s.login) for s in config.sources],
         stats=ExportStats(
             total=len(repos),
             public=sum(1 for e in repos if e.visibility == "public"),
