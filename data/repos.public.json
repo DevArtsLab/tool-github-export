@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-19T04:33:10.302496Z",
+  "generated_at": "2026-10-19T13:02:15.936746Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -16,16 +16,227 @@
     }
   ],
   "stats": {
-    "total": 121,
-    "public": 121,
+    "total": 122,
+    "public": 122,
     "private": 0,
     "by_category": {
+      "project": 114,
       "tool": 5,
-      "project": 113,
       "org-infra": 3
     }
   },
   "repositories": [
+    {
+      "name": "neuro-san-studio",
+      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Neuro San Studio",
+      "description": "A playground for neuro-san",
+      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
+      "homepage": "https://decisionai.ml/neuro-san",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 2947060,
+          "percentage": 97.22
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 30422,
+          "percentage": 1.0
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54",
+          "bytes": 26210,
+          "percentage": 0.86
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 14085,
+          "percentage": 0.46
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 9442,
+          "percentage": 0.31
+        },
+        {
+          "name": "Makefile",
+          "color": "#427819",
+          "bytes": 4261,
+          "percentage": 0.14
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 64141,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "cognizant-ai-lab/neuro-san-studio",
+      "default_branch": "main",
+      "created_at": "2026-09-29T10:30:56Z",
+      "updated_at": "2026-10-19T08:48:00Z",
+      "pushed_at": "2026-10-19T08:47:52Z",
+      "image_url": "https://opengraph.githubassets.com/372a5da936b5672d89698cd7347e9300ff29b3088b80e7eba92905660a396b7d/AmirhosseinOlyaei/neuro-san-studio"
+    },
+    {
+      "name": "tool-github-actions-audit",
+      "full_name": "DevArtsLab/tool-github-actions-audit",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Tool Github Actions Audit",
+      "description": "Interactive CLI auditor for GitHub Actions usage across a user or org account. Finds minute-eating forks and stale scheduled workflows, surfaces branches, events, and external effects, then selectively disables workflows or whole-repo Actions via the API - no commits, confirmation required for every change.",
+      "url": "https://github.com/DevArtsLab/tool-github-actions-audit",
+      "visibility": "public",
+      "category": "tool",
+      "featured": false,
+      "tags": [
+        "audit",
+        "cli",
+        "devops-tools",
+        "gh-cli",
+        "github-actions",
+        "python"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 40460,
+          "percentage": 100.0
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 42,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-10-10T03:22:19Z",
+      "updated_at": "2026-10-19T07:50:32Z",
+      "pushed_at": "2026-10-19T07:50:28Z",
+      "image_url": "https://opengraph.githubassets.com/3729c18c30d7e0044524d4c65748ef2cf01ce2c6392db7ec79e6962d319078c8/DevArtsLab/tool-github-actions-audit"
+    },
+    {
+      "name": "sesame-voice-escort",
+      "full_name": "DevArtsLab/sesame-voice-escort",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Sesame Voice Escort",
+      "description": "Local send box for Sesame Voice Capture - record voice notes, type-to-speak, or drop audio files and they upload to your Sesame agent for transcription. Stdlib Python server + single-file UI, macOS.",
+      "url": "https://github.com/DevArtsLab/sesame-voice-escort",
+      "homepage": "https://capture.sesameai.app",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "audio",
+        "macos",
+        "mediarecorder",
+        "python",
+        "sesame-ai",
+        "speech-to-text",
+        "tool",
+        "tts",
+        "vanilla-javascript",
+        "voice-ai",
+        "voice-notes"
+      ],
+      "primary_language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 38724,
+          "percentage": 72.65
+        },
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 13723,
+          "percentage": 25.75
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 856,
+          "percentage": 1.61
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 27,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-10-14T23:43:35Z",
+      "updated_at": "2026-10-19T07:36:36Z",
+      "pushed_at": "2026-10-19T07:30:54Z",
+      "image_url": "https://opengraph.githubassets.com/3144d9a49f4ae8eb901febbbfb4907dbcc7b588875ed131d7b946228ab4d00fe/DevArtsLab/sesame-voice-escort"
+    },
+    {
+      "name": "sesame-link-runbook",
+      "full_name": "DevArtsLab/sesame-link-runbook",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Sesame Link Runbook",
+      "description": "Runbook for Sesame Link: install, sign-in, TLS-inspection fix (rustls vs Gateway), security posture, command reference, troubleshooting",
+      "url": "https://github.com/DevArtsLab/sesame-link-runbook",
+      "homepage": "https://link.sesame.com/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "claude-code",
+        "documentation",
+        "linux",
+        "macos",
+        "remote-access",
+        "runbook",
+        "sesame-ai",
+        "terminal",
+        "tmux",
+        "websocket"
+      ],
+      "languages": [],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 3,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-10-19T07:17:18Z",
+      "updated_at": "2026-10-19T07:36:36Z",
+      "pushed_at": "2026-10-19T07:17:22Z",
+      "image_url": "https://opengraph.githubassets.com/3144d9a49f4ae8eb901febbbfb4907dbcc7b588875ed131d7b946228ab4d00fe/DevArtsLab/sesame-link-runbook"
+    },
     {
       "name": "tool-github-export",
       "full_name": "DevArtsLab/tool-github-export",
@@ -66,15 +277,15 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 143,
+      "size_kb": 144,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-18T20:36:05Z",
-      "pushed_at": "2026-10-18T20:36:01Z",
-      "image_url": "https://opengraph.githubassets.com/9adef5109d1ca1066ec97bed3c8161455c991f1c9fb8e2d56df0ec38db9bb8f6/DevArtsLab/tool-github-export"
+      "updated_at": "2026-10-19T04:33:15Z",
+      "pushed_at": "2026-10-19T04:33:11Z",
+      "image_url": "https://opengraph.githubassets.com/a5c14641b05b88715b4da74ccf21c18ac1e0542e38505e7c8533192c0334109c/DevArtsLab/tool-github-export"
     },
     {
       "name": "PlayItForward-Node",
@@ -587,53 +798,6 @@
       "updated_at": "2026-10-16T11:20:00Z",
       "pushed_at": "2026-10-15T09:36:17Z",
       "image_url": "https://opengraph.githubassets.com/e204f63f9b836eebee1ca9e87a9512c589e1a3863a8d5b71ba194abf10d62460/AmirhosseinOlyaei/c-track"
-    },
-    {
-      "name": "sesame-voice-escort",
-      "full_name": "DevArtsLab/sesame-voice-escort",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Sesame Voice Escort",
-      "url": "https://github.com/DevArtsLab/sesame-voice-escort",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 35772,
-          "percentage": 74.2
-        },
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 11582,
-          "percentage": 24.02
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 856,
-          "percentage": 1.78
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 16,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-10-14T23:43:35Z",
-      "updated_at": "2026-10-19T03:18:33Z",
-      "pushed_at": "2026-10-14T23:43:39Z",
-      "image_url": "https://opengraph.githubassets.com/823d88b7cd80c2f9f4be4250539d229b7f90b830cc148fc747dd75500697ab6f/DevArtsLab/sesame-voice-escort"
     },
     {
       "name": "social-media-blog-api-spring-boot",
@@ -1831,14 +1995,14 @@
       "open_issues": 0,
       "size_kb": 859,
       "is_fork": true,
-      "is_archived": false,
+      "is_archived": true,
       "is_template": false,
       "forked_from": "City-Bureau/city-scrapers-minn",
       "default_branch": "master",
       "created_at": "2026-05-04T17:00:12Z",
-      "updated_at": "2026-10-07T23:38:33Z",
+      "updated_at": "2026-10-19T09:04:12Z",
       "pushed_at": "2026-10-11T22:57:01Z",
-      "image_url": "https://opengraph.githubassets.com/d8a4b3119c8c50db363a664d17e5bc02be4ab98d5a97e3f1e8158f4fe12b95f6/AmirhosseinOlyaei/city-scrapers-minn"
+      "image_url": "https://opengraph.githubassets.com/8aa948c8aee3a5885779922e533d1e77cd9c3604bcef65d6d5295815a1c2c8b8/AmirhosseinOlyaei/city-scrapers-minn"
     },
     {
       "name": "plate-stacking-app",
@@ -2266,48 +2430,6 @@
       "image_url": "https://opengraph.githubassets.com/6269c9a80010e6e52fce763f4112cdd75e3c8a2261b85667c27d1fc06c9bc3c8/DevArtsLab/devartslab-site"
     },
     {
-      "name": "tool-github-actions-audit",
-      "full_name": "DevArtsLab/tool-github-actions-audit",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Tool Github Actions Audit",
-      "description": "Interactive CLI auditor for GitHub Actions usage across a user or org account. Finds minute-eating forks and stale scheduled workflows, surfaces branches, events, and external effects, then selectively disables workflows or whole-repo Actions via the API - no commits, confirmation required for every change.",
-      "url": "https://github.com/DevArtsLab/tool-github-actions-audit",
-      "visibility": "public",
-      "category": "tool",
-      "featured": false,
-      "tags": [
-        "audit",
-        "cli",
-        "devops-tools",
-        "gh-cli",
-        "github-actions",
-        "python"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 40460,
-          "percentage": 100.0
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 42,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-10-10T03:22:19Z",
-      "updated_at": "2026-10-11T07:08:21Z",
-      "pushed_at": "2026-10-10T22:29:38Z",
-      "image_url": "https://opengraph.githubassets.com/2d364827390c3e2d57c4afc56edb5d8224c70d7d569f8533428a3fa25785a066/DevArtsLab/tool-github-actions-audit"
-    },
-    {
       "name": "AmirhosseinOlyaei-Portfolio",
       "full_name": "AmirhosseinOlyaei/AmirhosseinOlyaei-Portfolio",
       "owner": "AmirhosseinOlyaei",
@@ -2451,74 +2573,6 @@
       "updated_at": "2026-10-08T08:14:22Z",
       "pushed_at": "2026-10-08T08:14:13Z",
       "image_url": "https://opengraph.githubassets.com/f5b73b73b9135343be5a24e4d2d6aa5c74feb819543bf8e3037602d52572f338/AmirhosseinOlyaei/Precourse"
-    },
-    {
-      "name": "neuro-san-studio",
-      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Neuro San Studio",
-      "description": "A playground for neuro-san",
-      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
-      "homepage": "https://decisionai.ml/neuro-san",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 2878447,
-          "percentage": 97.15
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 30422,
-          "percentage": 1.03
-        },
-        {
-          "name": "Dockerfile",
-          "color": "#384d54",
-          "bytes": 26210,
-          "percentage": 0.88
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 14085,
-          "percentage": 0.48
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 9442,
-          "percentage": 0.32
-        },
-        {
-          "name": "Makefile",
-          "color": "#427819",
-          "bytes": 4261,
-          "percentage": 0.14
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 63955,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "cognizant-ai-lab/neuro-san-studio",
-      "default_branch": "main",
-      "created_at": "2026-09-29T10:30:56Z",
-      "updated_at": "2026-10-07T23:39:55Z",
-      "pushed_at": "2026-10-07T23:39:42Z",
-      "image_url": "https://opengraph.githubassets.com/6b548bb1fc5a1831203fc5b754d1ea0f435f1713f91274ddb3c4ffd653739d91/AmirhosseinOlyaei/neuro-san-studio"
     },
     {
       "name": "material-dashboard-react",
@@ -3154,7 +3208,7 @@
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
-      "default_branch": "CS-121-docs-platform-implementations",
+      "default_branch": "CS-121-docs-platform-implementation-phase-2",
       "created_at": "2026-08-24T19:30:05Z",
       "updated_at": "2026-10-07T23:15:04Z",
       "pushed_at": "2026-09-17T05:45:10Z",
