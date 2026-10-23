@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-23T11:32:08.015596Z",
+  "generated_at": "2026-10-23T17:00:40.035047Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -20,12 +20,52 @@
     "public": 123,
     "private": 0,
     "by_category": {
+      "project": 114,
       "tool": 5,
-      "org-infra": 4,
-      "project": 114
+      "org-infra": 4
     }
   },
   "repositories": [
+    {
+      "name": "sesame-link-runbook",
+      "full_name": "DevArtsLab/sesame-link-runbook",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Sesame Link Runbook",
+      "description": "Runbook for Sesame Link: install, sign-in, TLS-inspection fix (rustls vs Gateway), security posture, command reference, troubleshooting",
+      "url": "https://github.com/DevArtsLab/sesame-link-runbook",
+      "homepage": "https://link.sesame.com/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "claude-code",
+        "documentation",
+        "linux",
+        "macos",
+        "remote-access",
+        "runbook",
+        "sesame-ai",
+        "terminal",
+        "tmux",
+        "websocket"
+      ],
+      "languages": [],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 6,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-10-19T07:17:18Z",
+      "updated_at": "2026-10-23T14:32:30Z",
+      "pushed_at": "2026-10-23T14:32:25Z",
+      "image_url": "https://opengraph.githubassets.com/e64a728845b263cd6573111b01d9037b9653bc8bccea0eb0ceec92d17c038bad/DevArtsLab/sesame-link-runbook"
+    },
     {
       "name": "tool-github-export",
       "full_name": "DevArtsLab/tool-github-export",
@@ -66,15 +106,15 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 158,
+      "size_kb": 159,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-23T04:41:09Z",
-      "pushed_at": "2026-10-23T04:41:05Z",
-      "image_url": "https://opengraph.githubassets.com/786064d24191423a9123e123c0f6e2bd9bb58523ae7b3050fe48ea7ead6659ab/DevArtsLab/tool-github-export"
+      "updated_at": "2026-10-23T11:32:13Z",
+      "pushed_at": "2026-10-23T11:32:09Z",
+      "image_url": "https://opengraph.githubassets.com/c04b639e72801020bc5bb3594abfd34a8ddbe8635197a8c7e74bce0fa7af4aee/DevArtsLab/tool-github-export"
     },
     {
       "name": "devartslab-foundation",
@@ -391,46 +431,6 @@
       "updated_at": "2026-10-19T07:36:36Z",
       "pushed_at": "2026-10-19T07:30:54Z",
       "image_url": "https://opengraph.githubassets.com/3144d9a49f4ae8eb901febbbfb4907dbcc7b588875ed131d7b946228ab4d00fe/DevArtsLab/sesame-voice-escort"
-    },
-    {
-      "name": "sesame-link-runbook",
-      "full_name": "DevArtsLab/sesame-link-runbook",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Sesame Link Runbook",
-      "description": "Runbook for Sesame Link: install, sign-in, TLS-inspection fix (rustls vs Gateway), security posture, command reference, troubleshooting",
-      "url": "https://github.com/DevArtsLab/sesame-link-runbook",
-      "homepage": "https://link.sesame.com/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "claude-code",
-        "documentation",
-        "linux",
-        "macos",
-        "remote-access",
-        "runbook",
-        "sesame-ai",
-        "terminal",
-        "tmux",
-        "websocket"
-      ],
-      "languages": [],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 3,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-10-19T07:17:18Z",
-      "updated_at": "2026-10-19T07:36:36Z",
-      "pushed_at": "2026-10-19T07:17:22Z",
-      "image_url": "https://opengraph.githubassets.com/3144d9a49f4ae8eb901febbbfb4907dbcc7b588875ed131d7b946228ab4d00fe/DevArtsLab/sesame-link-runbook"
     },
     {
       "name": "PlayItForward-Node",
