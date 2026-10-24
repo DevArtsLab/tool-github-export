@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-24T10:52:11.141515Z",
+  "generated_at": "2026-10-24T15:51:54.201010Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -72,9 +72,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-24T04:29:36Z",
-      "pushed_at": "2026-10-24T04:29:32Z",
-      "image_url": "https://opengraph.githubassets.com/6df0676fdb2c551afc7019d6f092f7f23c103dd26ae53f8d39623224dde286d6/DevArtsLab/tool-github-export"
+      "updated_at": "2026-10-24T10:52:16Z",
+      "pushed_at": "2026-10-24T10:52:12Z",
+      "image_url": "https://opengraph.githubassets.com/8f66e3e142d361458279d7f31b396f187421199fe30a8f526d5d06045fa1d45e/DevArtsLab/tool-github-export"
     },
     {
       "name": "sesame-link-runbook",
