@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-24T20:43:16.707430Z",
+  "generated_at": "2026-10-25T04:33:41.585706Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -20,12 +20,80 @@
     "public": 123,
     "private": 0,
     "by_category": {
-      "tool": 5,
       "project": 114,
+      "tool": 5,
       "org-infra": 4
     }
   },
   "repositories": [
+    {
+      "name": "neuro-san-studio",
+      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Neuro San Studio",
+      "description": "A playground for neuro-san",
+      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
+      "homepage": "https://decisionai.ml/neuro-san",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 3056507,
+          "percentage": 97.29
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 30422,
+          "percentage": 0.97
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54",
+          "bytes": 26210,
+          "percentage": 0.83
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 14085,
+          "percentage": 0.45
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 9442,
+          "percentage": 0.3
+        },
+        {
+          "name": "Makefile",
+          "color": "#427819",
+          "bytes": 5090,
+          "percentage": 0.16
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 64085,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "cognizant-ai-lab/neuro-san-studio",
+      "default_branch": "main",
+      "created_at": "2026-09-29T10:30:56Z",
+      "updated_at": "2026-10-25T00:47:20Z",
+      "pushed_at": "2026-10-25T00:47:13Z",
+      "image_url": "https://opengraph.githubassets.com/f2a57d2ca17622d1d35b979606aa1dfd4801d73832fe2086c09d998ae30efc4d/AmirhosseinOlyaei/neuro-san-studio"
+    },
     {
       "name": "tool-github-export",
       "full_name": "DevArtsLab/tool-github-export",
@@ -66,15 +134,15 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 163,
+      "size_kb": 164,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-24T15:52:00Z",
-      "pushed_at": "2026-10-24T15:51:55Z",
-      "image_url": "https://opengraph.githubassets.com/fb6623694786133b464151628342a32e5e4560fe260f26a76506c9bb113679ed/DevArtsLab/tool-github-export"
+      "updated_at": "2026-10-24T20:43:21Z",
+      "pushed_at": "2026-10-24T20:43:18Z",
+      "image_url": "https://opengraph.githubassets.com/989ed26fc07207b901130f250bc15d33b7f061e390c608e1e30ffa1d63c4f996/DevArtsLab/tool-github-export"
     },
     {
       "name": "sesame-link-runbook",
@@ -122,13 +190,14 @@
       "owner": "DevArtsLab",
       "owner_type": "Organization",
       "display_name": "Devartslab Foundation",
+      "description": "Research base and architectural charter for every DevArts Lab repository and client application: Cloudflare-native in production, local-first in development, agent-orchestrated across the delivery lifecycle. Documentation only.",
       "url": "https://github.com/DevArtsLab/devartslab-foundation",
       "visibility": "public",
       "category": "org-infra",
       "featured": false,
       "tags": [],
       "languages": [],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -138,9 +207,9 @@
       "is_template": false,
       "default_branch": "master",
       "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-10-22T02:52:52Z",
+      "updated_at": "2026-10-24T22:46:24Z",
       "pushed_at": "2026-10-22T02:50:34Z",
-      "image_url": "https://opengraph.githubassets.com/4078aa39fcf093c6faccaf9bb07bae86c0419a7f246fad6c269513885c9ee606/DevArtsLab/devartslab-foundation"
+      "image_url": "https://opengraph.githubassets.com/91cf63e1dffefc992dd12e58ccb75dfcb638209d7e2b32161231817e506ad92c/DevArtsLab/devartslab-foundation"
     },
     {
       "name": "tool-universal-ai-config",
@@ -260,74 +329,6 @@
       "updated_at": "2026-10-19T13:19:06Z",
       "pushed_at": "2026-10-19T13:19:01Z",
       "image_url": "https://opengraph.githubassets.com/eabb8ca8667b808dd6ec3e98ccbcd34b945ca82c444a69b50fad44ad3b06d11c/DevArtsLab/ai-starter-kits"
-    },
-    {
-      "name": "neuro-san-studio",
-      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Neuro San Studio",
-      "description": "A playground for neuro-san",
-      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
-      "homepage": "https://decisionai.ml/neuro-san",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 2947060,
-          "percentage": 97.22
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 30422,
-          "percentage": 1.0
-        },
-        {
-          "name": "Dockerfile",
-          "color": "#384d54",
-          "bytes": 26210,
-          "percentage": 0.86
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 14085,
-          "percentage": 0.46
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 9442,
-          "percentage": 0.31
-        },
-        {
-          "name": "Makefile",
-          "color": "#427819",
-          "bytes": 4261,
-          "percentage": 0.14
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 64141,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "cognizant-ai-lab/neuro-san-studio",
-      "default_branch": "main",
-      "created_at": "2026-09-29T10:30:56Z",
-      "updated_at": "2026-10-19T08:48:00Z",
-      "pushed_at": "2026-10-19T08:47:52Z",
-      "image_url": "https://opengraph.githubassets.com/372a5da936b5672d89698cd7347e9300ff29b3088b80e7eba92905660a396b7d/AmirhosseinOlyaei/neuro-san-studio"
     },
     {
       "name": "tool-github-actions-audit",
