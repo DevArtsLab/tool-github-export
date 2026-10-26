@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-26T12:51:26.107385Z",
+  "generated_at": "2026-10-26T22:37:16.818729Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -20,12 +20,181 @@
     "public": 123,
     "private": 0,
     "by_category": {
+      "tool": 5,
       "project": 114,
-      "org-infra": 4,
-      "tool": 5
+      "org-infra": 4
     }
   },
   "repositories": [
+    {
+      "name": "tool-universal-ai-config",
+      "full_name": "DevArtsLab/tool-universal-ai-config",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Tool Universal Ai Config",
+      "description": "Unified configuration management for AI agents across multiple providers",
+      "url": "https://github.com/DevArtsLab/tool-universal-ai-config",
+      "homepage": "https://pypi.org/project/universal-ai-config",
+      "visibility": "public",
+      "category": "tool",
+      "featured": false,
+      "tags": [
+        "ai",
+        "ai-agents",
+        "claude",
+        "configuration",
+        "developer-tools",
+        "devin",
+        "mcp",
+        "python",
+        "tool",
+        "windsurf"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 114367,
+          "percentage": 87.41
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 16467,
+          "percentage": 12.59
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 256,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-08-08T00:59:11Z",
+      "updated_at": "2026-10-07T09:38:45Z",
+      "pushed_at": "2026-10-26T21:19:50Z",
+      "latest_release": {
+        "tag": "v0.2.1",
+        "published_at": "2026-10-05T22:18:45Z"
+      },
+      "image_url": "https://opengraph.githubassets.com/5bc2ecb67a8589f1c9a1675a1673556e0612c320c1435f7b8f0fe21bccfe9a1e/DevArtsLab/tool-universal-ai-config"
+    },
+    {
+      "name": "ai-starter-kits",
+      "full_name": "DevArtsLab/ai-starter-kits",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Ai Starter Kits",
+      "description": "StarterKit Radar \u2014 a static dashboard for comparing AI starter kits: scored on time-to-hello-world, stack coverage, difficulty, maturity, docs quality and cost. Metrics auto-refresh weekly from the GitHub API.",
+      "url": "https://github.com/DevArtsLab/ai-starter-kits",
+      "homepage": "https://devartslab.github.io/ai-starter-kits/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "ai-starter-kits",
+        "dashboard",
+        "developer-tools",
+        "echarts",
+        "github-actions",
+        "github-pages",
+        "llm",
+        "rag",
+        "starter-template",
+        "static-site",
+        "vanilla-javascript"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 84129,
+          "percentage": 67.52
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 23852,
+          "percentage": 19.14
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 16619,
+          "percentage": 13.34
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 1929,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "development",
+      "created_at": "2026-09-22T02:15:04Z",
+      "updated_at": "2026-10-26T13:05:49Z",
+      "pushed_at": "2026-10-26T13:05:45Z",
+      "image_url": "https://opengraph.githubassets.com/cab8303334818ef3ae38cad6bbc657b98c034596703cdaf502047c21470185ba/DevArtsLab/ai-starter-kits"
+    },
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 34728,
+          "percentage": 62.09
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 21201,
+          "percentage": 37.91
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 171,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-10-26T12:51:31Z",
+      "pushed_at": "2026-10-26T12:51:27Z",
+      "image_url": "https://opengraph.githubassets.com/b0af08b352ac7c45ea1a88bcdc874ce4b74cf9f692432acd391b59dbf5bb48cc/DevArtsLab/tool-github-export"
+    },
     {
       "name": "sesame-link-runbook",
       "full_name": "DevArtsLab/sesame-link-runbook",
@@ -188,56 +357,6 @@
       "image_url": "https://opengraph.githubassets.com/424151d6cbb9be6e072909f25a1d0480799f667fb34fc9c392430169c63b7fea/AmirhosseinOlyaei/c-track"
     },
     {
-      "name": "tool-github-export",
-      "full_name": "DevArtsLab/tool-github-export",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "GitHub Export",
-      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
-      "url": "https://github.com/DevArtsLab/tool-github-export",
-      "visibility": "public",
-      "category": "tool",
-      "featured": true,
-      "tags": [
-        "cli",
-        "developer-tools",
-        "github-api",
-        "graphql",
-        "json",
-        "python",
-        "tool"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 34728,
-          "percentage": 62.09
-        },
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 21201,
-          "percentage": 37.91
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 169,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-26T04:39:02Z",
-      "pushed_at": "2026-10-26T04:38:58Z",
-      "image_url": "https://opengraph.githubassets.com/2422dcb84a140a82a0c4f551b1ff4376902e22aa5f3155ee0e6aa383fe34ffa7/DevArtsLab/tool-github-export"
-    },
-    {
       "name": "tool-readme-links",
       "full_name": "DevArtsLab/tool-readme-links",
       "owner": "DevArtsLab",
@@ -394,125 +513,6 @@
       "updated_at": "2026-10-25T00:47:20Z",
       "pushed_at": "2026-10-25T00:47:13Z",
       "image_url": "https://opengraph.githubassets.com/f2a57d2ca17622d1d35b979606aa1dfd4801d73832fe2086c09d998ae30efc4d/AmirhosseinOlyaei/neuro-san-studio"
-    },
-    {
-      "name": "tool-universal-ai-config",
-      "full_name": "DevArtsLab/tool-universal-ai-config",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Tool Universal Ai Config",
-      "description": "Unified configuration management for AI agents across multiple providers",
-      "url": "https://github.com/DevArtsLab/tool-universal-ai-config",
-      "homepage": "https://pypi.org/project/universal-ai-config",
-      "visibility": "public",
-      "category": "tool",
-      "featured": false,
-      "tags": [
-        "ai",
-        "ai-agents",
-        "claude",
-        "configuration",
-        "developer-tools",
-        "devin",
-        "mcp",
-        "python",
-        "tool",
-        "windsurf"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 114367,
-          "percentage": 87.41
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 16467,
-          "percentage": 12.59
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 244,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-08-08T00:59:11Z",
-      "updated_at": "2026-10-07T09:38:45Z",
-      "pushed_at": "2026-10-19T13:37:03Z",
-      "latest_release": {
-        "tag": "v0.2.1",
-        "published_at": "2026-10-05T22:18:45Z"
-      },
-      "image_url": "https://opengraph.githubassets.com/5bc2ecb67a8589f1c9a1675a1673556e0612c320c1435f7b8f0fe21bccfe9a1e/DevArtsLab/tool-universal-ai-config"
-    },
-    {
-      "name": "ai-starter-kits",
-      "full_name": "DevArtsLab/ai-starter-kits",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Ai Starter Kits",
-      "description": "StarterKit Radar \u2014 a static dashboard for comparing AI starter kits: scored on time-to-hello-world, stack coverage, difficulty, maturity, docs quality and cost. Metrics auto-refresh weekly from the GitHub API.",
-      "url": "https://github.com/DevArtsLab/ai-starter-kits",
-      "homepage": "https://devartslab.github.io/ai-starter-kits/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "ai-starter-kits",
-        "dashboard",
-        "developer-tools",
-        "echarts",
-        "github-actions",
-        "github-pages",
-        "llm",
-        "rag",
-        "starter-template",
-        "static-site",
-        "vanilla-javascript"
-      ],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 84131,
-          "percentage": 67.52
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 23852,
-          "percentage": 19.14
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 16619,
-          "percentage": 13.34
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 1927,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "development",
-      "created_at": "2026-09-22T02:15:04Z",
-      "updated_at": "2026-10-19T13:19:06Z",
-      "pushed_at": "2026-10-19T13:19:01Z",
-      "image_url": "https://opengraph.githubassets.com/eabb8ca8667b808dd6ec3e98ccbcd34b945ca82c444a69b50fad44ad3b06d11c/DevArtsLab/ai-starter-kits"
     },
     {
       "name": "tool-github-actions-audit",
@@ -3248,7 +3248,7 @@
       "stars": 1,
       "forks": 0,
       "watchers": 0,
-      "open_issues": 0,
+      "open_issues": 1,
       "size_kb": 1646,
       "is_fork": false,
       "is_archived": false,
