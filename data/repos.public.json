@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-27T04:56:53.506729Z",
+  "generated_at": "2026-10-27T17:56:40.117685Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -16,12 +16,12 @@
     }
   ],
   "stats": {
-    "total": 124,
-    "public": 124,
+    "total": 125,
+    "public": 125,
     "private": 0,
     "by_category": {
       "tool": 6,
-      "project": 114,
+      "project": 115,
       "org-infra": 4
     }
   },
@@ -70,19 +70,97 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 256,
+      "size_kb": 431,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-08-08T00:59:11Z",
       "updated_at": "2026-10-07T09:38:45Z",
-      "pushed_at": "2026-10-27T04:25:30Z",
+      "pushed_at": "2026-10-27T17:47:50Z",
       "latest_release": {
         "tag": "v0.2.1",
         "published_at": "2026-10-05T22:18:45Z"
       },
       "image_url": "https://opengraph.githubassets.com/5bc2ecb67a8589f1c9a1675a1673556e0612c320c1435f7b8f0fe21bccfe9a1e/DevArtsLab/tool-universal-ai-config"
+    },
+    {
+      "name": "agent-skills",
+      "full_name": "DevArtsLab/agent-skills",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Agent Skills",
+      "description": "DevArts Lab agent skill library - SKILL.md skills for AI coding assistants",
+      "url": "https://github.com/DevArtsLab/agent-skills",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "languages": [],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 83,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-27T06:33:40Z",
+      "updated_at": "2026-10-27T06:55:38Z",
+      "pushed_at": "2026-10-27T06:48:07Z",
+      "image_url": "https://opengraph.githubassets.com/a7a81362b8531dbe7a3ba726c9f82d68624906bf66a8820ee09061195ab20f39/DevArtsLab/agent-skills"
+    },
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 34728,
+          "percentage": 62.09
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 21201,
+          "percentage": 37.91
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 173,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-10-27T04:56:58Z",
+      "pushed_at": "2026-10-27T04:56:55Z",
+      "image_url": "https://opengraph.githubassets.com/106239db47c1d4f82908cd7880db4f0855c05c82b878e46bed835476fe342452/DevArtsLab/tool-github-export"
     },
     {
       "name": "tool-pnpm-fleet",
@@ -210,56 +288,6 @@
       "updated_at": "2026-10-27T01:38:50Z",
       "pushed_at": "2026-10-27T01:38:47Z",
       "image_url": "https://opengraph.githubassets.com/213bd82651c85b42640b96e96a267d873279656c03de5ee3d9486b75a4961289/DevArtsLab/devartslab-foundation"
-    },
-    {
-      "name": "tool-github-export",
-      "full_name": "DevArtsLab/tool-github-export",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "GitHub Export",
-      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
-      "url": "https://github.com/DevArtsLab/tool-github-export",
-      "visibility": "public",
-      "category": "tool",
-      "featured": true,
-      "tags": [
-        "cli",
-        "developer-tools",
-        "github-api",
-        "graphql",
-        "json",
-        "python",
-        "tool"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 34728,
-          "percentage": 62.09
-        },
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 21201,
-          "percentage": 37.91
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 172,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-26T22:37:22Z",
-      "pushed_at": "2026-10-26T22:37:18Z",
-      "image_url": "https://opengraph.githubassets.com/3befacea554ebc4d4e70cbc4b760a71c954d8706bfcbe612a221cb199e730cad/DevArtsLab/tool-github-export"
     },
     {
       "name": "ai-starter-kits",
