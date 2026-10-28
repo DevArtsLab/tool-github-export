@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-27T22:08:38.874588Z",
+  "generated_at": "2026-10-28T05:31:51.281687Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -20,12 +20,39 @@
     "public": 125,
     "private": 0,
     "by_category": {
+      "org-infra": 4,
       "tool": 6,
-      "project": 115,
-      "org-infra": 4
+      "project": 115
     }
   },
   "repositories": [
+    {
+      "name": "devartslab-foundation",
+      "full_name": "DevArtsLab/devartslab-foundation",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Devartslab Foundation",
+      "description": "Research base and architectural charter for every DevArts Lab repository and client application: Cloudflare-native in production, local-first in development, agent-orchestrated across the delivery lifecycle. Documentation only.",
+      "url": "https://github.com/DevArtsLab/devartslab-foundation",
+      "visibility": "public",
+      "category": "org-infra",
+      "featured": false,
+      "tags": [],
+      "languages": [],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 127,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-10-22T02:50:30Z",
+      "updated_at": "2026-10-28T00:29:28Z",
+      "pushed_at": "2026-10-28T00:29:25Z",
+      "image_url": "https://opengraph.githubassets.com/99ddd27dec7d69091e4cc2138e18006c2127c4cfaae5925bab70b0d1786b899c/DevArtsLab/devartslab-foundation"
+    },
     {
       "name": "tool-universal-ai-config",
       "full_name": "DevArtsLab/tool-universal-ai-config",
@@ -70,19 +97,127 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 530,
+      "size_kb": 511,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-08-08T00:59:11Z",
       "updated_at": "2026-10-07T09:38:45Z",
-      "pushed_at": "2026-10-27T20:42:31Z",
+      "pushed_at": "2026-10-28T00:16:05Z",
       "latest_release": {
         "tag": "v0.2.1",
         "published_at": "2026-10-05T22:18:45Z"
       },
       "image_url": "https://opengraph.githubassets.com/5bc2ecb67a8589f1c9a1675a1673556e0612c320c1435f7b8f0fe21bccfe9a1e/DevArtsLab/tool-universal-ai-config"
+    },
+    {
+      "name": "sesame-link-runbook",
+      "full_name": "DevArtsLab/sesame-link-runbook",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Sesame Link Runbook",
+      "description": "Runbook + bridge for Sesame Link: install, sign-in, TLS-inspection fix (rustls vs Gateway), security posture, and a Pi-slot adapter that routes Link sessions to Devin Local over ACP",
+      "url": "https://github.com/DevArtsLab/sesame-link-runbook",
+      "homepage": "https://link.sesame.com/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "acp",
+        "agent-client-protocol",
+        "ai-agents",
+        "claude-code",
+        "devin",
+        "documentation",
+        "linux",
+        "macos",
+        "remote-access",
+        "runbook",
+        "sesame-ai",
+        "terminal",
+        "tmux",
+        "websocket"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 39549,
+          "percentage": 94.11
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 2476,
+          "percentage": 5.89
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 55,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-10-19T07:17:18Z",
+      "updated_at": "2026-10-28T00:06:55Z",
+      "pushed_at": "2026-10-28T00:06:51Z",
+      "image_url": "https://opengraph.githubassets.com/a0a82ab2c49f26aab5055c96725ca5ba80d84820b9f6079b5324c192d62f78ce/DevArtsLab/sesame-link-runbook"
+    },
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 34728,
+          "percentage": 62.09
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 21201,
+          "percentage": 37.91
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 176,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-10-27T22:08:44Z",
+      "pushed_at": "2026-10-27T22:08:40Z",
+      "image_url": "https://opengraph.githubassets.com/0bac2beefdb1cc2573dc465be6918deadc5c4f3656e1ecf0579b9ac4588a5b7b/DevArtsLab/tool-github-export"
     },
     {
       "name": "algorithms-ctd",
@@ -135,56 +270,6 @@
       "updated_at": "2026-10-27T19:24:11Z",
       "pushed_at": "2026-10-27T19:24:07Z",
       "image_url": "https://opengraph.githubassets.com/7e01e7e8b17d896dbe2afd0a5511844199e0047b8a7778e43aa1436f7d351592/AmirhosseinOlyaei/algorithms-ctd"
-    },
-    {
-      "name": "tool-github-export",
-      "full_name": "DevArtsLab/tool-github-export",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "GitHub Export",
-      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
-      "url": "https://github.com/DevArtsLab/tool-github-export",
-      "visibility": "public",
-      "category": "tool",
-      "featured": true,
-      "tags": [
-        "cli",
-        "developer-tools",
-        "github-api",
-        "graphql",
-        "json",
-        "python",
-        "tool"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 34728,
-          "percentage": 62.09
-        },
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 21201,
-          "percentage": 37.91
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 175,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-27T17:56:47Z",
-      "pushed_at": "2026-10-27T17:56:42Z",
-      "image_url": "https://opengraph.githubassets.com/0df3a1211cfdb4ef16225ec4d15072fe01483edec1ade278e27c8e5ff96e571d/DevArtsLab/tool-github-export"
     },
     {
       "name": "agent-skills",
@@ -255,91 +340,6 @@
       "updated_at": "2026-10-27T03:07:14Z",
       "pushed_at": "2026-10-27T03:06:01Z",
       "image_url": "https://opengraph.githubassets.com/dbdebb3dab86894cecdac0cf6005dd4a7efe9217fe61f3b5ac002744baed0d2b/DevArtsLab/tool-pnpm-fleet"
-    },
-    {
-      "name": "sesame-link-runbook",
-      "full_name": "DevArtsLab/sesame-link-runbook",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Sesame Link Runbook",
-      "description": "Runbook + bridge for Sesame Link: install, sign-in, TLS-inspection fix (rustls vs Gateway), security posture, and a Pi-slot adapter that routes Link sessions to Devin Local over ACP",
-      "url": "https://github.com/DevArtsLab/sesame-link-runbook",
-      "homepage": "https://link.sesame.com/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "acp",
-        "agent-client-protocol",
-        "ai-agents",
-        "claude-code",
-        "devin",
-        "documentation",
-        "linux",
-        "macos",
-        "remote-access",
-        "runbook",
-        "sesame-ai",
-        "terminal",
-        "tmux",
-        "websocket"
-      ],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 38613,
-          "percentage": 94.63
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 2190,
-          "percentage": 5.37
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 54,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-10-19T07:17:18Z",
-      "updated_at": "2026-10-27T02:56:30Z",
-      "pushed_at": "2026-10-27T02:56:26Z",
-      "image_url": "https://opengraph.githubassets.com/d20fa29cd4a36d7ba41be14c707d0ee9e30ff4b3cc926a072f636bcee727a9ed/DevArtsLab/sesame-link-runbook"
-    },
-    {
-      "name": "devartslab-foundation",
-      "full_name": "DevArtsLab/devartslab-foundation",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Devartslab Foundation",
-      "description": "Research base and architectural charter for every DevArts Lab repository and client application: Cloudflare-native in production, local-first in development, agent-orchestrated across the delivery lifecycle. Documentation only.",
-      "url": "https://github.com/DevArtsLab/devartslab-foundation",
-      "visibility": "public",
-      "category": "org-infra",
-      "featured": false,
-      "tags": [],
-      "languages": [],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 115,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-10-27T01:38:50Z",
-      "pushed_at": "2026-10-27T01:38:47Z",
-      "image_url": "https://opengraph.githubassets.com/213bd82651c85b42640b96e96a267d873279656c03de5ee3d9486b75a4961289/DevArtsLab/devartslab-foundation"
     },
     {
       "name": "ai-starter-kits",
