@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-29T05:40:13.072552Z",
+  "generated_at": "2026-10-29T12:54:20.243444Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -27,6 +27,95 @@
   },
   "repositories": [
     {
+      "name": "ai-starter-kits",
+      "full_name": "DevArtsLab/ai-starter-kits",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Ai Starter Kits",
+      "description": "StarterKit Radar \u2014 a static dashboard for comparing AI starter kits: scored on time-to-hello-world, stack coverage, difficulty, maturity, docs quality and cost. Metrics auto-refresh weekly from the GitHub API.",
+      "url": "https://github.com/DevArtsLab/ai-starter-kits",
+      "homepage": "https://devartslab.github.io/ai-starter-kits/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "ai-starter-kits",
+        "dashboard",
+        "developer-tools",
+        "echarts",
+        "github-actions",
+        "github-pages",
+        "llm",
+        "rag",
+        "starter-template",
+        "static-site",
+        "vanilla-javascript"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 84129,
+          "percentage": 67.52
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 23852,
+          "percentage": 19.14
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 16619,
+          "percentage": 13.34
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 1934,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "development",
+      "created_at": "2026-09-22T02:15:04Z",
+      "updated_at": "2026-10-29T11:08:31Z",
+      "pushed_at": "2026-10-29T11:08:26Z",
+      "image_url": "https://opengraph.githubassets.com/040bf144c8d764e8da7d319a2f1ea936b9c5198f2e74a88a2a889e62498fb64c/DevArtsLab/ai-starter-kits"
+    },
+    {
+      "name": "agent-skills",
+      "full_name": "DevArtsLab/agent-skills",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Agent Skills",
+      "description": "DevArts Lab agent skill library - SKILL.md skills for AI coding assistants",
+      "url": "https://github.com/DevArtsLab/agent-skills",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "languages": [],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 97,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-27T06:33:40Z",
+      "updated_at": "2026-10-29T10:47:21Z",
+      "pushed_at": "2026-10-29T10:47:18Z",
+      "image_url": "https://opengraph.githubassets.com/727de027569e0a626b411da378a0ea73ad3c32f5e3130a0706d804b4e135f810/DevArtsLab/agent-skills"
+    },
+    {
       "name": "virtual-screener-ai-drug-discovery",
       "full_name": "DevArtsLab/virtual-screener-ai-drug-discovery",
       "owner": "DevArtsLab",
@@ -34,7 +123,7 @@
       "display_name": "Virtual Screener Ai Drug Discovery",
       "description": "AI-powered virtual screening platform: 3-tier ML + physics pipeline for drug discovery binding affinity prediction",
       "url": "https://github.com/DevArtsLab/virtual-screener-ai-drug-discovery",
-      "homepage": "https://devartslab-virtualscreener.hf.space/",
+      "homepage": "https://amirolyaei-virtualscreener.hf.space/",
       "visibility": "public",
       "category": "project",
       "featured": false,
@@ -59,53 +148,53 @@
         {
           "name": "Python",
           "color": "#3572A5",
-          "bytes": 55911,
-          "percentage": 48.8
+          "bytes": 63342,
+          "percentage": 51.92
         },
         {
           "name": "TypeScript",
           "color": "#3178c6",
           "bytes": 51481,
-          "percentage": 44.94
+          "percentage": 42.2
         },
         {
           "name": "CSS",
           "color": "#663399",
           "bytes": 3476,
-          "percentage": 3.03
+          "percentage": 2.85
         },
         {
           "name": "Dockerfile",
           "color": "#384d54",
           "bytes": 2032,
-          "percentage": 1.77
+          "percentage": 1.67
         },
         {
           "name": "JavaScript",
           "color": "#f1e05a",
           "bytes": 1306,
-          "percentage": 1.14
+          "percentage": 1.07
         },
         {
           "name": "HTML",
           "color": "#e34c26",
           "bytes": 360,
-          "percentage": 0.31
+          "percentage": 0.3
         }
       ],
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 832,
+      "size_kb": 1114,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-05-08T03:59:07Z",
-      "updated_at": "2026-10-29T04:57:24Z",
-      "pushed_at": "2026-10-29T04:57:20Z",
-      "image_url": "https://opengraph.githubassets.com/e415c7db981679785e857dd7ff4309fce6f594683c58547e6111439a5a08354e/DevArtsLab/virtual-screener-ai-drug-discovery"
+      "updated_at": "2026-10-29T09:04:38Z",
+      "pushed_at": "2026-10-29T09:04:34Z",
+      "image_url": "https://opengraph.githubassets.com/7114f4412c4b469ef3e50c4b3760ccf9ebeb42275f90f101f4927886a30bb5b5/DevArtsLab/virtual-screener-ai-drug-discovery"
     },
     {
       "name": "devartslab-foundation",
@@ -124,15 +213,133 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 241,
+      "size_kb": 245,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "master",
       "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-10-29T02:46:37Z",
-      "pushed_at": "2026-10-29T02:46:33Z",
-      "image_url": "https://opengraph.githubassets.com/525f5dfc2512b4f268de0c9bccf4e2e779636412fec954190f1a1ec685ef67e4/DevArtsLab/devartslab-foundation"
+      "updated_at": "2026-10-29T08:59:26Z",
+      "pushed_at": "2026-10-29T08:59:21Z",
+      "image_url": "https://opengraph.githubassets.com/d7070744b8dda3e171dfca68872890a2ea066a32f190c61ced802505a3accdc8/DevArtsLab/devartslab-foundation"
+    },
+    {
+      "name": "neuro-san-studio",
+      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
+      "owner": "AmirhosseinOlyaei",
+      "owner_type": "User",
+      "display_name": "Neuro San Studio",
+      "description": "A playground for neuro-san",
+      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
+      "homepage": "https://decisionai.ml/neuro-san",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 3390445,
+          "percentage": 97.55
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 30422,
+          "percentage": 0.88
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54",
+          "bytes": 26244,
+          "percentage": 0.76
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 14085,
+          "percentage": 0.41
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 9442,
+          "percentage": 0.27
+        },
+        {
+          "name": "Makefile",
+          "color": "#427819",
+          "bytes": 5090,
+          "percentage": 0.15
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 64507,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "cognizant-ai-lab/neuro-san-studio",
+      "default_branch": "main",
+      "created_at": "2026-09-29T10:30:56Z",
+      "updated_at": "2026-10-29T05:57:26Z",
+      "pushed_at": "2026-10-29T05:57:15Z",
+      "image_url": "https://opengraph.githubassets.com/44d452db5a6824d45c1b2195e10cba0ec1d40eaaf7ecb8b122e5853539a48773/AmirhosseinOlyaei/neuro-san-studio"
+    },
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 34728,
+          "percentage": 62.09
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 21201,
+          "percentage": 37.91
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 181,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-10-29T05:40:18Z",
+      "pushed_at": "2026-10-29T05:40:14Z",
+      "image_url": "https://opengraph.githubassets.com/97f883e023360524344c63918036af1ea69bd273ab53adf9dd5a19daac6621e9/DevArtsLab/tool-github-export"
     },
     {
       "name": "devartslab-durable-state",
@@ -175,84 +382,6 @@
       "updated_at": "2026-10-29T01:57:03Z",
       "pushed_at": "2026-10-29T01:56:58Z",
       "image_url": "https://opengraph.githubassets.com/a4033cc1190e9f69c426abf5561a60d97abb34e55e51afac946672a31003cf8d/DevArtsLab/devartslab-durable-state"
-    },
-    {
-      "name": "agent-skills",
-      "full_name": "DevArtsLab/agent-skills",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Agent Skills",
-      "description": "DevArts Lab agent skill library - SKILL.md skills for AI coding assistants",
-      "url": "https://github.com/DevArtsLab/agent-skills",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "languages": [],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 95,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-27T06:33:40Z",
-      "updated_at": "2026-10-29T00:40:25Z",
-      "pushed_at": "2026-10-29T00:40:21Z",
-      "image_url": "https://opengraph.githubassets.com/74da9f5e92b3f8e4f3ebbac66fea796d6f082860f7350963f272f2c7da3ecde3/DevArtsLab/agent-skills"
-    },
-    {
-      "name": "tool-github-export",
-      "full_name": "DevArtsLab/tool-github-export",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "GitHub Export",
-      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
-      "url": "https://github.com/DevArtsLab/tool-github-export",
-      "visibility": "public",
-      "category": "tool",
-      "featured": true,
-      "tags": [
-        "cli",
-        "developer-tools",
-        "github-api",
-        "graphql",
-        "json",
-        "python",
-        "tool"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 34728,
-          "percentage": 62.09
-        },
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 21201,
-          "percentage": 37.91
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 179,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-10-28T22:31:12Z",
-      "pushed_at": "2026-10-28T22:31:08Z",
-      "image_url": "https://opengraph.githubassets.com/7bf4474ebba04b800bfdcfb0133fc627a4968605878ded94d3ea25400431ce76/DevArtsLab/tool-github-export"
     },
     {
       "name": "tool-github-actions-audit",
@@ -507,67 +636,6 @@
       "image_url": "https://opengraph.githubassets.com/dbdebb3dab86894cecdac0cf6005dd4a7efe9217fe61f3b5ac002744baed0d2b/DevArtsLab/tool-pnpm-fleet"
     },
     {
-      "name": "ai-starter-kits",
-      "full_name": "DevArtsLab/ai-starter-kits",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Ai Starter Kits",
-      "description": "StarterKit Radar \u2014 a static dashboard for comparing AI starter kits: scored on time-to-hello-world, stack coverage, difficulty, maturity, docs quality and cost. Metrics auto-refresh weekly from the GitHub API.",
-      "url": "https://github.com/DevArtsLab/ai-starter-kits",
-      "homepage": "https://devartslab.github.io/ai-starter-kits/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "ai-starter-kits",
-        "dashboard",
-        "developer-tools",
-        "echarts",
-        "github-actions",
-        "github-pages",
-        "llm",
-        "rag",
-        "starter-template",
-        "static-site",
-        "vanilla-javascript"
-      ],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 84129,
-          "percentage": 67.52
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 23852,
-          "percentage": 19.14
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 16619,
-          "percentage": 13.34
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 1929,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "development",
-      "created_at": "2026-09-22T02:15:04Z",
-      "updated_at": "2026-10-26T13:05:49Z",
-      "pushed_at": "2026-10-26T13:05:45Z",
-      "image_url": "https://opengraph.githubassets.com/cab8303334818ef3ae38cad6bbc657b98c034596703cdaf502047c21470185ba/DevArtsLab/ai-starter-kits"
-    },
-    {
       "name": "devarts-business",
       "full_name": "DevArtsLab/devarts-business",
       "owner": "DevArtsLab",
@@ -732,74 +800,6 @@
       "updated_at": "2026-10-26T00:01:19Z",
       "pushed_at": "2026-10-26T00:01:15Z",
       "image_url": "https://opengraph.githubassets.com/82ba720c72dfd7b879424938cf8e65d07b1bbd81e047f42724ed67a2f80ef85f/AmirhosseinOlyaei/social-media-blog-api-spring-boot"
-    },
-    {
-      "name": "neuro-san-studio",
-      "full_name": "AmirhosseinOlyaei/neuro-san-studio",
-      "owner": "AmirhosseinOlyaei",
-      "owner_type": "User",
-      "display_name": "Neuro San Studio",
-      "description": "A playground for neuro-san",
-      "url": "https://github.com/AmirhosseinOlyaei/neuro-san-studio",
-      "homepage": "https://decisionai.ml/neuro-san",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 3056507,
-          "percentage": 97.29
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 30422,
-          "percentage": 0.97
-        },
-        {
-          "name": "Dockerfile",
-          "color": "#384d54",
-          "bytes": 26210,
-          "percentage": 0.83
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 14085,
-          "percentage": 0.45
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 9442,
-          "percentage": 0.3
-        },
-        {
-          "name": "Makefile",
-          "color": "#427819",
-          "bytes": 5090,
-          "percentage": 0.16
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 64085,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "cognizant-ai-lab/neuro-san-studio",
-      "default_branch": "main",
-      "created_at": "2026-09-29T10:30:56Z",
-      "updated_at": "2026-10-25T00:47:20Z",
-      "pushed_at": "2026-10-25T00:47:13Z",
-      "image_url": "https://opengraph.githubassets.com/f2a57d2ca17622d1d35b979606aa1dfd4801d73832fe2086c09d998ae30efc4d/AmirhosseinOlyaei/neuro-san-studio"
     },
     {
       "name": "sesame-voice-escort",
