@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-09T16:17:54.983445Z",
+  "generated_at": "2026-11-10T01:29:26.359782Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -26,6 +26,83 @@
     }
   },
   "repositories": [
+    {
+      "name": "foundation",
+      "full_name": "DevArtsLab/foundation",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Foundation",
+      "description": "Research base and architectural charter for every DevArts Lab repository and client application: Cloudflare-native in production, local-first in development, agent-orchestrated across the delivery lifecycle. Documentation only.",
+      "url": "https://github.com/DevArtsLab/foundation",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "languages": [],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 515,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "v1",
+      "created_at": "2026-10-22T02:50:30Z",
+      "updated_at": "2026-11-02T07:49:15Z",
+      "pushed_at": "2026-11-09T23:12:58Z",
+      "image_url": "https://opengraph.githubassets.com/9317a7e7f060dfe816d51e375d8dddf396411e5e36a728d5bd90c047e80d0675/DevArtsLab/foundation"
+    },
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 34728,
+          "percentage": 62.09
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 21201,
+          "percentage": 37.91
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 220,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-11-09T16:18:02Z",
+      "pushed_at": "2026-11-09T16:17:57Z",
+      "image_url": "https://opengraph.githubassets.com/036092d6aef113d8e608fe6656ae3fa829b42edb832c33128cae0047d74dbcc5/DevArtsLab/tool-github-export"
+    },
     {
       "name": "factory",
       "full_name": "DevArtsLab/factory",
@@ -395,33 +472,6 @@
       "image_url": "https://opengraph.githubassets.com/2f55fba38f5609be100a23429ea8b77f349c42758a395aa60e61f9e2a06816ff/DevArtsLab/voice-quote"
     },
     {
-      "name": "foundation",
-      "full_name": "DevArtsLab/foundation",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Foundation",
-      "description": "Research base and architectural charter for every DevArts Lab repository and client application: Cloudflare-native in production, local-first in development, agent-orchestrated across the delivery lifecycle. Documentation only.",
-      "url": "https://github.com/DevArtsLab/foundation",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "languages": [],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 515,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-11-02T07:49:15Z",
-      "pushed_at": "2026-11-09T10:11:38Z",
-      "image_url": "https://opengraph.githubassets.com/9317a7e7f060dfe816d51e375d8dddf396411e5e36a728d5bd90c047e80d0675/DevArtsLab/foundation"
-    },
-    {
       "name": "vault-cli",
       "full_name": "DevArtsLab/vault-cli",
       "owner": "DevArtsLab",
@@ -463,56 +513,6 @@
       "updated_at": "2026-11-09T07:08:15Z",
       "pushed_at": "2026-11-09T07:08:12Z",
       "image_url": "https://opengraph.githubassets.com/495eb8485cfb847ede0007acfb827680df7eacc93b8b929783e285aea2a63b64/DevArtsLab/vault-cli"
-    },
-    {
-      "name": "tool-github-export",
-      "full_name": "DevArtsLab/tool-github-export",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "GitHub Export",
-      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
-      "url": "https://github.com/DevArtsLab/tool-github-export",
-      "visibility": "public",
-      "category": "tool",
-      "featured": true,
-      "tags": [
-        "cli",
-        "developer-tools",
-        "github-api",
-        "graphql",
-        "json",
-        "python",
-        "tool"
-      ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 34728,
-          "percentage": 62.09
-        },
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 21201,
-          "percentage": 37.91
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 218,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-11-09T06:13:32Z",
-      "pushed_at": "2026-11-09T06:13:29Z",
-      "image_url": "https://opengraph.githubassets.com/2ee5c6a87f354b90f6fcf65f4f59fa42d5faa80f5b32e5770cec5339507daf04/DevArtsLab/tool-github-export"
     },
     {
       "name": "neuro-san-studio",
