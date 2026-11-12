@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T14:10:18.848829Z",
+  "generated_at": "2026-11-12T00:35:28.133964Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -16,42 +16,163 @@
     }
   ],
   "stats": {
-    "total": 130,
-    "public": 130,
+    "total": 131,
+    "public": 131,
     "private": 0,
     "by_category": {
-      "project": 120,
+      "project": 121,
       "tool": 6,
       "org-infra": 4
     }
   },
   "repositories": [
     {
+      "name": "train-docs",
+      "full_name": "DevArtsLab/train-docs",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Train Docs",
+      "description": "Markdown docs viewer for train/ content on train.devartslab.com. Pluggable viewer shells, per-doc public/private zones gated by Cloudflare Access JWT, private content git-crypt encrypted.",
+      "url": "https://github.com/DevArtsLab/train-docs",
+      "homepage": "https://train.devartslab.com",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "cloudflare-access",
+        "cloudflare-workers",
+        "docsify",
+        "git-crypt",
+        "markdown"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 4343,
+          "percentage": 36.65
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 3805,
+          "percentage": 32.11
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 3292,
+          "percentage": 27.78
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 409,
+          "percentage": 3.45
+        }
+      ],
+      "license": "MIT",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 0,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-11-11T23:45:39Z",
+      "updated_at": "2026-11-11T23:50:31Z",
+      "pushed_at": "2026-11-12T00:34:42Z",
+      "image_url": "https://opengraph.githubassets.com/4e05998725723866ad306d92587824409440266d3eef1b5c21e3643e4b4bddec/DevArtsLab/train-docs"
+    },
+    {
+      "name": "platforms",
+      "full_name": "DevArtsLab/platforms",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Platforms",
+      "description": "Multi-tenant platform for DevArts Lab: subdomains turn one codebase into a home for every lab venture.",
+      "url": "https://github.com/DevArtsLab/platforms",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "multi-tenant",
+        "nextjs",
+        "react",
+        "shadcn-ui",
+        "tailwindcss",
+        "upstash-redis"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 36274,
+          "percentage": 85.35
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 6145,
+          "percentage": 14.46
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 81,
+          "percentage": 0.19
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 7231,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-11-08T02:45:18Z",
+      "updated_at": "2026-11-11T23:55:05Z",
+      "pushed_at": "2026-11-11T23:07:04Z",
+      "image_url": "https://opengraph.githubassets.com/9fc05686fa5ec3c8aafd31ec842915e9c490e9347a72e5691e1c4281c8354de6/DevArtsLab/platforms"
+    },
+    {
       "name": "foundation",
       "full_name": "DevArtsLab/foundation",
       "owner": "DevArtsLab",
       "owner_type": "Organization",
       "display_name": "Foundation",
-      "description": "Research base and architectural charter for every DevArts Lab repository and client application: Cloudflare-native in production, local-first in development, agent-orchestrated across the delivery lifecycle. Documentation only.",
+      "description": "Decisions, contracts, and procedures governing every DevArts Lab repository and client application. Typed document store - decisions, concepts, reference, guides. Documentation only: no code, templates, or configuration.",
       "url": "https://github.com/DevArtsLab/foundation",
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "ai-agents",
+        "architecture",
+        "cloudflare",
+        "documentation",
+        "governance"
+      ],
       "languages": [],
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 517,
+      "size_kb": 525,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "v1",
       "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-11-11T09:52:08Z",
-      "pushed_at": "2026-11-11T09:52:04Z",
-      "image_url": "https://opengraph.githubassets.com/85f9001da1cc17b1bc3842f10caccf5d9406177e307a71e0d7aa4b39f55405e1/DevArtsLab/foundation"
+      "updated_at": "2026-11-11T23:48:39Z",
+      "pushed_at": "2026-11-11T22:38:59Z",
+      "image_url": "https://opengraph.githubassets.com/071c291c763815263f6b5ea8c595a6d18ded04c87e26f83652a8ce233ce965b4/DevArtsLab/foundation"
     },
     {
       "name": "tool-github-export",
@@ -93,15 +214,15 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 224,
+      "size_kb": 225,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-11-11T07:03:07Z",
-      "pushed_at": "2026-11-11T06:03:02Z",
-      "image_url": "https://opengraph.githubassets.com/09ae9f180c93b8ce94e128070fe6ad2fc2d56dcc5e047748b1659894fb3d8c9e/DevArtsLab/tool-github-export"
+      "updated_at": "2026-11-11T15:10:25Z",
+      "pushed_at": "2026-11-11T14:10:20Z",
+      "image_url": "https://opengraph.githubassets.com/64b309199d0df5c2a186b6725a6628df88c1cc74e42113297cc6abc8500fe270/DevArtsLab/tool-github-export"
     },
     {
       "name": "team-carnival-the-craigslist-rebuild",
@@ -906,52 +1027,6 @@
       "updated_at": "2026-11-11T01:09:37Z",
       "pushed_at": "2026-11-09T05:51:08Z",
       "image_url": "https://opengraph.githubassets.com/63ae500a542f9d2ad7d3491989378551f18b3f254bac8254ca09d11cdb35c3e3/DevArtsLab/neuro-san-studio"
-    },
-    {
-      "name": "platforms",
-      "full_name": "DevArtsLab/platforms",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Platforms",
-      "url": "https://github.com/DevArtsLab/platforms",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 36274,
-          "percentage": 85.35
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 6145,
-          "percentage": 14.46
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 81,
-          "percentage": 0.19
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 7228,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-11-08T02:45:18Z",
-      "updated_at": "2026-11-11T01:06:28Z",
-      "pushed_at": "2026-11-08T22:46:21Z",
-      "image_url": "https://opengraph.githubassets.com/35d008e59403642786d5f3386c824abd4808f8235219e6cc88318cb50178281b/DevArtsLab/platforms"
     },
     {
       "name": "legal",
