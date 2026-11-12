@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-12T00:35:28.133964Z",
+  "generated_at": "2026-11-12T23:32:02.240787Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -16,130 +16,45 @@
     }
   ],
   "stats": {
-    "total": 131,
-    "public": 131,
+    "total": 132,
+    "public": 132,
     "private": 0,
     "by_category": {
-      "project": 121,
-      "tool": 6,
-      "org-infra": 4
+      "org-infra": 4,
+      "project": 122,
+      "tool": 6
     }
   },
   "repositories": [
     {
-      "name": "train-docs",
-      "full_name": "DevArtsLab/train-docs",
+      "name": "devarts-business",
+      "full_name": "DevArtsLab/devarts-business",
       "owner": "DevArtsLab",
       "owner_type": "Organization",
-      "display_name": "Train Docs",
-      "description": "Markdown docs viewer for train/ content on train.devartslab.com. Pluggable viewer shells, per-doc public/private zones gated by Cloudflare Access JWT, private content git-crypt encrypted.",
-      "url": "https://github.com/DevArtsLab/train-docs",
-      "homepage": "https://train.devartslab.com",
+      "display_name": "Devarts Business",
+      "description": "DevArts Business Plan and Documentation",
+      "url": "https://github.com/DevArtsLab/devarts-business",
       "visibility": "public",
-      "category": "project",
+      "category": "org-infra",
       "featured": false,
       "tags": [
-        "cloudflare-access",
-        "cloudflare-workers",
-        "docsify",
-        "git-crypt",
-        "markdown"
+        "business-plan",
+        "documentation"
       ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 4343,
-          "percentage": 36.65
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 3805,
-          "percentage": 32.11
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 3292,
-          "percentage": 27.78
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 409,
-          "percentage": 3.45
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
+      "languages": [],
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 0,
+      "size_kb": 2424,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-11-11T23:45:39Z",
-      "updated_at": "2026-11-11T23:50:31Z",
-      "pushed_at": "2026-11-12T00:34:42Z",
-      "image_url": "https://opengraph.githubassets.com/4e05998725723866ad306d92587824409440266d3eef1b5c21e3643e4b4bddec/DevArtsLab/train-docs"
-    },
-    {
-      "name": "platforms",
-      "full_name": "DevArtsLab/platforms",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Platforms",
-      "description": "Multi-tenant platform for DevArts Lab: subdomains turn one codebase into a home for every lab venture.",
-      "url": "https://github.com/DevArtsLab/platforms",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "multi-tenant",
-        "nextjs",
-        "react",
-        "shadcn-ui",
-        "tailwindcss",
-        "upstash-redis"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 36274,
-          "percentage": 85.35
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 6145,
-          "percentage": 14.46
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 81,
-          "percentage": 0.19
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 7231,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-11-08T02:45:18Z",
-      "updated_at": "2026-11-11T23:55:05Z",
-      "pushed_at": "2026-11-11T23:07:04Z",
-      "image_url": "https://opengraph.githubassets.com/9fc05686fa5ec3c8aafd31ec842915e9c490e9347a72e5691e1c4281c8354de6/DevArtsLab/platforms"
+      "default_branch": "2026-11-11",
+      "created_at": "2025-12-15T23:24:51Z",
+      "updated_at": "2026-10-30T02:00:32Z",
+      "pushed_at": "2026-11-12T19:48:41Z",
+      "image_url": "https://opengraph.githubassets.com/ecb79d5ec8f67e27d8a03df09dffbdd106bf4fba2d203a33a541e6c6ac9ba3e8/DevArtsLab/devarts-business"
     },
     {
       "name": "foundation",
@@ -149,6 +64,7 @@
       "display_name": "Foundation",
       "description": "Decisions, contracts, and procedures governing every DevArts Lab repository and client application. Typed document store - decisions, concepts, reference, guides. Documentation only: no code, templates, or configuration.",
       "url": "https://github.com/DevArtsLab/foundation",
+      "homepage": "https://train.devartslab.com",
       "visibility": "public",
       "category": "project",
       "featured": false,
@@ -160,19 +76,147 @@
         "governance"
       ],
       "languages": [],
+      "license": "CC-BY-4.0",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 525,
+      "size_kb": 534,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "v1",
       "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-11-11T23:48:39Z",
-      "pushed_at": "2026-11-11T22:38:59Z",
-      "image_url": "https://opengraph.githubassets.com/071c291c763815263f6b5ea8c595a6d18ded04c87e26f83652a8ce233ce965b4/DevArtsLab/foundation"
+      "updated_at": "2026-11-12T07:02:24Z",
+      "pushed_at": "2026-11-12T07:02:20Z",
+      "image_url": "https://opengraph.githubassets.com/be73c1634d8f526f7d48a258af5021eefbc80866ad967fb4638317cfcdb9a405/DevArtsLab/foundation"
+    },
+    {
+      "name": "documents",
+      "full_name": "DevArtsLab/documents",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Documents",
+      "description": "Documents for DevArts Lab",
+      "url": "https://github.com/DevArtsLab/documents",
+      "homepage": "https://train.devartslab.com",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "git-crypt"
+      ],
+      "languages": [],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 6,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-11-12T01:17:53Z",
+      "updated_at": "2026-11-12T02:42:20Z",
+      "pushed_at": "2026-11-12T02:41:21Z",
+      "image_url": "https://opengraph.githubassets.com/e2df7df4e71586e405fb00afe46bbb9ffd8b8395efc8a6db3e1cc7c3a7b68cd7/DevArtsLab/documents"
+    },
+    {
+      "name": "agent-skills",
+      "full_name": "DevArtsLab/agent-skills",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Agent Skills",
+      "description": "DevArts Lab agent skill library - SKILL.md skills for AI coding assistants",
+      "url": "https://github.com/DevArtsLab/agent-skills",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 10527,
+          "percentage": 100.0
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 123,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-27T06:33:40Z",
+      "updated_at": "2026-11-12T03:18:46Z",
+      "pushed_at": "2026-11-12T02:18:42Z",
+      "image_url": "https://opengraph.githubassets.com/edeb1acfd443e87f05dd31f902943135c9853226e4618d31d31c0502129ae154/DevArtsLab/agent-skills"
+    },
+    {
+      "name": "doc-view",
+      "full_name": "DevArtsLab/doc-view",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Doc View",
+      "description": "Documentation viewer for train.devartslab.com",
+      "url": "https://github.com/DevArtsLab/doc-view",
+      "homepage": "https://train.devartslab.com",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "cloudflare-access",
+        "cloudflare-workers",
+        "docsify",
+        "git-crypt",
+        "markdown"
+      ],
+      "primary_language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 9342,
+          "percentage": 42.39
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 6204,
+          "percentage": 28.15
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 6083,
+          "percentage": 27.6
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 407,
+          "percentage": 1.85
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 166,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-11-11T23:45:39Z",
+      "updated_at": "2026-11-12T02:42:29Z",
+      "pushed_at": "2026-11-12T02:00:03Z",
+      "image_url": "https://opengraph.githubassets.com/60f273c40163974ec88540471d37f5a66be70617c7bdd1072e18891150d8e4a1/DevArtsLab/doc-view"
     },
     {
       "name": "tool-github-export",
@@ -214,15 +258,69 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 225,
+      "size_kb": 227,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-11-11T15:10:25Z",
-      "pushed_at": "2026-11-11T14:10:20Z",
-      "image_url": "https://opengraph.githubassets.com/64b309199d0df5c2a186b6725a6628df88c1cc74e42113297cc6abc8500fe270/DevArtsLab/tool-github-export"
+      "updated_at": "2026-11-12T01:35:33Z",
+      "pushed_at": "2026-11-12T00:35:29Z",
+      "image_url": "https://opengraph.githubassets.com/2bce02e13e85ad4890f1bf7edf14cfdd148d0e3f741fbfdd5452c3c021f17de8/DevArtsLab/tool-github-export"
+    },
+    {
+      "name": "platforms",
+      "full_name": "DevArtsLab/platforms",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Platforms",
+      "description": "Multi-tenant platform for DevArts Lab: subdomains turn one codebase into a home for every lab venture.",
+      "url": "https://github.com/DevArtsLab/platforms",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "multi-tenant",
+        "nextjs",
+        "react",
+        "shadcn-ui",
+        "tailwindcss",
+        "upstash-redis"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 36274,
+          "percentage": 85.35
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 6145,
+          "percentage": 14.46
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 81,
+          "percentage": 0.19
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 7231,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-11-08T02:45:18Z",
+      "updated_at": "2026-11-12T02:42:55Z",
+      "pushed_at": "2026-11-11T23:07:04Z",
+      "image_url": "https://opengraph.githubassets.com/aed9e9f8a6b75d95cfc38aaab075ec7fc4d895b3ccf7cd1dc44143fec6697297/DevArtsLab/platforms"
     },
     {
       "name": "team-carnival-the-craigslist-rebuild",
@@ -560,7 +658,14 @@
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "ai-agents",
+        "automation",
+        "cli",
+        "devartslab",
+        "devin",
+        "pipeline"
+      ],
       "primary_language": "TypeScript",
       "languages": [
         {
@@ -571,7 +676,7 @@
         }
       ],
       "license": "MIT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -581,9 +686,9 @@
       "is_template": false,
       "default_branch": "devin-factory",
       "created_at": "2026-11-09T01:39:36Z",
-      "updated_at": "2026-11-09T14:41:27Z",
+      "updated_at": "2026-11-12T02:45:05Z",
       "pushed_at": "2026-11-09T14:41:23Z",
-      "image_url": "https://opengraph.githubassets.com/5b07a9d4a5a23b1b56bd6e0c7191c3626cb84cf9a7c654e0b3fa4f89994774d6/DevArtsLab/factory"
+      "image_url": "https://opengraph.githubassets.com/1069ffecf0d61ad2bfe93b17151cd35dcb174fc6682f9e84c6ffaa2e1f1828f9/DevArtsLab/factory"
     },
     {
       "name": "tool-universal-ai-config",
@@ -1182,42 +1287,6 @@
       "image_url": "https://opengraph.githubassets.com/9021181da1c1ff2bf06e6cc0dbc9d8af8cf0959e1d16d3535919d3eb709a3c5c/DevArtsLab/project-blueprint"
     },
     {
-      "name": "agent-skills",
-      "full_name": "DevArtsLab/agent-skills",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Agent Skills",
-      "description": "DevArts Lab agent skill library - SKILL.md skills for AI coding assistants",
-      "url": "https://github.com/DevArtsLab/agent-skills",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 10527,
-          "percentage": 100.0
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 120,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-27T06:33:40Z",
-      "updated_at": "2026-11-07T00:12:31Z",
-      "pushed_at": "2026-11-07T00:12:28Z",
-      "image_url": "https://opengraph.githubassets.com/add178030e51261211ed48547d21a20e349efd20bcc22768c12792119486ef9c/DevArtsLab/agent-skills"
-    },
-    {
       "name": "marketing-ai-app",
       "full_name": "AmirhosseinOlyaei/marketing-ai-app",
       "owner": "AmirhosseinOlyaei",
@@ -1572,36 +1641,6 @@
       "updated_at": "2026-10-30T02:28:58Z",
       "pushed_at": "2026-10-30T02:28:54Z",
       "image_url": "https://opengraph.githubassets.com/795fe37af48fb14dcec5d8850d8dc80fa8de1b106841341046f31900e2ba4dad/DevArtsLab/sesame-link-runbook"
-    },
-    {
-      "name": "devarts-business",
-      "full_name": "DevArtsLab/devarts-business",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Devarts Business",
-      "description": "DevArts Business Plan and Documentation",
-      "url": "https://github.com/DevArtsLab/devarts-business",
-      "visibility": "public",
-      "category": "org-infra",
-      "featured": false,
-      "tags": [
-        "business-plan",
-        "documentation"
-      ],
-      "languages": [],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 2377,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2025-12-15T23:24:51Z",
-      "updated_at": "2026-10-30T02:00:32Z",
-      "pushed_at": "2026-10-30T02:00:28Z",
-      "image_url": "https://opengraph.githubassets.com/ecb79d5ec8f67e27d8a03df09dffbdd106bf4fba2d203a33a541e6c6ac9ba3e8/DevArtsLab/devarts-business"
     },
     {
       "name": "virtual-screener-ai-drug-discovery",
