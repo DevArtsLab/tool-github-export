@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-13T19:37:00.135369Z",
+  "generated_at": "2026-11-14T06:11:01.507150Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -20,41 +20,323 @@
     "public": 132,
     "private": 0,
     "by_category": {
+      "project": 122,
       "org-infra": 4,
-      "tool": 6,
-      "project": 122
+      "tool": 6
     }
   },
   "repositories": [
     {
-      "name": "devarts-business",
-      "full_name": "DevArtsLab/devarts-business",
+      "name": "voice-quote-proxy",
+      "full_name": "DevArtsLab/voice-quote-proxy",
       "owner": "DevArtsLab",
       "owner_type": "Organization",
-      "display_name": "Devarts Business",
-      "description": "DevArts Business Plan and Documentation",
-      "url": "https://github.com/DevArtsLab/devarts-business",
+      "display_name": "Voice Quote Proxy",
+      "description": "Worker proxy serving voice-quote.netlify.app at voice-quote.devartslab.com - Cloudflare Workers",
+      "url": "https://github.com/DevArtsLab/voice-quote-proxy",
+      "homepage": "https://voice-quote.devartslab.com",
       "visibility": "public",
-      "category": "org-infra",
+      "category": "project",
       "featured": false,
       "tags": [
-        "business-plan",
-        "documentation"
+        "cloudflare-workers",
+        "reverse-proxy"
       ],
-      "languages": [],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 3850,
+          "percentage": 100.0
+        }
+      ],
+      "license": "Apache-2.0",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 2428,
+      "size_kb": 19,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
-      "default_branch": "2026-11-11",
-      "created_at": "2025-12-15T23:24:51Z",
-      "updated_at": "2026-10-30T02:00:32Z",
-      "pushed_at": "2026-11-13T08:49:13Z",
-      "image_url": "https://opengraph.githubassets.com/ecb79d5ec8f67e27d8a03df09dffbdd106bf4fba2d203a33a541e6c6ac9ba3e8/DevArtsLab/devarts-business"
+      "default_branch": "main",
+      "created_at": "2026-10-01T06:07:54Z",
+      "updated_at": "2026-10-16T00:37:33Z",
+      "pushed_at": "2026-11-13T20:31:35Z",
+      "image_url": "https://opengraph.githubassets.com/84fabadb618946dad082212b13cbd83f9249e90eb3ef24a7a62f06fdf3b34f2b/DevArtsLab/voice-quote-proxy"
+    },
+    {
+      "name": "devarts-mail",
+      "full_name": "DevArtsLab/devarts-mail",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Devarts Mail",
+      "description": "Self-hosted email + calendar entirely on Cloudflare - Workers, Email Routing, D1, send_email. No Google or third-party mail service.",
+      "url": "https://github.com/DevArtsLab/devarts-mail",
+      "visibility": "public",
+      "category": "org-infra",
+      "featured": false,
+      "tags": [
+        "calendar",
+        "cloudflare-workers",
+        "d1",
+        "email",
+        "self-hosted"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 54465,
+          "percentage": 48.45
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 30369,
+          "percentage": 27.02
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 18647,
+          "percentage": 16.59
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 6413,
+          "percentage": 5.7
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 2518,
+          "percentage": 2.24
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 323,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-01T01:41:59Z",
+      "updated_at": "2026-11-09T12:09:59Z",
+      "pushed_at": "2026-11-13T20:28:02Z",
+      "image_url": "https://opengraph.githubassets.com/3d7fdce6245cc19207de8011ea6e06d00ff49e3d8de64e63899193f3f1e41450/DevArtsLab/devarts-mail"
+    },
+    {
+      "name": "c-track",
+      "full_name": "DevArtsLab/c-track",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "C Track",
+      "url": "https://github.com/DevArtsLab/c-track",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 5016,
+          "percentage": 93.46
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 257,
+          "percentage": 4.79
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 94,
+          "percentage": 1.75
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 113,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-10-15T09:18:10Z",
+      "updated_at": "2026-11-11T01:08:01Z",
+      "pushed_at": "2026-11-13T20:17:22Z",
+      "image_url": "https://opengraph.githubassets.com/ce8600d9492d9df8382b05fee20d095d21d56ca28e3da5745f56bde9ffcd60ab/DevArtsLab/c-track"
+    },
+    {
+      "name": "project-blueprint",
+      "full_name": "DevArtsLab/project-blueprint",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Project Blueprint",
+      "description": "Project boilerplate for new DevArts Lab repos - .agents/ config, agent conventions, env resolution via workspace store",
+      "url": "https://github.com/DevArtsLab/project-blueprint",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [],
+      "primary_language": "Jinja",
+      "languages": [
+        {
+          "name": "Jinja",
+          "color": "#a52a22",
+          "bytes": 3280,
+          "percentage": 81.05
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 767,
+          "percentage": 18.95
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 14,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-30T07:22:29Z",
+      "updated_at": "2026-11-07T00:54:38Z",
+      "pushed_at": "2026-11-13T20:14:39Z",
+      "image_url": "https://opengraph.githubassets.com/9021181da1c1ff2bf06e6cc0dbc9d8af8cf0959e1d16d3535919d3eb709a3c5c/DevArtsLab/project-blueprint"
+    },
+    {
+      "name": "foundation",
+      "full_name": "DevArtsLab/foundation",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Foundation",
+      "description": "Decisions, contracts, and procedures governing every DevArts Lab repository and client application. Typed document store - decisions, concepts, reference, guides. Documentation only: no code, templates, or configuration.",
+      "url": "https://github.com/DevArtsLab/foundation",
+      "homepage": "https://train.devartslab.com",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "architecture",
+        "cloudflare",
+        "documentation",
+        "governance"
+      ],
+      "languages": [],
+      "license": "CC-BY-4.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 535,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "v1",
+      "created_at": "2026-10-22T02:50:30Z",
+      "updated_at": "2026-11-12T07:02:24Z",
+      "pushed_at": "2026-11-13T20:13:58Z",
+      "image_url": "https://opengraph.githubassets.com/be73c1634d8f526f7d48a258af5021eefbc80866ad967fb4638317cfcdb9a405/DevArtsLab/foundation"
+    },
+    {
+      "name": "factory",
+      "full_name": "DevArtsLab/factory",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Factory",
+      "description": "Foreman: the software factory \u2014 work items in, reviewed draft PRs out. Stations run as local devin acp sessions on your own Devin plan.",
+      "url": "https://github.com/DevArtsLab/factory",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "automation",
+        "cli",
+        "devartslab",
+        "devin",
+        "pipeline"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 42084,
+          "percentage": 100.0
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 1459,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-11-09T01:39:36Z",
+      "updated_at": "2026-11-12T02:45:05Z",
+      "pushed_at": "2026-11-13T19:57:45Z",
+      "image_url": "https://opengraph.githubassets.com/1069ffecf0d61ad2bfe93b17151cd35dcb174fc6682f9e84c6ffaa2e1f1828f9/DevArtsLab/factory"
+    },
+    {
+      "name": "devartslab-site",
+      "full_name": "DevArtsLab/devartslab-site",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Devartslab Site",
+      "description": "DevArts Lab landing page on devartslab.com - Cloudflare Workers",
+      "url": "https://github.com/DevArtsLab/devartslab-site",
+      "homepage": "https://devartslab.com",
+      "visibility": "public",
+      "category": "org-infra",
+      "featured": false,
+      "tags": [
+        "cloudflare-workers",
+        "landing-page"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 5774,
+          "percentage": 100.0
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 105,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-01T02:08:10Z",
+      "updated_at": "2026-11-09T11:21:11Z",
+      "pushed_at": "2026-11-13T19:40:53Z",
+      "image_url": "https://opengraph.githubassets.com/9ab8a2c00f1f295a2c126aff3e5886793f22450ce7cdff1f5118bca3f28edd30/DevArtsLab/devartslab-site"
     },
     {
       "name": "tool-github-export",
@@ -96,15 +378,45 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 230,
+      "size_kb": 231,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
       "updated_at": "2026-11-12T01:35:33Z",
-      "pushed_at": "2026-11-13T06:33:08Z",
+      "pushed_at": "2026-11-13T19:37:01Z",
       "image_url": "https://opengraph.githubassets.com/2bce02e13e85ad4890f1bf7edf14cfdd148d0e3f741fbfdd5452c3c021f17de8/DevArtsLab/tool-github-export"
+    },
+    {
+      "name": "devarts-business",
+      "full_name": "DevArtsLab/devarts-business",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Devarts Business",
+      "description": "DevArts Business Plan and Documentation",
+      "url": "https://github.com/DevArtsLab/devarts-business",
+      "visibility": "public",
+      "category": "org-infra",
+      "featured": false,
+      "tags": [
+        "business-plan",
+        "documentation"
+      ],
+      "languages": [],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 2428,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "2026-11-11",
+      "created_at": "2025-12-15T23:24:51Z",
+      "updated_at": "2026-10-30T02:00:32Z",
+      "pushed_at": "2026-11-13T08:49:13Z",
+      "image_url": "https://opengraph.githubassets.com/ecb79d5ec8f67e27d8a03df09dffbdd106bf4fba2d203a33a541e6c6ac9ba3e8/DevArtsLab/devarts-business"
     },
     {
       "name": "neuro-san-studio",
@@ -227,84 +539,6 @@
       "updated_at": "2026-11-13T05:22:42Z",
       "pushed_at": "2026-11-13T05:18:46Z",
       "image_url": "https://opengraph.githubassets.com/c85a86596a6a6bb617ca95bee6fb88b9e5f9b7888158effbc248da1cec5f0c96/AmirhosseinOlyaei/react-todo"
-    },
-    {
-      "name": "factory",
-      "full_name": "DevArtsLab/factory",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Factory",
-      "description": "Foreman: the software factory \u2014 work items in, reviewed draft PRs out. Stations run as local devin acp sessions on your own Devin plan.",
-      "url": "https://github.com/DevArtsLab/factory",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "automation",
-        "cli",
-        "devartslab",
-        "devin",
-        "pipeline"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 42084,
-          "percentage": 100.0
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 1459,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-11-09T01:39:36Z",
-      "updated_at": "2026-11-12T02:45:05Z",
-      "pushed_at": "2026-11-13T04:27:19Z",
-      "image_url": "https://opengraph.githubassets.com/1069ffecf0d61ad2bfe93b17151cd35dcb174fc6682f9e84c6ffaa2e1f1828f9/DevArtsLab/factory"
-    },
-    {
-      "name": "foundation",
-      "full_name": "DevArtsLab/foundation",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Foundation",
-      "description": "Decisions, contracts, and procedures governing every DevArts Lab repository and client application. Typed document store - decisions, concepts, reference, guides. Documentation only: no code, templates, or configuration.",
-      "url": "https://github.com/DevArtsLab/foundation",
-      "homepage": "https://train.devartslab.com",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "architecture",
-        "cloudflare",
-        "documentation",
-        "governance"
-      ],
-      "languages": [],
-      "license": "CC-BY-4.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 534,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "v1",
-      "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-11-12T07:02:24Z",
-      "pushed_at": "2026-11-12T07:02:20Z",
-      "image_url": "https://opengraph.githubassets.com/be73c1634d8f526f7d48a258af5021eefbc80866ad967fb4638317cfcdb9a405/DevArtsLab/foundation"
     },
     {
       "name": "documents",
@@ -913,158 +1147,6 @@
       "image_url": "https://opengraph.githubassets.com/d658039e59a76485ba3416f5f46bb320a33f6a8775360abe2744a6f10700a2c4/DevArtsLab/devartslab-durable-state"
     },
     {
-      "name": "devarts-mail",
-      "full_name": "DevArtsLab/devarts-mail",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Devarts Mail",
-      "description": "Self-hosted email + calendar entirely on Cloudflare - Workers, Email Routing, D1, send_email. No Google or third-party mail service.",
-      "url": "https://github.com/DevArtsLab/devarts-mail",
-      "visibility": "public",
-      "category": "org-infra",
-      "featured": false,
-      "tags": [
-        "calendar",
-        "cloudflare-workers",
-        "d1",
-        "email",
-        "self-hosted"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 54465,
-          "percentage": 48.45
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 30369,
-          "percentage": 27.02
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 18647,
-          "percentage": 16.59
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 6413,
-          "percentage": 5.7
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 2518,
-          "percentage": 2.24
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 322,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-01T01:41:59Z",
-      "updated_at": "2026-11-09T12:09:59Z",
-      "pushed_at": "2026-11-09T12:09:55Z",
-      "image_url": "https://opengraph.githubassets.com/3d7fdce6245cc19207de8011ea6e06d00ff49e3d8de64e63899193f3f1e41450/DevArtsLab/devarts-mail"
-    },
-    {
-      "name": "devartslab-site",
-      "full_name": "DevArtsLab/devartslab-site",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Devartslab Site",
-      "description": "DevArts Lab landing page on devartslab.com - Cloudflare Workers",
-      "url": "https://github.com/DevArtsLab/devartslab-site",
-      "homepage": "https://devartslab.com",
-      "visibility": "public",
-      "category": "org-infra",
-      "featured": false,
-      "tags": [
-        "cloudflare-workers",
-        "landing-page"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 5774,
-          "percentage": 100.0
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 104,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-01T02:08:10Z",
-      "updated_at": "2026-11-09T11:21:11Z",
-      "pushed_at": "2026-11-09T11:21:07Z",
-      "image_url": "https://opengraph.githubassets.com/9ab8a2c00f1f295a2c126aff3e5886793f22450ce7cdff1f5118bca3f28edd30/DevArtsLab/devartslab-site"
-    },
-    {
-      "name": "c-track",
-      "full_name": "DevArtsLab/c-track",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "C Track",
-      "url": "https://github.com/DevArtsLab/c-track",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 4978,
-          "percentage": 93.41
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 257,
-          "percentage": 4.82
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 94,
-          "percentage": 1.76
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 42,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-10-15T09:18:10Z",
-      "updated_at": "2026-11-11T01:08:01Z",
-      "pushed_at": "2026-11-09T10:20:29Z",
-      "image_url": "https://opengraph.githubassets.com/ce8600d9492d9df8382b05fee20d095d21d56ca28e3da5745f56bde9ffcd60ab/DevArtsLab/c-track"
-    },
-    {
       "name": "voice-quote",
       "full_name": "DevArtsLab/voice-quote",
       "owner": "DevArtsLab",
@@ -1297,48 +1379,6 @@
       "updated_at": "2026-11-07T00:58:28Z",
       "pushed_at": "2026-11-07T00:58:24Z",
       "image_url": "https://opengraph.githubassets.com/d9a61b69b56cedb29d9fd2c2621aba60d5f752f211b0391045374d0d339a30d2/DevArtsLab/tool-pnpm-fleet"
-    },
-    {
-      "name": "project-blueprint",
-      "full_name": "DevArtsLab/project-blueprint",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Project Blueprint",
-      "description": "Project boilerplate for new DevArts Lab repos - .agents/ config, agent conventions, env resolution via workspace store",
-      "url": "https://github.com/DevArtsLab/project-blueprint",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [],
-      "primary_language": "Jinja",
-      "languages": [
-        {
-          "name": "Jinja",
-          "color": "#a52a22",
-          "bytes": 3199,
-          "percentage": 80.66
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 767,
-          "percentage": 19.34
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 13,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-30T07:22:29Z",
-      "updated_at": "2026-11-07T00:54:38Z",
-      "pushed_at": "2026-11-07T00:54:34Z",
-      "image_url": "https://opengraph.githubassets.com/9021181da1c1ff2bf06e6cc0dbc9d8af8cf0959e1d16d3535919d3eb709a3c5c/DevArtsLab/project-blueprint"
     },
     {
       "name": "marketing-ai-app",
@@ -2197,46 +2237,6 @@
         "published_at": "2026-10-16T09:39:01Z"
       },
       "image_url": "https://opengraph.githubassets.com/5dd7ee74c9b8aecef28c24193bcf56cec472216e329202f32b90fde5b7560375/DevArtsLab/saystop"
-    },
-    {
-      "name": "voice-quote-proxy",
-      "full_name": "DevArtsLab/voice-quote-proxy",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Voice Quote Proxy",
-      "description": "Worker proxy serving voice-quote.netlify.app at voice-quote.devartslab.com - Cloudflare Workers",
-      "url": "https://github.com/DevArtsLab/voice-quote-proxy",
-      "homepage": "https://voice-quote.devartslab.com",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "cloudflare-workers",
-        "reverse-proxy"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 3850,
-          "percentage": 100.0
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 19,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-01T06:07:54Z",
-      "updated_at": "2026-10-16T00:37:33Z",
-      "pushed_at": "2026-10-16T00:37:29Z",
-      "image_url": "https://opengraph.githubassets.com/84fabadb618946dad082212b13cbd83f9249e90eb3ef24a7a62f06fdf3b34f2b/DevArtsLab/voice-quote-proxy"
     },
     {
       "name": "ctd-react-numberGuessingAssignment",
