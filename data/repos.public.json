@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-15T18:47:01.453200Z",
+  "generated_at": "2026-11-16T06:17:59.455145Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -20,12 +20,210 @@
     "public": 132,
     "private": 0,
     "by_category": {
-      "tool": 6,
       "project": 122,
+      "tool": 6,
       "org-infra": 4
     }
   },
   "repositories": [
+    {
+      "name": "factory",
+      "full_name": "DevArtsLab/factory",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Factory",
+      "description": "Foreman: the software factory \u2014 work items in, reviewed draft PRs out. Stations run as local devin acp sessions on your own Devin plan.",
+      "url": "https://github.com/DevArtsLab/factory",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "automation",
+        "cli",
+        "devartslab",
+        "devin",
+        "pipeline"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 42084,
+          "percentage": 100.0
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 1474,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-11-09T01:39:36Z",
+      "updated_at": "2026-11-12T02:45:05Z",
+      "pushed_at": "2026-11-15T21:46:59Z",
+      "image_url": "https://opengraph.githubassets.com/1069ffecf0d61ad2bfe93b17151cd35dcb174fc6682f9e84c6ffaa2e1f1828f9/DevArtsLab/factory"
+    },
+    {
+      "name": "foundation",
+      "full_name": "DevArtsLab/foundation",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Foundation",
+      "description": "Decisions, contracts, and procedures governing every DevArts Lab repository and client application. Typed document store - decisions, concepts, reference, guides. Documentation only: no code, templates, or configuration.",
+      "url": "https://github.com/DevArtsLab/foundation",
+      "homepage": "https://train.devartslab.com",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "architecture",
+        "cloudflare",
+        "documentation",
+        "governance"
+      ],
+      "languages": [],
+      "license": "CC-BY-4.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 540,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "v1",
+      "created_at": "2026-10-22T02:50:30Z",
+      "updated_at": "2026-11-12T07:02:24Z",
+      "pushed_at": "2026-11-15T21:46:16Z",
+      "image_url": "https://opengraph.githubassets.com/be73c1634d8f526f7d48a258af5021eefbc80866ad967fb4638317cfcdb9a405/DevArtsLab/foundation"
+    },
+    {
+      "name": "voice-quote",
+      "full_name": "DevArtsLab/voice-quote",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Voice Quote",
+      "description": "An AI-native insurance quoting experience built with Angular 21, GraphQL, Vapi voice AI, and Claude GenUI",
+      "url": "https://github.com/DevArtsLab/voice-quote",
+      "homepage": "https://voice-quote.netlify.app/",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "angular",
+        "apollo",
+        "claude-api",
+        "docker",
+        "express",
+        "flyio",
+        "graphql",
+        "insurance",
+        "netlify",
+        "nodejs",
+        "typescript",
+        "vapi",
+        "voice-ai"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 39539,
+          "percentage": 36.18
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 28907,
+          "percentage": 26.45
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 24485,
+          "percentage": 22.41
+        },
+        {
+          "name": "SCSS",
+          "color": "#c6538c",
+          "bytes": 14886,
+          "percentage": 13.62
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54",
+          "bytes": 825,
+          "percentage": 0.75
+        },
+        {
+          "name": "Smarty",
+          "color": "#f0c040",
+          "bytes": 640,
+          "percentage": 0.59
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 16198,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-06-01T03:34:24Z",
+      "updated_at": "2026-11-09T10:16:36Z",
+      "pushed_at": "2026-11-15T21:42:46Z",
+      "image_url": "https://opengraph.githubassets.com/2f55fba38f5609be100a23429ea8b77f349c42758a395aa60e61f9e2a06816ff/DevArtsLab/voice-quote"
+    },
+    {
+      "name": "voice-quote-proxy",
+      "full_name": "DevArtsLab/voice-quote-proxy",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Voice Quote Proxy",
+      "description": "Worker proxy serving voice-quote.netlify.app at voice-quote.devartslab.com - Cloudflare Workers",
+      "url": "https://github.com/DevArtsLab/voice-quote-proxy",
+      "homepage": "https://voice-quote.devartslab.com",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "cloudflare-workers",
+        "reverse-proxy"
+      ],
+      "primary_language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 3850,
+          "percentage": 100.0
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 29,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-01T06:07:54Z",
+      "updated_at": "2026-10-16T00:37:33Z",
+      "pushed_at": "2026-11-15T21:04:51Z",
+      "image_url": "https://opengraph.githubassets.com/84fabadb618946dad082212b13cbd83f9249e90eb3ef24a7a62f06fdf3b34f2b/DevArtsLab/voice-quote-proxy"
+    },
     {
       "name": "tool-github-export",
       "full_name": "DevArtsLab/tool-github-export",
@@ -73,48 +271,8 @@
       "default_branch": "main",
       "created_at": "2026-10-03T23:50:19Z",
       "updated_at": "2026-11-12T01:35:33Z",
-      "pushed_at": "2026-11-15T06:18:49Z",
+      "pushed_at": "2026-11-15T18:47:03Z",
       "image_url": "https://opengraph.githubassets.com/2bce02e13e85ad4890f1bf7edf14cfdd148d0e3f741fbfdd5452c3c021f17de8/DevArtsLab/tool-github-export"
-    },
-    {
-      "name": "voice-quote-proxy",
-      "full_name": "DevArtsLab/voice-quote-proxy",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Voice Quote Proxy",
-      "description": "Worker proxy serving voice-quote.netlify.app at voice-quote.devartslab.com - Cloudflare Workers",
-      "url": "https://github.com/DevArtsLab/voice-quote-proxy",
-      "homepage": "https://voice-quote.devartslab.com",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "cloudflare-workers",
-        "reverse-proxy"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 3850,
-          "percentage": 100.0
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 19,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-10-01T06:07:54Z",
-      "updated_at": "2026-10-16T00:37:33Z",
-      "pushed_at": "2026-11-13T20:31:35Z",
-      "image_url": "https://opengraph.githubassets.com/84fabadb618946dad082212b13cbd83f9249e90eb3ef24a7a62f06fdf3b34f2b/DevArtsLab/voice-quote-proxy"
     },
     {
       "name": "devarts-mail",
@@ -269,84 +427,6 @@
       "updated_at": "2026-11-07T00:54:38Z",
       "pushed_at": "2026-11-13T20:14:39Z",
       "image_url": "https://opengraph.githubassets.com/9021181da1c1ff2bf06e6cc0dbc9d8af8cf0959e1d16d3535919d3eb709a3c5c/DevArtsLab/project-blueprint"
-    },
-    {
-      "name": "foundation",
-      "full_name": "DevArtsLab/foundation",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Foundation",
-      "description": "Decisions, contracts, and procedures governing every DevArts Lab repository and client application. Typed document store - decisions, concepts, reference, guides. Documentation only: no code, templates, or configuration.",
-      "url": "https://github.com/DevArtsLab/foundation",
-      "homepage": "https://train.devartslab.com",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "architecture",
-        "cloudflare",
-        "documentation",
-        "governance"
-      ],
-      "languages": [],
-      "license": "CC-BY-4.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 535,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "v1",
-      "created_at": "2026-10-22T02:50:30Z",
-      "updated_at": "2026-11-12T07:02:24Z",
-      "pushed_at": "2026-11-13T20:13:58Z",
-      "image_url": "https://opengraph.githubassets.com/be73c1634d8f526f7d48a258af5021eefbc80866ad967fb4638317cfcdb9a405/DevArtsLab/foundation"
-    },
-    {
-      "name": "factory",
-      "full_name": "DevArtsLab/factory",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Factory",
-      "description": "Foreman: the software factory \u2014 work items in, reviewed draft PRs out. Stations run as local devin acp sessions on your own Devin plan.",
-      "url": "https://github.com/DevArtsLab/factory",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai-agents",
-        "automation",
-        "cli",
-        "devartslab",
-        "devin",
-        "pipeline"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 42084,
-          "percentage": 100.0
-        }
-      ],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 1459,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-11-09T01:39:36Z",
-      "updated_at": "2026-11-12T02:45:05Z",
-      "pushed_at": "2026-11-13T19:57:45Z",
-      "image_url": "https://opengraph.githubassets.com/1069ffecf0d61ad2bfe93b17151cd35dcb174fc6682f9e84c6ffaa2e1f1828f9/DevArtsLab/factory"
     },
     {
       "name": "devartslab-site",
@@ -1145,86 +1225,6 @@
       "updated_at": "2026-11-09T13:57:21Z",
       "pushed_at": "2026-11-09T13:57:17Z",
       "image_url": "https://opengraph.githubassets.com/d658039e59a76485ba3416f5f46bb320a33f6a8775360abe2744a6f10700a2c4/DevArtsLab/devartslab-durable-state"
-    },
-    {
-      "name": "voice-quote",
-      "full_name": "DevArtsLab/voice-quote",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Voice Quote",
-      "description": "An AI-native insurance quoting experience built with Angular 21, GraphQL, Vapi voice AI, and Claude GenUI",
-      "url": "https://github.com/DevArtsLab/voice-quote",
-      "homepage": "https://voice-quote.netlify.app/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "angular",
-        "apollo",
-        "claude-api",
-        "docker",
-        "express",
-        "flyio",
-        "graphql",
-        "insurance",
-        "netlify",
-        "nodejs",
-        "typescript",
-        "vapi",
-        "voice-ai"
-      ],
-      "primary_language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 39539,
-          "percentage": 36.2
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 28907,
-          "percentage": 26.46
-        },
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 24485,
-          "percentage": 22.42
-        },
-        {
-          "name": "SCSS",
-          "color": "#c6538c",
-          "bytes": 14886,
-          "percentage": 13.63
-        },
-        {
-          "name": "Dockerfile",
-          "color": "#384d54",
-          "bytes": 825,
-          "percentage": 0.76
-        },
-        {
-          "name": "Smarty",
-          "color": "#f0c040",
-          "bytes": 586,
-          "percentage": 0.54
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 16121,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-06-01T03:34:24Z",
-      "updated_at": "2026-11-09T10:16:36Z",
-      "pushed_at": "2026-11-09T10:16:32Z",
-      "image_url": "https://opengraph.githubassets.com/2f55fba38f5609be100a23429ea8b77f349c42758a395aa60e61f9e2a06816ff/DevArtsLab/voice-quote"
     },
     {
       "name": "vault-cli",
