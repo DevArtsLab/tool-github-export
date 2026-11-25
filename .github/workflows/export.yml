@@ -2,8 +2,8 @@ name: export
 
 on:
   schedule:
-    # Every 6 hours, offset from the top of the hour.
-    - cron: "13 */6 * * *"
+    # Daily at 06:13 UTC (1:13 AM US Eastern in winter, 2:13 AM in summer).
+    - cron: "13 6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -59,3 +59,10 @@ jobs:
           git add repos.private.json
           git diff --staged --quiet || git commit -m "chore(data): update repos.private.json"
           git push
+
+      - name: Trigger API resync
+        env:
+          PRIVATE_API_TOKEN: ${{ secrets.PRIVATE_API_TOKEN }}
+        run: |
+          curl -sf -X POST -H "Authorization: Bearer ${PRIVATE_API_TOKEN}" \
+            https://data.devartslab.com/v1/admin/sync

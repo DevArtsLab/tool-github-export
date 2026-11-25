@@ -20,11 +20,12 @@ export.config.yaml  -->  github-export (GraphQL v4)  -->  data/repos.public.json
                         v
               categories | overrides | filters
 
-GitHub Action (every 6h) writes the files; the data.devartslab.com Worker
-(cron */15m) pulls them into R2 and serves a filtered JSON API on top.
+GitHub Action (daily) writes the files and triggers an immediate API resync;
+the data.devartslab.com Worker (daily backup cron) also pulls them into R2
+and serves a filtered JSON API on top.
 ```
 
-A scheduled GitHub Action runs the exporter every 6 hours (or on demand via `workflow_dispatch`), validates the output against the JSON schema, and commits `data/repos.public.json` back to this repo. `repos.private.json` is pushed to a separate private repo (see [Private output](#private-output)).
+A scheduled GitHub Action runs the exporter daily at 06:13 UTC (or on demand via `workflow_dispatch`), validates the output against the JSON schema, and commits `data/repos.public.json` back to this repo. After publishing, it calls `POST /v1/admin/sync` so the API refreshes within seconds. `repos.private.json` is pushed to a separate private repo (see [Private output](#private-output)).
 
 ## Outputs
 
@@ -37,7 +38,7 @@ A scheduled GitHub Action runs the exporter every 6 hours (or on demand via `wor
 
 | Endpoint     | URL                                                                                              | Notes                                                                |
 | ------------ | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| **API**      | `https://data.devartslab.com`                                                                    | Cloudflare Worker + R2, filtered endpoints, ~15 min freshness        |
+| **API**      | `https://data.devartslab.com`                                                                    | Cloudflare Worker + R2, filtered endpoints, ~1 day freshness        |
 | raw          | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json`    | always fresh, rate-limited lightly                                   |
 | jsDelivr CDN | `https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json`          | cached, fast, CORS-friendly; pin `@<commit>` for deterministic reads |
 | schema       | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/schemas/repos.schema.json` | JSON Schema 2020-12                                                  |
@@ -70,7 +71,7 @@ See `examples/consumer.html` for a working browser page (serve it with `uv run p
 
 ## API: data.devartslab.com
 
-The `worker/` directory is a Cloudflare Worker serving both exports from R2 at `https://data.devartslab.com`. It syncs from GitHub every 15 minutes (cron) and also accepts `POST /v1/admin/sync` to force a refresh.
+The `worker/` directory is a Cloudflare Worker serving both exports from R2 at `https://data.devartslab.com`. It syncs from GitHub once a day (backup cron, 04:17 UTC) and is otherwise kept fresh by the export workflow calling `POST /v1/admin/sync` right after publishing. The endpoint also accepts manual calls to force a refresh.
 
 | Endpoint                       | Description                  |
 | ------------------------------ | ---------------------------- |
@@ -163,7 +164,7 @@ Token resolution order: `--token` flag -> `GH_EXPORT_TOKEN` / `GH_TOKEN` / `GITH
 
 ## GitHub Action
 
-`.github/workflows/export.yml` runs every 6 hours + on demand:
+`.github/workflows/export.yml` runs daily + on demand:
 
 1. `github-export export` writes `data/repos.public.json` + `data/repos.private.json`
 2. both files are validated against `schemas/repos.schema.json`

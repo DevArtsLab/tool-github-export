@@ -15,7 +15,7 @@ bucket_name = "github-export"
 
 [triggers]
 # Keep R2 in sync with the GitHub-committed exports.
-crons = ["*/15 * * * *"]
+crons = ["17 4 * * *"]
 
 [observability]
 enabled = true
