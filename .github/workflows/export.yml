@@ -59,10 +59,3 @@ jobs:
           git add repos.private.json
           git diff --staged --quiet || git commit -m "chore(data): update repos.private.json"
           git push
-
-      - name: Trigger API resync
-        env:
-          PRIVATE_API_TOKEN: ${{ secrets.PRIVATE_API_TOKEN }}
-        run: |
-          curl -sf -X POST -H "Authorization: Bearer ${PRIVATE_API_TOKEN}" \
-            https://data.devartslab.com/v1/admin/sync

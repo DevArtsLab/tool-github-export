@@ -20,12 +20,11 @@ export.config.yaml  -->  github-export (GraphQL v4)  -->  data/repos.public.json
                         v
               categories | overrides | filters
 
-GitHub Action (daily) writes the files and triggers an immediate API resync;
-the data.devartslab.com Worker (daily backup cron) also pulls them into R2
-and serves a filtered JSON API on top.
+GitHub Action (daily) writes the files; the data.devartslab.com Worker
+pulls them into R2 on a daily cron and serves a filtered JSON API on top.
 ```
 
-A scheduled GitHub Action runs the exporter daily at 06:13 UTC (or on demand via `workflow_dispatch`), validates the output against the JSON schema, and commits `data/repos.public.json` back to this repo. After publishing, it calls `POST /v1/admin/sync` so the API refreshes within seconds. `repos.private.json` is pushed to a separate private repo (see [Private output](#private-output)).
+A scheduled GitHub Action runs the exporter daily at 06:13 UTC (or on demand via `workflow_dispatch`), validates the output against the JSON schema, and commits `data/repos.public.json` back to this repo. The Worker syncs R2 from the committed files daily at 07:00 UTC; `POST /v1/admin/sync` remains available to force an immediate refresh. `repos.private.json` is pushed to a separate private repo (see [Private output](#private-output)).
 
 ## Outputs
 
@@ -38,7 +37,7 @@ A scheduled GitHub Action runs the exporter daily at 06:13 UTC (or on demand via
 
 | Endpoint     | URL                                                                                              | Notes                                                                |
 | ------------ | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| **API**      | `https://data.devartslab.com`                                                                    | Cloudflare Worker + R2, filtered endpoints, ~1 day freshness        |
+| **API**      | `https://data.devartslab.com`                                                                    | Cloudflare Worker + R2, filtered endpoints, ~1 day freshness         |
 | raw          | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/data/repos.public.json`    | always fresh, rate-limited lightly                                   |
 | jsDelivr CDN | `https://cdn.jsdelivr.net/gh/DevArtsLab/tool-github-export@main/data/repos.public.json`          | cached, fast, CORS-friendly; pin `@<commit>` for deterministic reads |
 | schema       | `https://raw.githubusercontent.com/DevArtsLab/tool-github-export/main/schemas/repos.schema.json` | JSON Schema 2020-12                                                  |
@@ -71,7 +70,7 @@ See `examples/consumer.html` for a working browser page (serve it with `uv run p
 
 ## API: data.devartslab.com
 
-The `worker/` directory is a Cloudflare Worker serving both exports from R2 at `https://data.devartslab.com`. It syncs from GitHub once a day (backup cron, 04:17 UTC) and is otherwise kept fresh by the export workflow calling `POST /v1/admin/sync` right after publishing. The endpoint also accepts manual calls to force a refresh.
+The `worker/` directory is a Cloudflare Worker serving both exports from R2 at `https://data.devartslab.com`. It syncs from GitHub once a day (cron, 07:00 UTC, after the export workflow commits) since Bot Fight Mode challenges non-browser clients from CI. `POST /v1/admin/sync` accepts manual calls to force a refresh.
 
 | Endpoint                       | Description                  |
 | ------------------------------ | ---------------------------- |

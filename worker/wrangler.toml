@@ -14,8 +14,9 @@ binding = "BUCKET"
 bucket_name = "github-export"
 
 [triggers]
-# Keep R2 in sync with the GitHub-committed exports.
-crons = ["17 4 * * *"]
+# Daily at 07:00 UTC, after the export workflow commits (~06:15 UTC).
+# HTTP-triggered resync is not possible: Bot Fight Mode challenges CI curl clients.
+crons = ["0 7 * * *"]
 
 [observability]
 enabled = true
