@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-25T17:15:15.758620Z",
+  "generated_at": "2026-11-26T16:55:06.939269Z",
   "generator": {
     "name": "tool-github-export",
     "version": "0.1.0"
@@ -21,128 +21,45 @@
     "private": 0,
     "by_category": {
       "project": 122,
-      "tool": 6,
-      "org-infra": 5
+      "org-infra": 5,
+      "tool": 6
     }
   },
   "repositories": [
     {
-      "name": "neuro-san-studio",
-      "full_name": "DevArtsLab/neuro-san-studio",
+      "name": "american-community-network",
+      "full_name": "DevArtsLab/american-community-network",
       "owner": "DevArtsLab",
       "owner_type": "Organization",
-      "display_name": "Neuro San Studio",
-      "description": "A playground for neuro-san",
-      "url": "https://github.com/DevArtsLab/neuro-san-studio",
-      "homepage": "https://decisionai.ml/neuro-san",
+      "display_name": "American Community Network",
+      "description": "Landing page for the Intelligence Revenue System: an AI-powered community intelligence platform giving nonprofit leaders automated donor engagement, real-time community analytics, and unified organizational insights.",
+      "url": "https://github.com/DevArtsLab/american-community-network",
+      "homepage": "https://devartslab.github.io/american-community-network/",
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 3771001,
-          "percentage": 97.76
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 30422,
-          "percentage": 0.79
-        },
-        {
-          "name": "Dockerfile",
-          "color": "#384d54",
-          "bytes": 27412,
-          "percentage": 0.71
-        },
-        {
-          "name": "HTML",
-          "color": "#e34c26",
-          "bytes": 14085,
-          "percentage": 0.37
-        },
-        {
-          "name": "CSS",
-          "color": "#663399",
-          "bytes": 9442,
-          "percentage": 0.24
-        },
-        {
-          "name": "Makefile",
-          "color": "#427819",
-          "bytes": 5103,
-          "percentage": 0.13
-        }
-      ],
-      "license": "Apache-2.0",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 64831,
-      "is_fork": true,
-      "is_archived": false,
-      "is_template": false,
-      "forked_from": "cognizant-ai-lab/neuro-san-studio",
-      "default_branch": "main",
-      "created_at": "2026-09-29T10:30:56Z",
-      "updated_at": "2026-11-11T01:09:37Z",
-      "pushed_at": "2026-11-25T06:27:03Z",
-      "image_url": "https://opengraph.githubassets.com/63ae500a542f9d2ad7d3491989378551f18b3f254bac8254ca09d11cdb35c3e3/DevArtsLab/neuro-san-studio"
-    },
-    {
-      "name": "tool-github-export",
-      "full_name": "DevArtsLab/tool-github-export",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "GitHub Export",
-      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
-      "url": "https://github.com/DevArtsLab/tool-github-export",
-      "visibility": "public",
-      "category": "tool",
-      "featured": true,
       "tags": [
-        "cli",
-        "developer-tools",
-        "github-api",
-        "graphql",
-        "json",
-        "python",
-        "tool"
+        "ai",
+        "community-intelligence",
+        "github-pages",
+        "landing-page",
+        "nonprofit"
       ],
-      "primary_language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "color": "#3572A5",
-          "bytes": 34728,
-          "percentage": 62.09
-        },
-        {
-          "name": "TypeScript",
-          "color": "#3178c6",
-          "bytes": 21201,
-          "percentage": 37.91
-        }
-      ],
+      "languages": [],
       "license": "MIT",
       "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 265,
+      "size_kb": 16,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "main",
-      "created_at": "2026-10-03T23:50:19Z",
-      "updated_at": "2026-11-12T01:35:33Z",
-      "pushed_at": "2026-11-25T06:07:30Z",
-      "image_url": "https://opengraph.githubassets.com/2bce02e13e85ad4890f1bf7edf14cfdd148d0e3f741fbfdd5452c3c021f17de8/DevArtsLab/tool-github-export"
+      "created_at": "2026-09-24T04:51:04Z",
+      "updated_at": "2026-10-07T23:14:35Z",
+      "pushed_at": "2026-11-26T07:11:09Z",
+      "image_url": "https://opengraph.githubassets.com/49614373f5d6e7253542d9ad7445a86598462a323f0c545db796c99fcebf6973/DevArtsLab/american-community-network"
     },
     {
       "name": "devarts-mail",
@@ -200,15 +117,183 @@
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
-      "size_kb": 491,
+      "size_kb": 494,
       "is_fork": false,
       "is_archived": false,
       "is_template": false,
       "default_branch": "feat/attio-sync",
       "created_at": "2026-10-01T01:41:59Z",
       "updated_at": "2026-11-09T12:09:59Z",
-      "pushed_at": "2026-11-23T11:16:07Z",
+      "pushed_at": "2026-11-25T21:09:32Z",
       "image_url": "https://opengraph.githubassets.com/3d7fdce6245cc19207de8011ea6e06d00ff49e3d8de64e63899193f3f1e41450/DevArtsLab/devarts-mail"
+    },
+    {
+      "name": "tool-github-export",
+      "full_name": "DevArtsLab/tool-github-export",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "GitHub Export",
+      "description": "Export GitHub repository metadata to versioned JSON for downstream consumers (directory, portfolio, resume builder)",
+      "url": "https://github.com/DevArtsLab/tool-github-export",
+      "visibility": "public",
+      "category": "tool",
+      "featured": true,
+      "tags": [
+        "cli",
+        "developer-tools",
+        "github-api",
+        "graphql",
+        "json",
+        "python",
+        "tool"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 34728,
+          "percentage": 62.09
+        },
+        {
+          "name": "TypeScript",
+          "color": "#3178c6",
+          "bytes": 21201,
+          "percentage": 37.91
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 267,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "main",
+      "created_at": "2026-10-03T23:50:19Z",
+      "updated_at": "2026-11-12T01:35:33Z",
+      "pushed_at": "2026-11-25T18:28:23Z",
+      "image_url": "https://opengraph.githubassets.com/2bce02e13e85ad4890f1bf7edf14cfdd148d0e3f741fbfdd5452c3c021f17de8/DevArtsLab/tool-github-export"
+    },
+    {
+      "name": "devartslab-media",
+      "full_name": "DevArtsLab/devartslab-media",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Devartslab Media",
+      "description": "Media asset host: public R2 bucket + Worker serving share links at media.devartslab.com - noindex headers",
+      "url": "https://github.com/DevArtsLab/devartslab-media",
+      "homepage": "https://media.devartslab.com",
+      "visibility": "public",
+      "category": "org-infra",
+      "featured": false,
+      "tags": [
+        "cloudflare-workers",
+        "media-hosting",
+        "r2"
+      ],
+      "primary_language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a",
+          "bytes": 1883,
+          "percentage": 81.94
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 415,
+          "percentage": 18.06
+        }
+      ],
+      "license": "MIT",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 6,
+      "is_fork": false,
+      "is_archived": false,
+      "is_template": false,
+      "default_branch": "master",
+      "created_at": "2026-11-16T20:14:44Z",
+      "updated_at": "2026-11-26T02:35:39Z",
+      "pushed_at": "2026-11-25T18:10:57Z",
+      "image_url": "https://opengraph.githubassets.com/f5b109adb41b2b98db3dcedc4ce1f945de49a07e960b7d0f659e03b6c9fe5966/DevArtsLab/devartslab-media"
+    },
+    {
+      "name": "neuro-san-studio",
+      "full_name": "DevArtsLab/neuro-san-studio",
+      "owner": "DevArtsLab",
+      "owner_type": "Organization",
+      "display_name": "Neuro San Studio",
+      "description": "A playground for neuro-san",
+      "url": "https://github.com/DevArtsLab/neuro-san-studio",
+      "homepage": "https://decisionai.ml/neuro-san",
+      "visibility": "public",
+      "category": "project",
+      "featured": false,
+      "tags": [
+        "ai-agents",
+        "neuro-san"
+      ],
+      "primary_language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "color": "#3572A5",
+          "bytes": 3771001,
+          "percentage": 97.76
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051",
+          "bytes": 30422,
+          "percentage": 0.79
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54",
+          "bytes": 27412,
+          "percentage": 0.71
+        },
+        {
+          "name": "HTML",
+          "color": "#e34c26",
+          "bytes": 14085,
+          "percentage": 0.37
+        },
+        {
+          "name": "CSS",
+          "color": "#663399",
+          "bytes": 9442,
+          "percentage": 0.24
+        },
+        {
+          "name": "Makefile",
+          "color": "#427819",
+          "bytes": 5103,
+          "percentage": 0.13
+        }
+      ],
+      "license": "Apache-2.0",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "size_kb": 64831,
+      "is_fork": true,
+      "is_archived": false,
+      "is_template": false,
+      "forked_from": "cognizant-ai-lab/neuro-san-studio",
+      "default_branch": "main",
+      "created_at": "2026-09-29T10:30:56Z",
+      "updated_at": "2026-11-26T02:35:41Z",
+      "pushed_at": "2026-11-25T06:27:03Z",
+      "image_url": "https://opengraph.githubassets.com/df326f8f0e465b3b299eab6fca7e13d38c495a52366db081063d8d3783a1bed5/DevArtsLab/neuro-san-studio"
     },
     {
       "name": "project-blueprint",
@@ -221,7 +306,11 @@
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "boilerplate",
+        "copier",
+        "project-template"
+      ],
       "primary_language": "Jinja",
       "languages": [
         {
@@ -248,9 +337,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-30T07:22:29Z",
-      "updated_at": "2026-11-07T00:54:38Z",
+      "updated_at": "2026-11-26T02:35:42Z",
       "pushed_at": "2026-11-20T22:36:03Z",
-      "image_url": "https://opengraph.githubassets.com/9021181da1c1ff2bf06e6cc0dbc9d8af8cf0959e1d16d3535919d3eb709a3c5c/DevArtsLab/project-blueprint"
+      "image_url": "https://opengraph.githubassets.com/b0c05caeeeae82d984a4895ecade9393c1f42fc13cd8c253c106d4387a912ef3/DevArtsLab/project-blueprint"
     },
     {
       "name": "tool-pnpm-fleet",
@@ -482,7 +571,11 @@
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "devin"
+      ],
       "primary_language": "Python",
       "languages": [
         {
@@ -503,9 +596,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-27T06:33:40Z",
-      "updated_at": "2026-11-12T03:18:46Z",
+      "updated_at": "2026-11-26T02:35:43Z",
       "pushed_at": "2026-11-20T00:39:16Z",
-      "image_url": "https://opengraph.githubassets.com/edeb1acfd443e87f05dd31f902943135c9853226e4618d31d31c0502129ae154/DevArtsLab/agent-skills"
+      "image_url": "https://opengraph.githubassets.com/aa139c3f51fccd7fda709003c46ed52e122496f33309bb8ee94e3b2df62077bc/DevArtsLab/agent-skills"
     },
     {
       "name": "algorithms-ctd",
@@ -605,11 +698,18 @@
       "owner": "DevArtsLab",
       "owner_type": "Organization",
       "display_name": "C Track",
+      "description": "Career tracker on Cloudflare Workers - vinext port",
       "url": "https://github.com/DevArtsLab/c-track",
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "career-tracker",
+        "cloudflare-workers",
+        "job-search",
+        "nextjs",
+        "vinext"
+      ],
       "primary_language": "TypeScript",
       "languages": [
         {
@@ -641,50 +741,9 @@
       "is_template": false,
       "default_branch": "master",
       "created_at": "2026-10-15T09:18:10Z",
-      "updated_at": "2026-11-11T01:08:01Z",
+      "updated_at": "2026-11-26T02:35:46Z",
       "pushed_at": "2026-11-16T21:03:06Z",
-      "image_url": "https://opengraph.githubassets.com/ce8600d9492d9df8382b05fee20d095d21d56ca28e3da5745f56bde9ffcd60ab/DevArtsLab/c-track"
-    },
-    {
-      "name": "devartslab-media",
-      "full_name": "DevArtsLab/devartslab-media",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "Devartslab Media",
-      "url": "https://github.com/DevArtsLab/devartslab-media",
-      "visibility": "public",
-      "category": "org-infra",
-      "featured": false,
-      "tags": [],
-      "primary_language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "color": "#f1e05a",
-          "bytes": 1883,
-          "percentage": 81.94
-        },
-        {
-          "name": "Shell",
-          "color": "#89e051",
-          "bytes": 415,
-          "percentage": 18.06
-        }
-      ],
-      "license": "MIT",
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 6,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "master",
-      "created_at": "2026-11-16T20:14:44Z",
-      "updated_at": "2026-11-16T20:14:53Z",
-      "pushed_at": "2026-11-16T20:41:58Z",
-      "image_url": "https://opengraph.githubassets.com/976c2f74f7144bb5b5cd779b02008a8f5b32f56fc2bc1d067d44cdfe93755d63/DevArtsLab/devartslab-media"
+      "image_url": "https://opengraph.githubassets.com/62502030d02cd12f63f3d539fcaacb3f50c7c110ce9966fe8a1d4c0f0d4dfc08/DevArtsLab/c-track"
     },
     {
       "name": "foundation",
@@ -1507,7 +1566,11 @@
       "visibility": "public",
       "category": "org-infra",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "migrations",
+        "sql",
+        "sqlite"
+      ],
       "primary_language": "Python",
       "languages": [
         {
@@ -1524,7 +1587,7 @@
         }
       ],
       "license": "MIT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -1534,9 +1597,9 @@
       "is_template": false,
       "default_branch": "master",
       "created_at": "2026-10-29T01:49:03Z",
-      "updated_at": "2026-11-09T13:57:21Z",
+      "updated_at": "2026-11-26T02:35:49Z",
       "pushed_at": "2026-11-09T13:57:17Z",
-      "image_url": "https://opengraph.githubassets.com/d658039e59a76485ba3416f5f46bb320a33f6a8775360abe2744a6f10700a2c4/DevArtsLab/devartslab-durable-state"
+      "image_url": "https://opengraph.githubassets.com/7eaa995cfde44d9c83ac95b159a1076ab8b3d0cd65a2a2ab40ac073bb1638fb3/DevArtsLab/devartslab-durable-state"
     },
     {
       "name": "vault-cli",
@@ -1592,9 +1655,12 @@
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "compliance",
+        "legal"
+      ],
       "languages": [],
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "watchers": 0,
       "open_issues": 0,
@@ -1604,9 +1670,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-11-07T01:12:21Z",
-      "updated_at": "2026-11-07T01:37:00Z",
+      "updated_at": "2026-11-26T02:35:50Z",
       "pushed_at": "2026-11-07T01:36:56Z",
-      "image_url": "https://opengraph.githubassets.com/44fcd43d227194981219fb253961ff3fb4bb3e5f28ca40e63057231ed201ebf1/DevArtsLab/legal"
+      "image_url": "https://opengraph.githubassets.com/26db9a66f30e4dc26dd80fab379d53e0ff892ef552a3b40e2224c7fe7de1c9a1/DevArtsLab/legal"
     },
     {
       "name": "tool-github-actions-audit",
@@ -2301,7 +2367,10 @@
       "visibility": "public",
       "category": "project",
       "featured": false,
-      "tags": [],
+      "tags": [
+        "homebrew",
+        "homebrew-tap"
+      ],
       "primary_language": "Ruby",
       "languages": [
         {
@@ -2321,9 +2390,9 @@
       "is_template": false,
       "default_branch": "main",
       "created_at": "2026-10-15T07:18:35Z",
-      "updated_at": "2026-10-16T09:39:14Z",
+      "updated_at": "2026-11-26T02:35:54Z",
       "pushed_at": "2026-10-16T09:39:10Z",
-      "image_url": "https://opengraph.githubassets.com/a36712a18c8f0613149f2d94f72c96ce27b885c18d3f20740f908ea3c641a7a5/DevArtsLab/homebrew-tap"
+      "image_url": "https://opengraph.githubassets.com/71d5363a829db33ee3b1431c40555151d8e9a5179e96a0e87b736ab9a4ab663b/DevArtsLab/homebrew-tap"
     },
     {
       "name": "saystop",
@@ -3947,41 +4016,6 @@
       "updated_at": "2026-10-07T23:14:26Z",
       "pushed_at": "2026-10-01T04:40:29Z",
       "image_url": "https://opengraph.githubassets.com/ac7500f0b51ef2067b1a90f7125217e899149661c61f924bd2de87e48fe9331d/DevArtsLab/guaranteed-income-program"
-    },
-    {
-      "name": "american-community-network",
-      "full_name": "DevArtsLab/american-community-network",
-      "owner": "DevArtsLab",
-      "owner_type": "Organization",
-      "display_name": "American Community Network",
-      "description": "Landing page for the Intelligence Revenue System: an AI-powered community intelligence platform giving nonprofit leaders automated donor engagement, real-time community analytics, and unified organizational insights.",
-      "url": "https://github.com/DevArtsLab/american-community-network",
-      "homepage": "https://devartslab.github.io/american-community-network/",
-      "visibility": "public",
-      "category": "project",
-      "featured": false,
-      "tags": [
-        "ai",
-        "community-intelligence",
-        "github-pages",
-        "landing-page",
-        "nonprofit"
-      ],
-      "languages": [],
-      "license": "MIT",
-      "stars": 1,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "size_kb": 11,
-      "is_fork": false,
-      "is_archived": false,
-      "is_template": false,
-      "default_branch": "main",
-      "created_at": "2026-09-24T04:51:04Z",
-      "updated_at": "2026-10-07T23:14:35Z",
-      "pushed_at": "2026-09-25T01:35:19Z",
-      "image_url": "https://opengraph.githubassets.com/49614373f5d6e7253542d9ad7445a86598462a323f0c545db796c99fcebf6973/DevArtsLab/american-community-network"
     },
     {
       "name": "city-scrapers-meetings-viewer",
